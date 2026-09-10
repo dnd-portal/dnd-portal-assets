@@ -1,0 +1,20 @@
+{
+    "name": "@dnd-portal/assets",
+    "version": "1.0.1",
+    "description": "Shared branding, icons and visual assets for the DND Portal ecosystem.",
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dnd-portal/dnd-portal-assets.git"
+    },
+    "homepage": "https://assets.dnd-portal.com",
+    "files": [
+        "branding",
+        "icons",
+        "README.md",
+        "LICENSE"
+    ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
+}
