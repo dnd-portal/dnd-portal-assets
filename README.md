@@ -40,8 +40,41 @@ Reusable icons used throughout the DND Portal ecosystem.
 
 ## Usage
 
-Assets can be referenced directly from this repository by DND Portal projects
-instead of maintaining duplicate copies across multiple repositories.
+The stable public asset origin is:
+
+```text
+https://assets.dnd-portal.com/
+```
+
+Assets can be referenced directly by DND Portal projects instead of maintaining
+duplicate copies across multiple repositories. Public paths mirror the
+repository structure. For example:
+
+```text
+https://assets.dnd-portal.com/branding/dnd-portal-logo-wide.svg
+https://assets.dnd-portal.com/branding/dnd-portal-icon.svg
+https://assets.dnd-portal.com/branding/dnd-portal-social-card.png
+https://assets.dnd-portal.com/icons/white/classes/barbarian.svg
+```
+
+Use the existing filename and path when adding a reference. Do not use hashed,
+build-specific, `dist`, or GitHub raw-content URLs for public assets.
+
+When adding a new asset:
+
+1. Put it in the appropriate `branding/` or `icons/` subdirectory.
+2. Use a descriptive, stable filename.
+3. Confirm that the public URL matches the repository path.
+4. Treat a published path as a public API: do not casually rename or delete it.
+
+If an asset needs to be replaced, prefer replacing the file at the same stable
+URL when its semantic purpose remains the same. Introduce a new path only when
+the asset's purpose or format has changed.
+
+The public website and future desktop applications should use this asset origin
+for shared visual assets. The GitHub Packages publication is a separate
+distribution channel for projects that need the `@dnd-portal/assets` package;
+it does not change the public URL contract above.
 
 When using an asset in another project, prefer linking to a specific file on
 the `main` branch or a versioned release when stability is important.
