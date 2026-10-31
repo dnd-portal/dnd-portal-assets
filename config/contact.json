@@ -1,0 +1,14 @@
+{
+    "general": {
+        "description": "Use this email for general contact.",
+        "emailAddress": "contact@dnd-portal.com"
+    },
+    "professional": {
+        "description": "For professional and business-related communication.",
+        "emailAddress": "global@dnd-portal.com"
+    },
+    "support": {
+        "description": "For bugs, technical problems, and support requests.",
+        "emailAddress": "support@dnd-portal.com"
+    }
+}

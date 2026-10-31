@@ -1,0 +1,49 @@
+{
+    "dnd-portal.com": {
+        "title": "D&D Portal Wiki",
+        "slug": "dnd-portal",
+        "description": "Browse rules, classes, spells, campaign references, project information, and other D&D Portal Wiki content.",
+        "url": "https://dnd-portal.com",
+
+        "branding": {
+            "logo": {
+                "src": "/branding/dnd-portal/dnd-portal-logo-wide.svg",
+                "alt": "D&D Portal"
+            },
+
+            "icon": {
+                "svg": "/branding/dnd-portal/dnd-portal-icon.svg",
+                "png96": "/branding/dnd-portal/dnd-portal-icon-96.png",
+                "png192": "/branding/dnd-portal/dnd-portal-icon-192.png",
+                "png512": "/branding/dnd-portal/dnd-portal-icon-512.png",
+                "alt": "D&D Portal icon"
+            },
+
+            "favicon": {
+                "ico": "/branding/dnd-portal/favicon.ico"
+            },
+
+            "appleTouchIcon": {
+                "src": "/branding/dnd-portal/apple-touch-icon.png",
+                "sizes": "180x180"
+            },
+
+            "socialCard": {
+                "src": "/branding/dnd-portal/dnd-portal-social-card.png",
+                "alt": "D&D Portal Wiki"
+            }
+        }
+    },
+    "dashboard.dnd-portal.com": {
+        "title": "D&D Portal Dashboard",
+        "slug": "dashboard-dnd-portal",
+        "description": "Browse your character sheets, session notes, upcoming sessions and manage what days you are available.",
+        "url": "https://dnd-portal.com/dashboard"
+    },
+    "assets.dnd-portal.com": {
+        "title": "D&D Portal Assets",
+        "slug": "assets-dnd-portal",
+        "description": "Get all dnd assets that are being used by D&D Portal Wiki and D&D Portal Dashboard.",
+        "url": "https://assets.dnd-portal.com/README.md"
+    }
+}
