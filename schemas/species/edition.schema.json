@@ -214,6 +214,49 @@
             "minLength": 1
           },
           "minItems": 0
+        },
+        "subraceSelection": {
+          "type": "object",
+          "description": "Optional, edition-specific selection metadata for a parent species that requires a child option; child mechanics are stored separately and no availability is implied.",
+          "required": [
+            "required",
+            "count",
+            "inheritSharedTraits",
+            "availability",
+            "resolution"
+          ],
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "inheritSharedTraits": {
+              "type": "boolean"
+            },
+            "availability": {
+              "enum": [
+                "pending-child-content",
+                "child-content-available"
+              ]
+            },
+            "resolution": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sourceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": true
         }
       },
       "additionalProperties": true

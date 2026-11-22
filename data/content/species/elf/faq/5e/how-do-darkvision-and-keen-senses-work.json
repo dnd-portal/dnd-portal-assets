@@ -1,0 +1,114 @@
+{
+  "id": "elf-darkvision-keen-senses",
+  "slug": "how-do-darkvision-and-keen-senses-work",
+  "edition": "5e",
+  "contentId": "species:elf",
+  "question": "How do Darkvision and Keen Senses work for Elves in D&D 5e?",
+  "shortAnswer": "The 2014 Elf has Darkvision out to 60 feet, treating dim light as bright and darkness as dim while seeing no colors in darkness. Keen Senses grants proficiency in Perception, not automatic detection or advantage.",
+  "introduction": "These abilities help an Elf notice the environment but affect different parts of the rules. Darkvision determines what lighting permits the Elf to see, whereas Perception proficiency improves applicable Wisdom (Perception) checks and passive scores.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e",
+    "sage-advice-compendium-5e"
+  ],
+  "sections": [
+    {
+      "id": "elf-darkvision-range",
+      "title": "The 60-foot range and what happens beyond it",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The shared 2014 Elf Darkvision works within 60 feet of the character. Within that radius, dimly illuminated places are perceived as bright and darkness is perceived as dim. The trait does not provide unlimited sight through a cavern or reveal distant creatures that lie well beyond its stated range."
+        },
+        {
+          "type": "paragraph",
+          "text": "A practical example is a guard in an unlit corridor 40 feet away: the Elf may be able to see the guard's shape despite the absence of a torch. At 100 feet in the same darkness, Darkvision by itself provides no visibility benefit. Lighting, obstructions and other vision rules still matter."
+        }
+      ]
+    },
+    {
+      "id": "elf-darkvision-light",
+      "title": "Why darkness does not become bright light",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Darkvision treats darkness as dim light rather than bright light. Under 2014 visibility rules, dim light creates a lightly obscured area for visual perception. A lightly obscured area can impose disadvantage on Wisdom (Perception) checks that rely on sight, even though the creature may still make out shapes and movement."
+        },
+        {
+          "type": "paragraph",
+          "text": "This means an Elf exploring a completely dark room may spot a large moving figure but struggle to notice a faint scratch on a wall. In actual dim light, Darkvision treats the surroundings as bright light, removing the particular dim-light limitation for vision within range. No feature automatically negates cover, fog or invisible targets."
+        }
+      ]
+    },
+    {
+      "id": "elf-darkvision-color",
+      "title": "The restriction on color in darkness",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 description expressly limits the Elf to shades of gray when viewing darkness through Darkvision. A character might recognize a familiar symbol by its shape, but cannot depend on telling a red symbol from a green one solely with this sense in a completely dark area."
+        },
+        {
+          "type": "paragraph",
+          "text": "Color can matter for riddles, color-coded alchemical vials or identifying a banner at night. The Elf may need a light source or another way to gather the missing information. The absence of color does not imply the Elf is permanently color-blind in ordinary illumination."
+        }
+      ]
+    },
+    {
+      "id": "elf-darkvision-magical",
+      "title": "What about magical darkness and hidden creatures?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Darkvision is not a universal answer to magical darkness. The official Sage Advice Compendium clarifies that an individual magical darkness effect blocks Darkvision when that effect's rules say it does. For example, a darkness spell can explicitly obstruct Darkvision. Apply the actual effect's wording rather than an assumption about all magical darkness."
+        },
+        {
+          "type": "paragraph",
+          "text": "The trait also does not automatically reveal an invisible enemy or a hidden creature behind solid cover. An Elf can only notice what its senses and the relevant circumstances allow; a Perception check, a different sense or changing the lighting might still be necessary."
+        }
+      ]
+    },
+    {
+      "id": "elf-darkvision-keen",
+      "title": "Keen Senses means Perception proficiency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keen Senses provides proficiency in the Perception skill. For an eligible ability check, a proficient character adds their proficiency bonus to the relevant ability modifier. The trait also contributes through the normal passive Perception formula, which typically begins at 10 plus the applicable modifiers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Consider a 1st-level Elf with Wisdom 14 and proficiency bonus +2: an ordinary proficient Wisdom (Perception) check uses a +4 modifier, and passive Perception is normally 14 before other adjustments. The Elf did not gain +4 directly from Keen Senses; that total combines the Wisdom modifier and proficiency bonus."
+        }
+      ]
+    },
+    {
+      "id": "elf-darkvision-interaction",
+      "title": "How sight-based checks combine the two traits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A dark chamber is a good example of the difference. Darkvision may let the Elf perceive nearby surfaces as dimly lit instead of completely unseen, while Keen Senses adds proficiency to an appropriate Perception check. If the check relies on sight and is disadvantaged by lightly obscured conditions, Perception proficiency does not erase that disadvantage."
+        },
+        {
+          "type": "paragraph",
+          "text": "If passive Perception is used while the character has disadvantage on the relevant check, the 2014 passive-check rule normally applies a -5 adjustment. The same 1st-level Elf with passive Perception 14 could therefore have an effective passive score of 9 for an applicable disadvantaged visual observation. Which check matters and what is observable remain the DM's determination."
+        }
+      ]
+    },
+    {
+      "id": "elf-darkvision-avoiding-misconceptions",
+      "title": "Common mistakes to avoid",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Darkvision is not perfect night vision, automatic Stealth, a detector for every secret door, or the ability to read colors without light. Keen Senses does not add proficiency to Investigation, give blindsight or guarantee success. Treat the first as a sensory capability and the second as a training benefit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, this is the parent Elf's 60-foot Darkvision. Some separately published 2014 subrace options may change how vision works, but those are not implemented in this dataset. Do not change the shared parent trait because an example character uses a different subrace."
+        }
+      ]
+    }
+  ]
+}

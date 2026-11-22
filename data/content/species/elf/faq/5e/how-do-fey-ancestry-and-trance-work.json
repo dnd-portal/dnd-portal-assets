@@ -1,0 +1,114 @@
+{
+  "id": "elf-fey-ancestry-trance",
+  "slug": "how-do-fey-ancestry-and-trance-work",
+  "edition": "5e",
+  "contentId": "species:elf",
+  "question": "How do Fey Ancestry and Trance work for Elves in D&D 5e?",
+  "shortAnswer": "Fey Ancestry grants advantage on saving throws against being charmed and prevents magic from putting a 2014 Elf to sleep. Trance replaces ordinary sleep with four hours of semiconscious meditation; official 2014 Sage Advice confirms a four-hour long rest.",
+  "introduction": "The two traits protect an Elf in different ways. Fey Ancestry affects particular hostile effects; Trance changes the Elf's normal rest routine. Neither grants blanket immunity to unconsciousness or later-edition lineage benefits.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e",
+    "sage-advice-compendium-5e"
+  ],
+  "sections": [
+    {
+      "id": "elf-fey-charm",
+      "title": "Advantage against being charmed is not immunity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 Fey Ancestry trait gives the Elf advantage on saving throws against being charmed. When an effect calls for an eligible saving throw to resist that condition, the character rolls two d20s and uses the higher result under the normal advantage rule. The saving throw can still fail."
+        },
+        {
+          "type": "paragraph",
+          "text": "For instance, an enchantment that allows a Wisdom saving throw to prevent being charmed triggers Fey Ancestry's advantage. If an effect does not involve being charmed, or if it does not call for a saving throw of the relevant kind, this wording does not automatically supply a bonus."
+        }
+      ]
+    },
+    {
+      "id": "elf-fey-sleep",
+      "title": "Why magic cannot put the Elf to sleep",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Fey Ancestry separately prevents magic from putting the Elf to sleep. An effect that would magically induce sleep, including a spell whose result is putting its target to sleep, cannot produce that sleep outcome for an Elf protected by the trait."
+        },
+        {
+          "type": "paragraph",
+          "text": "This does not mean the Elf automatically resists every magical effect. A spell can use charm, damage, paralysis, exhaustion or a different condition without actually putting the creature to sleep. Identify the nature of the effect before applying the sleep protection."
+        }
+      ]
+    },
+    {
+      "id": "elf-fey-unconscious",
+      "title": "Sleep and unconsciousness are not identical",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An Elf can still fall unconscious for reasons other than being magically put to sleep, such as being reduced to 0 hit points. Fey Ancestry is not general immunity to the unconscious condition, incapacitation, being stunned or losing hit points."
+        },
+        {
+          "type": "paragraph",
+          "text": "Likewise, the fact that Elves do not need normal sleep under Trance does not make it impossible for them to be knocked out. The game distinguishes a habitual biological rest requirement from particular combat conditions and effects. Applying these categories precisely avoids treating Fey Ancestry as a broad defensive shield."
+        }
+      ]
+    },
+    {
+      "id": "elf-trance-meditation",
+      "title": "What four hours of Trance involve",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the 2014 description, an Elf meditates deeply for four hours rather than sleeping normally. The character remains semiconscious while performing this rest and gains the benefit that a Human obtains from eight hours of sleep. The feature is a defined rest procedure, not normal waking activity during which the Elf can freely adventure."
+        },
+        {
+          "type": "paragraph",
+          "text": "For roleplaying, Trance can take the form of mentally rehearsing skills or reflecting on memories. That narrative idea does not give extra proficiency, spellcasting, divination or a special awareness check unless some other feature grants it. The four-hour period is the mechanical distinction."
+        }
+      ]
+    },
+    {
+      "id": "elf-trance-long-rest",
+      "title": "Can a 2014 Elf complete a long rest in four hours?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Yes. The official Sage Advice Compendium explicitly clarifies that an Elf who meditates during a long rest can complete that rest after four hours. All other rules for a long rest still apply; only its duration is changed in the stated circumstance. This clarification is important because the 2014 trait itself describes an eight-hour sleep benefit rather than using the newer sentence structure."
+        },
+        {
+          "type": "paragraph",
+          "text": "A party might have an Elf finish their own long rest while other members are still resting. That does not instantly restore companions' resources, eliminate encounter risks, automatically create a safe watch rotation or allow the Elf to ignore other limits on long rests. Time and resources should be tracked separately for each character."
+        }
+      ]
+    },
+    {
+      "id": "elf-trance-editions",
+      "title": "Why the 2024 Trance wording is not interchangeable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The updated 2024 Elf rules contain modernized lineage and Trance language. That design is not the same as the base 2014 Elf, which has a required subrace layer and no species feature that changes proficiencies after every Trance. Keep the 2014 four-hour meditation and official long-rest clarification without borrowing revised-edition features."
+        },
+        {
+          "type": "paragraph",
+          "text": "This distinction also matters for characters described as Astral Elves or other later designs. Their abilities might sound similar, but separate species entries and source books must determine the actual character sheet. Sharing the name Trance is not permission to combine all editions or subraces."
+        }
+      ]
+    },
+    {
+      "id": "elf-fey-practical",
+      "title": "Two examples at the table",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If an enemy tries to charm the party, the Elf gains advantage on a saving throw against that charm while companions without a similar defense follow their own rules. If another enemy uses magical sleep, the Elf's Fey Ancestry prevents that specific sleep effect. These are different protections and should be recorded separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the adventurers camp for the night, the Elf can spend four hours meditating and finish a long rest under the clarified 2014 rule. They still need a safe enough opportunity to rest, and a shorter personal rest does not create new time for everyone else. Talk with the DM about watches and interruptions under the campaign's usual long-rest rules."
+        }
+      ]
+    }
+  ]
+}

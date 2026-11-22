@@ -1,0 +1,128 @@
+{
+  "id": "elf-traits",
+  "slug": "what-traits-do-elves-get",
+  "edition": "5e",
+  "contentId": "species:elf",
+  "question": "What traits do Elves get in D&D 5e?",
+  "shortAnswer": "A 2014 Elf receives +2 Dexterity, Medium size, 30-foot speed, 60-foot Darkvision, Perception proficiency, Fey Ancestry, four-hour Trance, Common and Elvish, and descriptive age and alignment traits; one subrace must also be chosen.",
+  "introduction": "The shared Elf species package covers physical fundamentals, senses, defenses, rest and language. The distinction between these parent traits and the traits awarded by a selected subrace prevents incorrect character sheets.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e",
+    "sage-advice-compendium-5e"
+  ],
+  "sections": [
+    {
+      "id": "elf-traits-dexterity",
+      "title": "Dexterity increases by two",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 Elf's racial Ability Score Increase adds 2 to Dexterity. This is a fixed increase, not a choice between abilities. It can affect the Dexterity modifier used for initiative, certain attacks, ability checks and Armor Class calculations, depending on the character's equipment and features."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a starting Dexterity of 15 becomes 17, increasing its ability modifier from +2 to +3. Raising 14 to 16 likewise increases the modifier from +2 to +3. This trait does not independently grant proficiency with bows, a bonus to Strength or a second ability increase from the shared Elf species."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-age-alignment",
+      "title": "Age and alignment are descriptive",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The original 2014 description states that Elves reach physical maturity at about the same rate as Humans, but often count themselves adults at roughly 100 years and can live as long as 750 years. These figures may guide backstory, social expectations and how the Elf remembers events that are ancient to shorter-lived peoples."
+        },
+        {
+          "type": "paragraph",
+          "text": "The rules also describe a tendency to value freedom and often to favor good. This is not a required alignment or a mechanical restriction on player choice. An adventurer's ethics should reflect the character and campaign instead of being derived automatically from a species entry."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-size-speed",
+      "title": "Medium size and 30-foot movement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The base Elf is Medium, not Small, and has a walking speed of 30 feet. Neither a particular age nor the general 2014 Elf entry creates a bonus to jumping, climbing, swimming or flying speed. Separate game rules govern difficult terrain, Dash, squeezing and other movement interactions."
+        },
+        {
+          "type": "paragraph",
+          "text": "A common mistake is to assume every Elf has a higher walking speed because some Elf options are associated with forests and swift travel. That is not a benefit of the shared parent. Check the chosen subrace and class before recording any movement ability beyond the baseline."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-darkvision",
+      "title": "Darkvision at 60 feet",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Within 60 feet, an Elf sees dim light as though it were bright light and darkness as though it were dim light. Darkness does not become fully illuminated: the Elf still sees no normal color within darkness. Perceiving shapes in the dark does not automatically reveal hidden traps or invisible creatures."
+        },
+        {
+          "type": "paragraph",
+          "text": "This matters when the party explores an unlit passage. The Elf might spot a silhouette without a torch, but reading colored warning markings or recognizing subtle distinctions could still require light. Magical darkness must be handled according to the specific effect rather than assuming Darkvision always defeats it."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-keen-senses",
+      "title": "Keen Senses grants Perception proficiency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keen Senses makes the Elf proficient in the Perception skill. It applies to checks that actually use Perception, such as noticing a distant movement or listening for an approaching patrol when the Dungeon Master calls for that check."
+        },
+        {
+          "type": "paragraph",
+          "text": "Perception proficiency is not Expertise, automatic success, advantage on all sight checks, or proficiency in Investigation. It may improve passive Perception through the normal calculation, but the result still depends on the character's Wisdom and proficiency bonus."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-fey-ancestry",
+      "title": "Fey Ancestry provides two protections",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Fey Ancestry grants advantage on saving throws against being charmed. It does not make the Elf immune to all charm effects; if a saving throw is permitted, the Elf still rolls and can still fail. The trait separately states that magic cannot put the Elf to sleep."
+        },
+        {
+          "type": "paragraph",
+          "text": "These protections have different scopes. A magical effect that makes a creature unconscious without causing magical sleep is not automatically defeated by Fey Ancestry, and the trait does not prevent the frightened or stunned conditions merely because they also affect a character's decisions."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-trance",
+      "title": "Trance changes rest, not other proficiencies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Elves do not need ordinary sleep under the 2014 trait. Four hours of semiconscious meditation provide the stated rest benefit. The official 2014 Sage Advice Compendium confirms that the Elf can complete a long rest in those four hours, while otherwise obeying long-rest rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trance is not a free bonus action, a feature that refreshes every spell slot at will, or the revised 2024 system for selecting temporary proficiencies. Its chief impact is on how the character rests, which can matter for an individual's daily schedule or camp-watch planning."
+        }
+      ]
+    },
+    {
+      "id": "elf-traits-languages-subrace",
+      "title": "Languages and the missing subrace layer",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The shared Elf starts knowing Common and Elvish and can speak, read and write both. An additional automatically chosen language is not part of the shared parent package; a background, class, subrace or other rule might supply something more."
+        },
+        {
+          "type": "paragraph",
+          "text": "One subrace selection is required for a complete 2014 Elf. High Elf, Wood Elf and Drow are official examples named in the 2014 Basic Rules, but none of their special rules belongs in this parent entry. The base data lists those possibilities only as future documentation topics, not as published content or automatically available bonuses."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "elf-introduction",
+  "slug": "what-is-the-elf-species",
+  "edition": "5e",
+  "contentId": "species:elf",
+  "question": "What is the Elf species in D&D 5e?",
+  "shortAnswer": "Elf is a long-lived Humanoid species in D&D 5e (2014). Elves share +2 Dexterity, Medium size, 30-foot speed, Darkvision, Perception proficiency, Fey Ancestry, Trance, and Common and Elvish; completing a character requires a subrace.",
+  "introduction": "Elves have a recognizable mix of agility, watchfulness, unusual rest habits and long personal histories. Their 2014 character-creation rules have two layers: common Elf traits and one chosen subrace's additional features.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e",
+    "sage-advice-compendium-5e"
+  ],
+  "sections": [
+    {
+      "id": "elf-introduction-identity",
+      "title": "Elves as characters, not a single culture",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An Elf in D&D 5e is a Humanoid playable species often represented through long life, a particular sense of adulthood and an affinity for noticing details. These themes can suggest background stories, but they do not establish a fixed homeland, religion, political identity or moral alignment for every character. Different campaign settings and individual families can give them dramatically different traditions."
+        },
+        {
+          "type": "paragraph",
+          "text": "A century of memories might make one Elf cautious, yet another Elf may be reckless and curious. The rules describe broad cultural tendencies rather than directing how every member of the species must behave. Build a character's personality from relationships, ambitions, work and circumstances rather than treating a species label as a complete personality."
+        }
+      ]
+    },
+    {
+      "id": "elf-introduction-core",
+      "title": "The shared Elf rules at a glance",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 base Elf increases Dexterity by 2, is Medium and walks 30 feet. Darkvision helps in dim light or darkness within 60 feet, Keen Senses grants proficiency in Perception, and Fey Ancestry helps against being charmed while preventing magical sleep. Trance changes how the character rests, and the Elf knows Common and Elvish."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are parent species traits, meaning they are available before a character's particular subrace is applied. None of them grants automatic spellcasting, a general feat, weapon training or a movement speed above 30 feet. A specific subrace might add something beyond the shared list, but those additions must be traced to that separate option rather than silently included in the parent."
+        }
+      ]
+    },
+    {
+      "id": "elf-introduction-longevity",
+      "title": "Physical growth, adulthood and long life",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 Elf entry places physical maturity on roughly a human timeline but says that an Elf is usually recognized as an adult within elven culture at around 100 years. Elves can live up to approximately 750 years. This distinction offers room for an adventurer who has considerable life experience but is still viewed as young by elders."
+        },
+        {
+          "type": "paragraph",
+          "text": "The age description is chiefly a roleplaying guide, not an automatic penalty or benefit based on the character's birthday. A 120-year-old Elf is not required to know every lost language, remember every historical event or gain free skill proficiencies. A background and class still describe what the character actually learned."
+        }
+      ]
+    },
+    {
+      "id": "elf-introduction-subrace",
+      "title": "Why an Elf subrace is mandatory in 2014 creation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the original 2014 Elf character-creation model, the player selects one Elf subrace to supplement the parent rules. High Elf, Wood Elf and Dark Elf (Drow) are familiar examples from the official Basic Rules. Their individual rules are distinct and are not included in this parent-only JSON entry."
+        },
+        {
+          "type": "paragraph",
+          "text": "A complete 2014 Elf therefore consists of the shared parent Elf and one permitted subrace, along with class and background. Treating the unmodified base entry as a finished player build would omit a required decision. The D&D Portal data deliberately marks the subrace content as pending rather than pretending that child mechanics are available now."
+        }
+      ]
+    },
+    {
+      "id": "elf-introduction-adventuring",
+      "title": "How Elves contribute to a party",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An [[class:ranger@5e|Ranger]] may find the combination of Dexterity, Perception proficiency and Darkvision useful when scouting, but being able to see in darkness does not make the Elf silent or automatically hidden. A [[class:wizard@5e|Wizard]] might appreciate those same exploration features and the shorter meditation routine even without relying on Dexterity for spell attacks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fey Ancestry can matter when enemies try to charm the party or use magic to induce sleep. It does not create blanket immunity to mind-altering magic. Trance can help an Elf finish their own long rest sooner, but the rest of the group may still need longer, and the party must still plan watch rotations, travel and shared objectives."
+        }
+      ]
+    },
+    {
+      "id": "elf-introduction-sources",
+      "title": "Using the correct rules edition",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This entry follows the 2014 fifth-edition Elf, represented in official SRD 5.1 and the Basic Rules. The revised 5.5e Elf uses a different species framework and is not available here; mechanics from later Elf or Astral Elf designs should not be imported into the 2014 parent package."
+        },
+        {
+          "type": "paragraph",
+          "text": "The official Sage Advice Compendium explains a point that can be missed when reading the old Trance trait alone: an Elf who meditates during a long rest can finish it after four hours, while meeting the remaining long-rest rules. That clarification belongs to the original edition and is not permission to import unrelated 2024 rest or lineage benefits."
+        }
+      ]
+    }
+  ]
+}

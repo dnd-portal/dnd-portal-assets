@@ -1,0 +1,18 @@
+{
+  "id": "species:elf",
+  "type": "species",
+  "slug": "elf",
+  "name": "Elf",
+  "summary": "A long-lived, perceptive Humanoid whose shared 5e traits include Dexterity, Darkvision, Fey Ancestry and Trance; a subrace selection is also required.",
+  "editions": [
+    "5e"
+  ],
+  "defaultEdition": "5e",
+  "tags": [
+    "humanoid",
+    "playable",
+    "fey-heritage",
+    "darkvision",
+    "perceptive"
+  ]
+}

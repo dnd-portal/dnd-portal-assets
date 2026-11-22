@@ -1,0 +1,158 @@
+{
+  "id": "elf-subraces",
+  "slug": "how-do-elf-subraces-work",
+  "edition": "5e",
+  "contentId": "species:elf",
+  "question": "How do Elf subraces work in D&D 5e?",
+  "shortAnswer": "In the 2014 rules, an Elf must choose one subrace. The character receives every shared parent Elf trait plus the features of that selected subrace; High Elf, Wood Elf and Drow are official examples, but their separate mechanics are not part of this parent dataset.",
+  "introduction": "The original fifth-edition Elf is a layered character choice: parent rules establish what all Elves share, and a second decision determines additional abilities. Separating the two is essential for both accurate character sheets and maintainable content.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "elf-subraces-parent",
+      "title": "What every Elf already has before a subrace",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The parent Elf provides Dexterity +2, Medium size, 30-foot walking speed, Darkvision within 60 feet, Perception proficiency, Fey Ancestry, Trance, and Common and Elvish. It also carries descriptive rules about age and alignment. These benefits exist regardless of which permitted 2014 Elf subrace the player chooses."
+        },
+        {
+          "type": "paragraph",
+          "text": "That common package belongs in one reusable parent entry. For example, every character using the 2014 Elf parent has the same baseline Fey Ancestry protection against being charmed and magically put to sleep. A child does not need to restate those properties unless its own rule modifies a particular component."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-required",
+      "title": "Why the 2014 rules require a subrace selection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 Basic Rules explicitly instruct the player to choose an Elf subrace. That is part of the species choice, not an optional extra that can simply be ignored in a fully built 2014 character. After choosing the parent, a player records the relevant additional child features from the subrace's actual official rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "Until the D&D Portal child JSON files exist, this parent entry intentionally cannot supply a finished subrace package. A user should consult the permitted official source during character creation rather than assuming a placeholder subrace has no additional traits or borrowing features from another edition."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-examples",
+      "title": "High Elf, Wood Elf and Drow are distinct examples",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 Basic Rules discuss High Elves, Wood Elves and Dark Elves, commonly called Drow. They are examples of separate subraces, not three aliases for one mechanical choice. The appropriate published option depends on the edition and the campaign's allowed rules sources."
+        },
+        {
+          "type": "paragraph",
+          "text": "These names are included here to explain the model, not to implement them. This FAQ does not assign ability increases, spells, weapon proficiencies, improved speed, special hiding rules or alternate Darkvision to any of those children. Such rules must come from verified dedicated subrace data in future tasks."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-inheritance",
+      "title": "How parent and subrace traits combine",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the original racial trait framework, a subrace normally grants traits in addition to those of the parent race. Record a shared Elf benefit once from `species:elf@5e`, then record only the additional subrace-specific traits from the chosen child. The full resulting character sheet reflects both sources."
+        },
+        {
+          "type": "paragraph",
+          "text": "If an official subrace rule modifies the value of a shared feature, the child implementation must explicitly model that change instead of silently changing the parent for all Elves. This is important for mechanics such as movement or sensory ranges that may differ in individual published options. A reusable parent should remain the same for everyone who inherits it."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-example-model",
+      "title": "A future child-content model",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Where rules belong",
+          "headers": [
+            "Content layer",
+            "Owns",
+            "Current state"
+          ],
+          "rows": [
+            [
+              "Elf parent (5e)",
+              "Shared ability increase, senses, defenses, rest, languages and mandatory subrace choice",
+              "Implemented"
+            ],
+            [
+              "High Elf child",
+              "Only its verified subrace-specific rules, sources, article and FAQs",
+              "Not implemented"
+            ],
+            [
+              "Wood Elf child",
+              "Only its verified subrace-specific rules, sources, article and FAQs",
+              "Not implemented"
+            ],
+            [
+              "Drow child",
+              "Only its verified subrace-specific rules, sources, article and FAQs",
+              "Not implemented"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A child should use its own stable ID and reference the parent Elf instead of copying all shared trait definitions. The future design should be generic enough to support other species and, conceptually, class-to-subclass relationships without hardcoding one particular Elf option."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nothing in the table advertises a child page as available. It describes intended ownership of future records. A complete implementation will need IDs, edition files, valid source attributions, relationship checks and individual FAQ collections before a child is published."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-character-creation",
+      "title": "A safe character creation sequence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "First choose Elf as the species and apply its shared 2014 traits. Second, choose one campaign-permitted Elf subrace and add only that subrace's actual traits. Third, choose a class and background and apply their features separately. Record each benefit's source so a rules review can identify why the character has it."
+        },
+        {
+          "type": "paragraph",
+          "text": "For instance, a character concept might involve an agile explorer who sees in low light and is proficient in Perception. Those qualities are already in the parent Elf. If the selected subrace offers other options, they should be recorded through the corresponding subrace rules rather than misattributed to all Elves."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-edition-confusion",
+      "title": "Avoid confusing subraces with revised lineages",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2024 Elf species uses an updated design with its own lineage terminology and character-creation choices. Those revised rules are not automatically a legal substitute for the 2014 subrace decision when this dataset is used for 5e. Similarly, a standalone later Elf-like species is not necessarily a subrace of the original Elf."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a campaign explicitly mixes books or adopts conversion rules, the DM can decide what is appropriate, but the D&D Portal reference should not imply that packages freely stack. Keep one edition's species baseline and follow the specific child option that the campaign accepts."
+        }
+      ]
+    },
+    {
+      "id": "elf-subraces-sources",
+      "title": "Where to confirm a particular subrace",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The SRD 5.1 supplies the common Elf traits and demonstrates the basic parent-plus-subrace structure. The 2014 Basic Rules are the separate official reference that identifies High Elf, Wood Elf and Drow as examples. Whether a particular child rule is included in the CC-licensed SRD must be verified rather than assumed because the name appears on D&D Beyond."
+        },
+        {
+          "type": "paragraph",
+          "text": "The site marks Basic Rules material reference-only unless a corresponding section is verified as covered by the SRD license. Future child articles need their own appropriate citations and licensing metadata and must avoid reproducing non-SRD rulebook prose without permission."
+        }
+      ]
+    }
+  ]
+}
