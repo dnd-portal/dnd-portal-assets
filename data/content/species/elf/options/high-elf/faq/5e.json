@@ -1,0 +1,32 @@
+{
+  "id": "species-option:high-elf@5e:faq",
+  "edition": "5e",
+  "contentId": "species-option:high-elf",
+  "items": [
+    {
+      "id": "high-elf-5e-introduction",
+      "file": "./5e/what-is-a-high-elf.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "high-elf-5e-traits",
+      "file": "./5e/what-traits-do-high-elves-get.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "high-elf-5e-cantrip",
+      "file": "./5e/how-does-high-elf-cantrip-work.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "high-elf-5e-weapons-languages",
+      "file": "./5e/how-do-weapon-training-and-languages-work.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "high-elf-5e-character-choice",
+      "file": "./5e/is-high-elf-a-good-character-choice.json",
+      "includeInGlobalFaq": true
+    }
+  ]
+}

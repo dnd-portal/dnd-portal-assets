@@ -1,0 +1,113 @@
+{
+  "id": "high-elf-5e-introduction",
+  "slug": "what-is-a-high-elf",
+  "edition": "5e",
+  "contentId": "species-option:high-elf",
+  "question": "What is a High Elf in D&D 5e?",
+  "shortAnswer": "A High Elf is a 2014 Elf subrace: it adds Intelligence +1, four weapon proficiencies, a chosen Wizard cantrip cast with Intelligence, and one extra language to the standard Elf traits.",
+  "introduction": "High Elf is the first independently maintained child of Elf in D&D Portal. The child entry supplies only subrace additions; the Elf 5e parent remains the authority for shared species traits, senses, defenses, resting and base languages.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "high-elf-5e-introduction-definition",
+      "title": "High Elf is a subrace, not another species",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 fifth-edition character-creation framework asks a player to choose Elf and then select an Elf subrace. High Elf is one of those choices. It does not replace the Elf parent or let the player mix several subrace packages. That distinction is important when reading rules and when storing mechanics in a character builder."
+        },
+        {
+          "type": "paragraph",
+          "text": "A complete High Elf character is therefore a combination of the [[species:elf@5e|Elf 5e]] parent and one child option. Only the parent supplies the shared Elf Dexterity increase, Darkvision, Keen Senses, Fey Ancestry and Trance. The High Elf child supplies four named additions and refers to those parent traits rather than copying them."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-introduction-identity",
+      "title": "What does the High Elf idea represent?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "High Elves are frequently presented as people whose cultural traditions include scholarship, refined crafts and basic arcane study. Those are narrative themes, not rules that force every High Elf to be a researcher, noble, arrogant intellectual or spellcasting specialist. A community might instead emphasize exploration, music, languages, naval work or preserving oral histories."
+        },
+        {
+          "type": "paragraph",
+          "text": "Long lives can contribute to a particular outlook: a High Elf might study one discipline over decades or seek adventures as a break from an inherited family profession. The shared Elf entry already supplies the age and lifespan information. High Elf adds no separate fixed alignment, homeland or mandatory cultural identity."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-introduction-additional-traits",
+      "title": "The four added mechanical traits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "High Elf adds exactly four 2014 subrace benefits: Intelligence rises by 1; the character becomes proficient with longsword, shortsword, shortbow and longbow; they learn one Wizard cantrip chosen by the player using Intelligence for its spellcasting; and they can speak, read and write one additional language of their choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "These benefits are separate from class and background features. For example, a character may choose [[spell:mage-hand@5e|Mage Hand]] for utility or [[spell:fire-bolt@5e|Fire Bolt]] for an attack option, but neither cantrip choice gives a Wizard class level or spell slots. The High Elf record does not assume any spell has already been selected."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-introduction-inheritance",
+      "title": "Which abilities still come from Elf?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The parent Elf provides Dexterity +2, Medium size, 30-foot walking speed, 60-foot Darkvision, Perception proficiency, protection against charm and magical sleep, four-hour Trance and the ability to speak, read and write Common and Elvish. These traits remain present in a High Elf because a subrace grants traits in addition to its parent."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a quick ability-score example, a character starting with Dexterity 14 and Intelligence 15 becomes Dexterity 16 and Intelligence 16 after the combined parent and child increases. The first increase is parent-owned; the second is child-owned. Do not apply either bonus twice or substitute the revised 5.5e rules."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-introduction-character-creation",
+      "title": "Choosing High Elf at character creation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "First record the 2014 Elf race, then choose High Elf as the one subrace. Add the High Elf Intelligence increase, four proficiencies, chosen cantrip and extra language to the common Elf package. Finally, apply your class and background. This sequence keeps it clear which rule provides each number or proficiency."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a class already grants proficiency with longbows, High Elf does not add another attack bonus merely because two sources grant the same proficiency. If a background already teaches a language, choose the High Elf language according to normal options and avoid accidentally counting a language twice."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-introduction-edition-difference",
+      "title": "High Elf in 2014 is not High Elf in 2024",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The revised D&D 5.5e Elf uses Elven Lineage with level-based spells rather than the original 2014 subrace package. Even though the name High Elf appears in both systems, it does not follow that its spells, ability-score rules or other features are interchangeable. The 2014 High Elf has a fixed Intelligence increase and a freely chosen Wizard cantrip."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use `species-option:high-elf@5e` with the parent `species:elf@5e` for this implementation. High Elf 5.5e will have a separate edition file and content review. No current feature or article here advertises that later lineage as already implemented."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-introduction-sources",
+      "title": "Which official documents support this?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The High Elf 2014 mechanics appear in SRD 5.1, which is published under CC BY 4.0 with a prescribed attribution statement. That statement is stored with the edition source record so a future content consumer can present the required notice when redistributing licensed material. Editorial explanations here are original."
+        },
+        {
+          "type": "paragraph",
+          "text": "The official 2014 Basic Rules are used as a cross-check for the race/subrace relationship and terminology. Their webpage is reference-only: the fact that it reproduces or discusses some SRD rules does not place the whole site, its illustrations or setting-specific descriptions under the SRD license."
+        }
+      ]
+    }
+  ]
+}

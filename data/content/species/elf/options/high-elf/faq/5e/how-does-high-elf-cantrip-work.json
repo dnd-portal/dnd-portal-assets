@@ -1,0 +1,113 @@
+{
+  "id": "high-elf-5e-cantrip",
+  "slug": "how-does-high-elf-cantrip-work",
+  "edition": "5e",
+  "contentId": "species-option:high-elf",
+  "question": "How does the High Elf cantrip work in D&D 5e?",
+  "shortAnswer": "A 2014 High Elf knows one Wizard cantrip of their choice. Intelligence is the spellcasting ability for it; the cantrip does not grant Wizard levels, spell slots, a spellbook, or other Wizard spells.",
+  "introduction": "This feature is often the High Elf subrace’s most flexible addition. It gives any class one eligible cantrip while leaving the spell’s normal casting requirements and the rest of the character’s class progression unchanged.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "high-elf-5e-cantrip-eligibility",
+      "title": "Which spell can a High Elf choose?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 High Elf chooses one cantrip from the Wizard spell list. A cantrip is a level-0 spell; the option is not one of the class’s level-1 or higher spells, and it does not permit choosing a cantrip exclusively on another class list if it is absent from the applicable Wizard list."
+        },
+        {
+          "type": "paragraph",
+          "text": "Useful examples from the 2014 Wizard spell list include [[spell:mage-hand@5e|Mage Hand]], [[spell:minor-illusion@5e|Minor Illusion]], [[spell:prestidigitation@5e|Prestidigitation]] and [[spell:fire-bolt@5e|Fire Bolt]]. These are alternatives for the one choice, not four spells all granted by the subrace. A campaign can limit available sources and options."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-cantrip-casting",
+      "title": "Intelligence is the spellcasting ability",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The High Elf trait explicitly uses Intelligence for this chosen cantrip. When that spell requires a spell attack, the attack modifier generally combines the character’s proficiency bonus and Intelligence modifier. When it calls for a spell saving throw, the normal save DC formula uses Intelligence as the spellcasting ability."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a first-level High Elf with Intelligence 16 and proficiency bonus +2 has a +5 spell attack modifier for a High Elf cantrip that requires an attack roll, before situational adjustments. A spell without an attack roll or save may not use that modifier at all."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-cantrip-slots",
+      "title": "Casting a cantrip without spell slots",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A cantrip is a spell that can normally be cast without expending a spell slot, so a non-Wizard High Elf can cast their chosen cantrip. The feature does not supply any first-level spell slots or let the character prepare a collection of Wizard spells. Normal restrictions on casting time, range, components, targets and concentration still apply."
+        },
+        {
+          "type": "paragraph",
+          "text": "A High Elf with [[spell:minor-illusion@5e|Minor Illusion]], for example, can attempt an illusion according to that spell’s own rules rather than spending an additional resource granted by High Elf. The spell does not become a free action simply because it is a cantrip."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-cantrip-wizard",
+      "title": "Knowing one cantrip does not make you a Wizard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Wizard class features such as a spellbook, class spell preparation, Arcane Recovery and the ability to learn additional Wizard spells are gained from the class, not from the High Elf subrace. A High Elf [[class:fighter@5e|Fighter]] or [[class:rogue@5e|Rogue]] can have the one subrace cantrip without taking a single Wizard level."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the High Elf later becomes a Wizard, track the subrace cantrip and class-selected cantrips as separate sources. The subrace does not automatically expand the number of spells the character can prepare from Wizard class features or permit swapping the original choice whenever a Long Rest is completed."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-cantrip-choices",
+      "title": "Practical spell-selection considerations",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An offensive option such as Fire Bolt uses the High Elf’s Intelligence for the spell attack, making the Intelligence score relevant to its reliability. A utility spell such as Mage Hand may be useful for manipulating small unattended objects at a distance, while Prestidigitation can support creative flavor and minor magical tasks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Minor Illusion may be appealing in an investigation or stealth-oriented campaign, but its effectiveness depends on what the spell actually creates and on how other creatures interact with the illusion. Select for the character’s goals instead of assuming that one cantrip is always the strongest choice for every class."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-cantrip-scaling",
+      "title": "Cantrips and character level",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some damaging cantrips change their effect at certain total character levels according to the cantrip’s own 2014 description. That behavior comes from the spell rules, not from gaining extra High Elf cantrips or additional Wizard class levels. A spell like Mage Hand follows its own text and should not be assumed to scale in the same way as a damage cantrip."
+        },
+        {
+          "type": "paragraph",
+          "text": "The High Elf feature still grants only one selected cantrip. Level advancement may improve proficiency and spell attack calculations, but it does not independently grant a second cantrip, a free spell slot, or a different spellcasting ability."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-cantrip-mistakes",
+      "title": "Common misconceptions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A frequent error is to record the High Elf’s cantrip as if it belonged to the character’s main spellcasting class and therefore used a different ability. The 2014 High Elf subrace specifies Intelligence even when the character is a Bard, Cleric or Warlock. Track the feature separately on the sheet."
+        },
+        {
+          "type": "paragraph",
+          "text": "Another mistake is to borrow the 2024 High Elf lineage’s cantrip-changing or later-spell progression, or to grant a choice from every spell list. The original subrace permits one eligible Wizard-list cantrip; follow that edition’s mechanics and the spell description in the applicable rules."
+        }
+      ]
+    }
+  ]
+}

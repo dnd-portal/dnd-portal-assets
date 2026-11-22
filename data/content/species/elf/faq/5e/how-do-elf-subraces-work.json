@@ -88,7 +88,7 @@
             [
               "High Elf child",
               "Only its verified subrace-specific rules, sources, article and FAQs",
-              "Not implemented"
+              "Implemented (5e)"
             ],
             [
               "Wood Elf child",
@@ -108,7 +108,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Nothing in the table advertises a child page as available. It describes intended ownership of future records. A complete implementation will need IDs, edition files, valid source attributions, relationship checks and individual FAQ collections before a child is published."
+          "text": "The High Elf 5e child is now implemented at [[species-option:high-elf@5e|High Elf]] with its own edition data and FAQ collection. Wood Elf and Drow remain pending. This table distinguishes repository implementation status only; it neither grants nor denies a player's campaign permission to select an official subrace."
         }
       ]
     },

@@ -1,0 +1,19 @@
+{
+  "id": "species-option:high-elf",
+  "type": "species-option",
+  "slug": "high-elf",
+  "name": "High Elf",
+  "parentId": "species:elf",
+  "summary": "A 2014 Elf subrace adding Intelligence, four weapon proficiencies, a Wizard cantrip, and a chosen language to the shared Elf traits.",
+  "editions": [
+    "5e"
+  ],
+  "defaultEdition": "5e",
+  "tags": [
+    "elf",
+    "subrace",
+    "arcane",
+    "weapon-training",
+    "playable"
+  ]
+}

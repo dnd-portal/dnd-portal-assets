@@ -64,7 +64,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A complete 2014 Elf therefore consists of the shared parent Elf and one permitted subrace, along with class and background. Treating the unmodified base entry as a finished player build would omit a required decision. The D&D Portal data deliberately marks the subrace content as pending rather than pretending that child mechanics are available now."
+          "text": "A complete 2014 Elf therefore consists of the shared parent Elf and one permitted subrace, along with class and background. Treating the unmodified parent as a finished player build would omit a required choice. D&D Portal now implements [[species-option:high-elf@5e|High Elf 5e]] as an independent child, while Wood Elf and Drow remain pending in the JSON assets dataset."
         }
       ]
     },

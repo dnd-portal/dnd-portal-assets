@@ -11,7 +11,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*@[1-5](?:\\.5)?e:faq$"
+      "pattern": "^(?:species|species-option):[a-z0-9]+(?:-[a-z0-9]+)*@[1-5](?:\\.5)?e:faq$"
     },
     "edition": {
       "enum": [
@@ -26,7 +26,7 @@
     },
     "contentId": {
       "type": "string",
-      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "pattern": "^(?:species|species-option):[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "items": {
       "type": "array",

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/species/options/faq-index.schema.json",
+  "allOf": [
+    {
+      "$ref": "https://schemas.dnd-portal.invalid/faq/index.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "id",
+        "contentId"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^species-option:[a-z0-9]+(?:-[a-z0-9]+)*@[1-5](?:\\.5)?e:faq$"
+        },
+        "contentId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^species-option:[a-z0-9]+(?:-[a-z0-9]+)*$"
+        }
+      }
+    }
+  ]
+}

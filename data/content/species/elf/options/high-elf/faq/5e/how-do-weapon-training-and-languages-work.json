@@ -1,0 +1,113 @@
+{
+  "id": "high-elf-5e-weapons-languages",
+  "slug": "how-do-weapon-training-and-languages-work",
+  "edition": "5e",
+  "contentId": "species-option:high-elf",
+  "question": "How do High Elf Weapon Training and languages work in D&D 5e?",
+  "shortAnswer": "High Elf adds proficiency with longsword, shortsword, shortbow and longbow, plus one language the character can speak, read and write. The extra language supplements the parent Elf’s Common and Elvish.",
+  "introduction": "Both benefits broaden a character’s practical options, but neither creates equipment, extra attacks, weapon mastery, or unlimited language comprehension. The exact abilities are defined by the 2014 High Elf trait descriptions.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "high-elf-5e-weapons-languages-four-weapons",
+      "title": "The exact four weapon proficiencies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Elf Weapon Training grants proficiency with a longsword, shortsword, shortbow and longbow. The list includes two melee weapons and two ranged weapons, with different characteristics under the standard equipment rules. The feature does not automatically grant proficiency with a rapier, dagger, crossbow or other weapon not listed."
+        },
+        {
+          "type": "paragraph",
+          "text": "The proficiency belongs to the High Elf child option, even though the feature name begins with “Elf.” The base 2014 Elf does not grant this weapon-training package. Other subraces or classes may have overlapping proficiencies, but those need to be checked independently."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-weapons-languages-attack-math",
+      "title": "How proficiency changes an attack roll",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When the character makes an attack with a weapon they are proficient with, they add their proficiency bonus to the attack roll in addition to the relevant ability modifier and other applicable adjustments. Longbow and shortbow attacks normally use Dexterity; the finesse shortsword can use Strength or Dexterity under ordinary weapon rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "For instance, a first-level High Elf with Dexterity 16 and proficiency bonus +2 has a typical +5 attack modifier with a shortbow before modifiers from other features or the environment. The +2 proficiency does not get added again because the character is also proficient through a class."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-weapons-languages-limits",
+      "title": "What weapon proficiency does not grant",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Weapon proficiency does not provide the physical weapon or ammunition. A class, background, purchase or treasure must supply actual equipment. It also does not grant an extra attack, a fighting style, a damage bonus equal to proficiency, an automatic hit or proficiency in every weapon of the same broad type."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapon Mastery is not a feature supplied by the 2014 High Elf trait. Do not import revised-edition mastery mechanics or later fighting styles into this record. Some classes already know all four weapons, in which case the subrace proficiency may not change their attack calculations."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-weapons-languages-extra-language",
+      "title": "One language in addition to Common and Elvish",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 base Elf knows Common and Elvish and can speak, read and write them. High Elf adds a choice of one more language, which the character can also speak, read and write. The feature should not replace either inherited language or be misread as a choice of three different languages."
+        },
+        {
+          "type": "paragraph",
+          "text": "A High Elf who chooses Dwarvish, for instance, can communicate in Common, Elvish and Dwarvish if Dwarvish is available in the campaign. That does not grant a magical translation ability, knowledge of every secret cipher or automatic comprehension of unfamiliar language variants."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-weapons-languages-selection",
+      "title": "Choosing an available additional language",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The feature leaves the exact language to the player’s choice, within any campaign-specific rules about available languages. The DM may have a list of common tongues, exotic tongues or setting-specific choices. Make that selection when defining the character rather than treating the extra language slot as permanent unrestricted understanding."
+        },
+        {
+          "type": "paragraph",
+          "text": "A character might choose a language because of a mentor, trade route, family history or the region where the campaign begins. The choice can support roleplaying and social navigation while remaining a concrete mechanical entry, distinct from languages gained through background or class features."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-weapons-languages-redundancy",
+      "title": "Overlapping proficiencies and languages",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If a Fighter already has proficiency with longbows, High Elf Weapon Training does not double the Fighter’s proficiency bonus for those attacks. Likewise, if another source already grants a language, record the source and avoid counting the same language as two separately known languages."
+        },
+        {
+          "type": "paragraph",
+          "text": "Other rules may allow replacement choices when proficiency or language grants overlap, but no such replacement is included in the High Elf subrace itself. Follow the applicable creation rules and DM decisions instead of silently changing the four listed weapons or the one-language grant."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-weapons-languages-example",
+      "title": "A complete High Elf character example",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Consider an Elf Rogue who selects High Elf. The Elf parent gives Dexterity +2 and Perception proficiency. High Elf adds Intelligence +1, weapon proficiencies, one chosen Wizard cantrip and a third species language. The Rogue class separately supplies its own skills and weapons; none should be counted twice."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the Rogue chooses [[spell:mage-hand@5e|Mage Hand]] and Dwarvish, the character records one Intelligence-based High Elf cantrip and Common, Elvish and Dwarvish from their species layers. The example does not imply that every High Elf knows Mage Hand or that Dwarvish is a mandatory racial language."
+        }
+      ]
+    }
+  ]
+}

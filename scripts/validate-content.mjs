@@ -14,11 +14,13 @@ if (contentDirArg !== -1 && !process.argv[contentDirArg + 1]) {
 }
 const contentRoot = contentDirArg === -1 ? path.join(repoRoot, 'data', 'content') : path.resolve(process.argv[contentDirArg + 1]);
 const EDITIONS = new Set(['1e', '2e', '3e', '3.5e', '4e', '5e', '5.5e']);
-const LINK_KINDS = new Set(['species','class','subclass','rule','spell','monster','location','external','background','feat','item','magic-item','condition','equipment','organization','npc']);
+const LINK_KINDS = new Set(['species','species-option','class','subclass','rule','spell','monster','location','external','background','feat','item','magic-item','condition','equipment','organization','npc']);
 const SCHEMAS = [
   'common/content-block.schema.json', 'common/article-section.schema.json', 'common/source.schema.json',
   'species/index.schema.json', 'species/edition.schema.json',
-  'faq/article.schema.json', 'faq/index.schema.json'
+  'faq/article.schema.json', 'faq/index.schema.json',
+  'species/options/index.schema.json', 'species/options/edition.schema.json',
+  'species/options/faq-article.schema.json', 'species/options/faq-index.schema.json'
 ];
 const licenseAttribution = {
   'srd-5.1': 'This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.',
@@ -41,7 +43,15 @@ async function discover(directory) {
 }
 function routeFor(file) {
   const r = path.relative(contentRoot, file).split(path.sep);
-  if (r[0] !== 'species') return null; // Adding another type requires a schema route.
+  if (r[0] !== 'species') return null;
+  // Nested species options inherit the parent species, but own mechanics and FAQs.
+  if (r[2] === 'options') {
+    if (r.length === 5 && r[4] === 'index.json') return 'species/options/index.schema.json';
+    if (r.length === 6 && r[4] === 'editions' && r[5].endsWith('.json')) return 'species/options/edition.schema.json';
+    if (r.length === 6 && r[4] === 'faq' && r[5].endsWith('.json')) return 'species/options/faq-index.schema.json';
+    if (r.length === 7 && r[4] === 'faq' && EDITIONS.has(r[5]) && r[6].endsWith('.json')) return 'species/options/faq-article.schema.json';
+    return null;
+  }
   if (r.length === 3 && r[2] === 'index.json') return 'species/index.schema.json';
   if (r.length === 4 && r[2] === 'editions' && r[3].endsWith('.json')) return 'species/edition.schema.json';
   if (r.length === 4 && r[2] === 'faq' && r[3].endsWith('.json')) return 'faq/index.schema.json';
@@ -118,6 +128,142 @@ function checkMechanics(file, entry) {
   }
 }
 
+/** Reusable child-option checks shared by subraces, lineages, and later species options. */
+function checkParentOptionRegistration(file, doc, entries, species) {
+  const edition = doc.edition;
+  for (const [field, kind] of [['subraceSelection', 'subrace'], ['lineageSelection', 'lineage']]) {
+    const selection = doc.mechanics?.[field];
+    if (!selection?.options) continue;
+    unique(selection.options.map(o => o.key), `${field} option key`, file);
+    const implemented = selection.options.filter(o => o.status === 'child-content-available');
+    const expected = implemented.length ? 'child-content-available' : 'pending-child-content';
+    if (selection.availability !== expected) error(file, `${field}.availability must be ${expected} given the registered children`);
+    for (const option of selection.options) {
+      if (option.status === 'child-content-available') {
+        const childId = `species-option:${option.key}`;
+        if (option.contentId !== childId) error(file, `${field}: implemented child ${option.key} needs contentId '${childId}'`);
+        const childFile = path.join(contentRoot, 'species', species, 'options', option.key, 'editions', `${edition}.json`);
+        const child = entries.get(childFile);
+        if (!child || child.route !== 'species/options/edition.schema.json' || child.document.id !== `${childId}@${edition}` || child.document.kind !== kind) {
+          error(file, `${field}: implemented child ${option.key} has no matching ${edition} ${kind} edition document`);
+        }
+      } else if (option.status === 'pending-child-content') {
+        const childFile = path.join(contentRoot, 'species', species, 'options', option.key, 'editions', `${edition}.json`);
+        if (entries.has(childFile)) error(file, `${field}: child ${option.key} is present but parent marks it pending`);
+        if (option.contentId) error(file, `${field}: pending child ${option.key} must not advertise a published contentId`);
+      } else {
+        error(file, `${field}: unsupported child status ${option.status}`);
+      }
+    }
+  }
+}
+
+function checkOptionMechanics(file, doc, parent) {
+  const mechanics = doc.mechanics ?? {};
+  const additions = mechanics.additions ?? {};
+  const parentMechanics = parent?.mechanics ?? {};
+  const overrides = mechanics.overrides ?? [];
+  unique(overrides.map(o => o.field), 'child override field', file);
+  const overridden = new Set(overrides.map(o => o.field));
+  for (const key of Object.keys(additions)) {
+    if (key === 'traits') continue;
+    if (Object.prototype.hasOwnProperty.call(parentMechanics, key)) {
+      if (key === 'abilityScoreIncrease' || key === 'languages') {
+        if (JSON.stringify(additions[key]) === JSON.stringify(parentMechanics[key])) error(file, `duplicated inherited mechanic '${key}'`);
+      } else if (!overridden.has(key) && ![...overridden].some(f => f.startsWith(`${key}.`))) {
+        error(file, `inherited mechanic '${key}' must be represented as an explicit override, not copied into additions`);
+      }
+    }
+  }
+  const parentTraits = new Set((parentMechanics.traits ?? []).map(t => t.id));
+  unique((additions.traits ?? []).map(t => t.id), 'child trait ID', file);
+  for (const trait of additions.traits ?? []) if (parentTraits.has(trait.id)) error(file, `duplicate inherited trait ID '${trait.id}'`);
+  for (const item of overrides) {
+    if (!item.field || !(item.field.split('.')[0] in parentMechanics)) error(file, `override '${item.field}' does not target an inherited parent mechanic`);
+  }
+  const rows = (doc.article?.sections ?? []).find(s => s.id === 'basic-traits')?.blocks.filter(b => b.type === 'table').flatMap(t => t.rows) ?? [];
+  const value = key => rows.find(r => r[0]?.toLowerCase() === key.toLowerCase())?.slice(1).join(' ').toLowerCase() ?? '';
+  for (const [ability, amount] of Object.entries(additions.abilityScoreIncrease?.abilities ?? {})) {
+    if (!rows.some(r => r.join(' ').toLowerCase().includes(ability.toLowerCase()) && r.join(' ').includes(`+${amount}`))) {
+      error(file, `basic-traits table omits child ability increase ${ability} +${amount}`);
+    }
+  }
+  for (const weapon of additions.weaponProficiencies?.weapons ?? []) {
+    if (!rows.some(r => r.join(' ').toLowerCase().includes(weapon.toLowerCase()))) error(file, `basic-traits table omits child weapon proficiency '${weapon}'`);
+  }
+  if (additions.cantrip?.spellList && !value('Cantrip').includes(additions.cantrip.spellList.toLowerCase())) error(file, 'basic-traits Cantrip table does not match chosen spell list');
+  if (additions.cantrip?.spellcastingAbility && !value('Cantrip').includes(additions.cantrip.spellcastingAbility.toLowerCase())) error(file, 'basic-traits Cantrip table does not match spellcasting ability');
+  if (additions.languages?.additional?.count && !value('Extra Language')) error(file, 'basic-traits table omits additional language');
+}
+
+function checkSpeciesOption(file, doc, route, rel, entries, articleByFile) {
+  const species = rel[1], option = rel[3], optionId = `species-option:${option}`;
+  const indexPath = path.join(contentRoot, 'species', species, 'options', option, 'index.json');
+  const parentIndex = entries.get(path.join(contentRoot, 'species', species, 'index.json'));
+  if (!parentIndex || parentIndex.route !== 'species/index.schema.json') error(file, `parent reference missing: species:${species}`);
+  const parentId = `species:${species}`;
+  if (doc.parentId && doc.parentId !== parentId) error(file, `parentId must reference ${parentId}`);
+  if (route === 'species/options/index.schema.json') {
+    if (doc.id !== optionId || doc.type !== 'species-option' || doc.slug !== option || doc.parentId !== parentId) error(file, 'child index ID/type/slug/parentId mismatch');
+    if (!doc.editions?.includes(doc.defaultEdition)) error(file, 'child defaultEdition missing from editions list');
+    unique(doc.editions ?? [], 'child edition', file);
+    for (const edition of doc.editions ?? []) {
+      if (!parentIndex?.document.editions?.includes(edition)) error(file, `parent does not support child edition ${edition}`);
+      if (!entries.has(path.join(contentRoot, 'species', species, 'options', option, 'editions', `${edition}.json`))) error(file, `child edition ${edition} is listed but its edition JSON does not exist`);
+    }
+  }
+  if (route === 'species/options/edition.schema.json') {
+    const edition = rel[5].replace(/\.json$/, '');
+    const index = entries.get(indexPath);
+    if (!index || index.route !== 'species/options/index.schema.json') error(file, `child index missing: ${display(indexPath)}`);
+    if (!index?.document.editions?.includes(edition)) error(file, `child edition ${edition} is not listed in child index`);
+    if (doc.edition !== edition || doc.parentEdition !== edition || doc.contentId !== optionId || doc.id !== `${optionId}@${edition}` || doc.parentId !== parentId) error(file, 'child edition ID/contentId/parentEdition/filename mismatch');
+    const parent = entries.get(path.join(contentRoot, 'species', species, 'editions', `${edition}.json`));
+    if (!parent || parent.route !== 'species/edition.schema.json' || !parentIndex?.document.editions?.includes(edition)) error(file, `parent edition ${edition} does not exist or is incompatible`);
+    if (doc.inheritsFrom?.contentId !== parentId || doc.inheritsFrom?.edition !== edition || doc.inheritsFrom?.editionId !== `${parentId}@${edition}` || doc.inheritsFrom?.mergeStrategy !== 'parent-plus-additions') error(file, 'child inheritance parent reference or edition mismatch');
+    const selection = parent?.document.mechanics?.[doc.kind === 'subrace' ? 'subraceSelection' : doc.kind === 'lineage' ? 'lineageSelection' : '__otherSelection'];
+    if (!selection) error(file, `parent edition does not declare compatible child kind '${doc.kind}'`);
+    const listing = selection?.options?.find(item => item.key === option);
+    if (!listing || listing.status !== 'child-content-available' || listing.contentId !== optionId) error(file, `child ${optionId}@${edition} is not registered as implemented by its parent`);
+    const sources = new Map((doc.sources ?? []).map(s => [s.id, s]));
+    unique((doc.sources ?? []).map(s => s.id), 'child source ID', file);
+    for (const source of doc.sources ?? []) {
+      if (source.license?.id === 'CC-BY-4.0' && !source.attribution) error(file, `Missing CC attribution for ${source.id}`);
+      if (licenseAttribution[source.id] && source.attribution !== licenseAttribution[source.id]) error(file, `SRD legal attribution does not match official statement for ${source.id}`);
+      if (source.id === 'srd-5.1' && source.url !== 'https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf') error(file, 'SRD 5.1 source URL must point to official PDF');
+    }
+    checkSourceRefs(file, doc.mechanics?.sourceIds, sources, 'child mechanics');
+    for (const trait of doc.mechanics?.additions?.traits ?? []) checkSourceRefs(file, trait.sourceIds, sources, `child trait ${trait.id}`);
+    for (const over of doc.mechanics?.overrides ?? []) checkSourceRefs(file, over.sourceIds, sources, `child override ${over.field}`);
+    unique((doc.article?.sections ?? []).map(s => s.id), 'child article section ID', file);
+    if (parent) checkOptionMechanics(file, doc, parent.document);
+  }
+  if (route === 'species/options/faq-article.schema.json') {
+    const edition = rel[5], slug = rel[6].replace(/\.json$/, '');
+    if (!EDITIONS.has(edition) || doc.edition !== edition || doc.slug !== slug || doc.contentId !== optionId) error(file, 'child FAQ edition/slug/contentId mismatch');
+    unique((doc.sections ?? []).map(s => s.id), 'child FAQ section ID', file);
+    if ((doc.sections ?? []).length < 6) error(file, 'child FAQ must contain at least six substantive sections');
+    const editionEntry = entries.get(path.join(contentRoot, 'species', species, 'options', option, 'editions', `${edition}.json`));
+    if (!editionEntry) error(file, `child FAQ edition ${edition} has no source registry`);
+    else checkSourceRefs(file, doc.sourceIds, new Map((editionEntry.document.sources ?? []).map(s => [s.id, s])), 'child FAQ');
+  }
+  if (route === 'species/options/faq-index.schema.json') {
+    const edition = rel[5].replace(/\.json$/, '');
+    if (!EDITIONS.has(edition) || doc.edition !== edition || doc.id !== `${optionId}@${edition}:faq` || doc.contentId !== optionId) error(file, 'child FAQ index ID/edition/contentId mismatch');
+    if (!entries.has(path.join(contentRoot, 'species', species, 'options', option, 'editions', `${edition}.json`))) error(file, `child FAQ index edition ${edition} does not exist`);
+    unique((doc.items ?? []).map(x => x.id), 'child FAQ index ID', file);
+    unique((doc.items ?? []).map(x => x.file), 'child FAQ index file', file);
+    for (const item of doc.items ?? []) {
+      const full = path.resolve(path.dirname(file), item.file);
+      const expectedDir = path.resolve(path.dirname(file), edition);
+      if (!full.startsWith(expectedDir + path.sep)) { error(file, `child FAQ reference must be inside the matching edition directory: ${item.file}`); continue; }
+      const target = entries.get(full);
+      if (!target) { error(file, `FAQ file not found: ${item.file}`); continue; }
+      if (target.route !== 'species/options/faq-article.schema.json' || target.document.id !== item.id || target.document.edition !== edition || target.document.contentId !== optionId || target.document.slug !== path.basename(full, '.json')) error(file, `child FAQ index metadata mismatch: ${item.file}`);
+      articleByFile.add(full);
+    }
+  }
+}
 async function main() {
   const ajv = new Ajv2020({ allErrors: true, strict: false });
   const schemaIds = new Map();
@@ -202,9 +348,11 @@ async function main() {
         }
       }
     }
+    if (route.startsWith('species/options/')) checkSpeciesOption(file, doc, route, rel, entries, articleByFile);
+    if (route === 'species/edition.schema.json') checkParentOptionRegistration(file, doc, entries, species);
     strings(doc,(value,pointer)=>validateInline(value,pointer,file,registered));
   }
-  for(const {file,route} of entries.values()) if(route==='faq/article.schema.json'&&!articleByFile.has(file)) error(file,'FAQ article not referenced by its edition FAQ index');
+  for(const {file,route} of entries.values()) if((route==='faq/article.schema.json'||route==='species/options/faq-article.schema.json')&&!articleByFile.has(file)) error(file,'FAQ article not referenced by its edition FAQ index');
   for(const entry of warnings)console.warn(`WARN ${entry}`);
   for(const entry of errors)console.error(`ERROR ${entry}`);
   console.log(`Content validation: ${files.length} JSON files, ${errors.length} error(s), ${warnings.length} unresolved-link warning(s).`);

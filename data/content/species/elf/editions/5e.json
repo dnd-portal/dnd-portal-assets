@@ -50,10 +50,28 @@
       "required": true,
       "count": 1,
       "inheritSharedTraits": true,
-      "availability": "pending-child-content",
-      "resolution": "Select one permitted 2014 Elf subrace under the campaign's rules. Its additional features are defined in the child's own content, not in this shared parent entry.",
+      "availability": "child-content-available",
+      "resolution": "Choose one allowed 2014 Elf subrace. The High Elf 5e child is implemented separately at species-option:high-elf@5e; Wood Elf and Drow child data remain pending. Implementation status does not determine campaign permission.",
       "sourceIds": [
         "basic-rules-5e"
+      ],
+      "options": [
+        {
+          "key": "high-elf",
+          "name": "High Elf",
+          "status": "child-content-available",
+          "contentId": "species-option:high-elf"
+        },
+        {
+          "key": "wood-elf",
+          "name": "Wood Elf",
+          "status": "pending-child-content"
+        },
+        {
+          "key": "drow",
+          "name": "Drow",
+          "status": "pending-child-content"
+        }
       ]
     },
     "darkvision": {
@@ -284,7 +302,7 @@
           },
           {
             "type": "paragraph",
-            "text": "A crucial character-creation step remains outside these shared mechanics: the 2014 Elf must choose a subrace. That additional choice supplies its own traits and may change how a finished character plays. This page deliberately documents only the parent Elf package; High Elf, Wood Elf and Drow have not been published as child entries in this dataset. The base entry is therefore a reference foundation, not a fully configured player option."
+            "text": "A crucial character-creation step remains outside these shared mechanics: the 2014 Elf must choose a subrace. High Elf 5e is now implemented as a separate child at [[species-option:high-elf@5e|High Elf]], while Wood Elf and Drow child datasets remain pending. This parent page continues to define shared Elf traits only; a finished character also needs one allowed subrace."
           }
         ]
       },
@@ -397,16 +415,16 @@
           },
           {
             "type": "paragraph",
-            "text": "The official 2014 Basic Rules identify High Elf, Wood Elf and Dark Elf (Drow) as examples. Those names are provided solely to orient readers. Their unique ability score changes, training, spells, vision differences and other mechanics are intentionally absent here. The SRD 5.1 includes High Elf material, while the 2014 Basic Rules are the broader reference for the named options."
+            "text": "The official 2014 Basic Rules identify High Elf, Wood Elf and Dark Elf (Drow) as examples. Their unique abilities are not part of the shared Elf mechanics. High Elf's additional Intelligence, weapon, cantrip and language traits are documented in its separate implemented child; Wood Elf and Drow child mechanics remain future work."
           },
           {
             "type": "paragraph",
-            "text": "In a future content model, each subrace should own its independent ID, source citations, edition mechanics, full article and FAQ collection. A child should link back to `species:elf@5e` to reuse shared mechanics rather than copying those parent traits into multiple places. No child page or finished build is advertised until its actual JSON exists."
+            "text": "Each subrace should own an independent ID, source citations, edition-specific mechanics, full article and FAQ collection. [[species-option:high-elf@5e|High Elf 5e]] now follows that structure and references `species:elf@5e` instead of copying parent traits. Other subraces will follow the same model when their files are implemented."
           },
           {
             "type": "callout",
             "title": "Character creation is not finished yet",
-            "text": "Selecting this parent Elf alone does not complete a 2014 Elf's species selection. Choose an applicable subrace using your campaign's official books; D&D Portal's structured subrace files will be separate follow-up work."
+            "text": "Selecting this parent Elf alone does not complete a 2014 Elf's species selection. Choose one subrace permitted by the campaign: High Elf 5e has a D&D Portal child dataset; Wood Elf and Drow still require consultation of the official rules until their separate child entries are added."
           }
         ]
       },

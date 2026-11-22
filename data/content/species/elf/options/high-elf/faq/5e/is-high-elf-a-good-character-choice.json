@@ -1,0 +1,113 @@
+{
+  "id": "high-elf-5e-character-choice",
+  "slug": "is-high-elf-a-good-character-choice",
+  "edition": "5e",
+  "contentId": "species-option:high-elf",
+  "question": "Is High Elf a good character choice in D&D 5e?",
+  "shortAnswer": "High Elf can be a strong 2014 character option when Dexterity, Intelligence, an extra Wizard cantrip, four weapon proficiencies or a chosen language fit the build; its value depends on the class and campaign.",
+  "introduction": "There is no universally best species or subrace. High Elf brings a flexible magical tool to the Elf baseline and can complement several roles, but some of its weapon proficiencies overlap with class features and the fixed ability increases do not suit every concept equally.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "high-elf-5e-character-choice-strengths",
+      "title": "The main mechanical strengths",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The parent Elf contributes Dexterity +2, Darkvision, Perception proficiency, Fey Ancestry and Trance. High Elf adds Intelligence +1, weapon proficiencies and a freely chosen Wizard cantrip, which can bring a new kind of action or utility to almost any class. The additional language can make a difference in a campaign that features diplomacy, history or exploration."
+        },
+        {
+          "type": "paragraph",
+          "text": "These strengths complement one another without requiring the character to become a Wizard. A character can be agile, observant and capable of one small arcane trick even when their primary class has no spellcasting feature. The exact practical impact still depends on encounters, source permissions and the chosen cantrip."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-character-choice-scores",
+      "title": "Dexterity and Intelligence in ability-score planning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "High Elf adds the parent Dexterity +2 and its own Intelligence +1. In the original 2014 creation rules, those bonuses are fixed rather than points the player may distribute freely. The strongest benefit often arises when an increase crosses a modifier threshold, such as raising Dexterity 14 to 16 or Intelligence 15 to 16."
+        },
+        {
+          "type": "paragraph",
+          "text": "A High Elf character built around a different primary ability can still be viable. However, the fixed increases may be less directly useful than alternatives for a concept emphasizing Strength or Charisma. Consider the entire ability array rather than assuming that every class benefits equally from both numbers."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-character-choice-magic",
+      "title": "Combining High Elf magic with a spellcasting class",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A [[class:wizard@5e|Wizard]] High Elf gets a chosen Wizard cantrip from the subrace in addition to spells and cantrips learned through class rules, and Intelligence supports both sources. But the subrace itself still does not grant Wizard spell slots, a spellbook or additional prepared spells."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a different caster, the High Elf cantrip remains Intelligence-based even if the class uses Wisdom or Charisma. That makes utility cantrips attractive when Intelligence is modest, while cantrips requiring attack rolls or saving throws may reward a stronger Intelligence modifier. These are choices, not restrictions on creativity."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-character-choice-martial",
+      "title": "Martial and stealth-focused concepts",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "High Elf can fit a [[class:rogue@5e|Rogue]] who uses Dexterity, Perception and an illusion or utility cantrip to explore creatively. A [[class:fighter@5e|Fighter]] may already know all four weapons from class training, so their main new benefits may be Intelligence, the cantrip and the extra language instead."
+        },
+        {
+          "type": "paragraph",
+          "text": "Because the weapon training is a finite proficiency list, it is sometimes redundant. Redundancy is not a hidden disadvantage or penalty; it simply means that another source already provided the same mechanical benefit. Evaluate the class first rather than treating four listed weapons as four automatic attack upgrades."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-character-choice-limitations",
+      "title": "Limits and common tradeoffs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The High Elf cantrip is only one spell known from the eligible Wizard cantrip list, and normal casting rules still apply. Many uses are situational; for example, an illusion does not automatically fool every observer, while an offensive cantrip may require an attack roll and compete for an action during combat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also, High Elf is one selected 2014 subrace, not a way to collect all Elf subrace traits. Characters do not gain the 2024 High Elf lineage progression, and they cannot stack Wood Elf or Drow abilities unless a separate house rule explicitly replaces the standard character-creation model."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-character-choice-roleplaying",
+      "title": "Roleplaying without rigid stereotypes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A High Elf might be an apprentice whose mentor disappeared, a traveling translator, a former palace guard, a musician with an interest in minor magic or a person who rejects an established family institution. The extra language can reflect a relationship or shared community rather than proving that all High Elves belong to a particular nation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Elven longevity may create interesting personal stakes, but the character need not be wise, aristocratic, arrogant or detached. Cultural descriptions from a named campaign world should be treated as lore for that world, not as universal 2014 character requirements."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-character-choice-decision",
+      "title": "Deciding whether High Elf fits your campaign",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you want Dexterity and Intelligence together, one flexible Wizard cantrip and a language chosen to support the story, High Elf is worth considering. If you mainly seek a different ability-score increase or a specialized movement or combat benefit, another permitted option may better match the concept. Those comparisons are advice rather than official rules text."
+        },
+        {
+          "type": "paragraph",
+          "text": "Check the DM’s allowed 2014 sources, choose one subrace, and record the base Elf and High Elf mechanics separately. That approach makes the build easier to audit and prevents older subraces, revised lineages and campaign-specific homebrew from being silently combined."
+        }
+      ]
+    }
+  ]
+}

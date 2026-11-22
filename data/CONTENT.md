@@ -29,3 +29,24 @@ The script auto-discovers species under `data/content/`, validates against the [
 5. Check [content licensing](LICENSING.md) and independently verify the rules, links and artwork rights.
 
 The Wiki renderer does **not** yet parse `[[...]]` strings or automatically consume these JSON files. Neither the existing assets website nor the published `@dnd-portal/assets` package automatically includes or exposes the new JSON/API. Content integration and publishing are separate tasks.
+
+## Nested species options (subraces and lineages)
+
+Child options live **inside** their parent, not alongside top-level species:
+
+```text
+data/content/species/elf/options/high-elf/
+  index.json
+  editions/5e.json
+  faq/5e.json
+  faq/5e/<question-slug>.json
+```
+
+- The child index uses a stable `species-option:<slug>` ID and `parentId: "species:elf"`. It advertises only editions with actual child edition files.
+- The child edition uses `species-option:<slug>@<edition>`, `parentEdition`, `kind` (`subrace` or `lineage`), and `inheritsFrom` with an exact parent edition ID. Its `mechanics.additions` owns *only* child features; `mechanics.overrides` must explicitly identify and explain any genuine inherited-field change.
+- Parent edition `subraceSelection.options` or `lineageSelection.options` registers choices with `pending-child-content` or `child-content-available`. A published child needs a matching child edition and `contentId`. These are **repository implementation states**, never campaign permissions.
+- Each child has an independent FAQ index and articles, using the same common content blocks and source metadata. The validator discovers child and parent FAQs without adding placeholder children or copying parent FAQ articles.
+- Use `[[species-option:high-elf@5e|High Elf]]` for child links. The future Wiki renderer and API must resolve those references; correct syntax is validated now.
+- Run `npm run validate:content` and `npm run test:content-validator`. Regression tests fail on broken parent IDs, incompatible edition references, missing child FAQ targets, missing parent registration, and accidentally duplicated inherited mechanics.
+
+The 2014 High Elf subrace uses `species:elf@5e`; the later High Elf lineage will use `species:elf@5.5e` in its **own edition file**. Parent features stay in their original edition documents. No 5.5e High Elf lineage, Wood Elf or Drow child JSON is published by adding the 2014 High Elf. A future class/subclass model can apply the same parent-reference and additive/override principle using its own class-specific schemas.

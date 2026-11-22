@@ -106,7 +106,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Finally, this is the parent Elf's 60-foot Darkvision. Some separately published 2014 subrace options may change how vision works, but those are not implemented in this dataset. Do not change the shared parent trait because an example character uses a different subrace."
+          "text": "This is the parent Elf's 60-foot Darkvision. The [[species-option:high-elf@5e|High Elf]] 5e child is now implemented, but it does not change that inherited range. Other 2014 subraces can have their own vision-related additions, which require separately sourced child mechanics; do not change the shared parent trait because another subrace has different rules."
         }
       ]
     }

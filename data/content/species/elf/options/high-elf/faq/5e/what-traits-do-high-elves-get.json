@@ -1,0 +1,113 @@
+{
+  "id": "high-elf-5e-traits",
+  "slug": "what-traits-do-high-elves-get",
+  "edition": "5e",
+  "contentId": "species-option:high-elf",
+  "question": "What traits do High Elves get in D&D 5e?",
+  "shortAnswer": "In addition to Elf 5e parent traits, a High Elf gains Intelligence +1, longsword/shortsword/shortbow/longbow proficiency, one Wizard cantrip using Intelligence, and one extra language.",
+  "introduction": "High Elf traits are best understood in two layers. The common Elf traits apply automatically to every 2014 Elf, while the High Elf subrace adds four specific choices or benefits without redefining the entire parent.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "high-elf-5e-traits-score",
+      "title": "Intelligence +1 is an additional score increase",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The High Elf subrace increases Intelligence by 1. The parent Elf separately increases Dexterity by 2. These increases are not alternatives: both are applied when building a 2014 High Elf. No other ability score rises automatically due to the High Elf subrace."
+        },
+        {
+          "type": "paragraph",
+          "text": "The effect on a modifier depends on the original score. Intelligence 15 rises to 16, changing the modifier from +2 to +3; Intelligence 14 rises to 15 without changing the +2 modifier. The trait does not grant Intelligence saving throw proficiency, additional skill proficiencies, spell slots or a special ability-score cap."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-traits-weapon",
+      "title": "Proficiencies from Elf Weapon Training",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "High Elf gets weapon proficiency with longsword, shortsword, shortbow and longbow. This is a precise list of four weapons; it does not confer proficiency with all swords, all martial weapons or every type of bow. The proficiency applies to attacks made with an included weapon under the normal 2014 combat rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a High Elf with a longbow may add their normal proficiency bonus to an appropriate longbow attack roll. The trait does not add the proficiency bonus to damage, grant the weapon as starting equipment, supply ammunition, allow two attacks by itself or provide a Weapon Mastery property."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-traits-cantrip",
+      "title": "A chosen Wizard cantrip, not a Wizard class",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose one 2014 Wizard-list cantrip. That spell is known because of the High Elf subrace, and Intelligence is the spellcasting ability for it. The selection has to be eligible on the Wizard spell list used at character creation; a Wizard spell of level 1 or higher is not a valid replacement."
+        },
+        {
+          "type": "paragraph",
+          "text": "The subrace does not give a spellbook, prepared Wizard spells or Wizard class levels. A cantrip normally costs no spell slot to cast, but it still follows its description for components, range, casting time, attack rolls and saving throws. If an attack or save uses a spellcasting ability, High Elf uses Intelligence for this chosen spell."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-traits-language",
+      "title": "One additional spoken and written language",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A High Elf gains the ability to speak, read and write one additional language of their choice. The base Elf already knows Common and Elvish, which remain intact. The child adds one choice on top, rather than replacing Elvish or making every High Elf automatically multilingual in the same extra tongue."
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose a language available within the campaign. It might help the character communicate with a neighboring people, study technical texts or negotiate on an expedition. The benefit is knowledge of one language, not automatic translation of every dialect or a magical ability to understand unknown speech."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-traits-parent",
+      "title": "Shared Elf rules remain inherited",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "All High Elves also use the parent Elf’s Medium size, 30-foot walking speed, 60-foot Darkvision, Perception proficiency, Fey Ancestry, Trance, Common and Elvish and descriptive age and alignment information. The child edition deliberately does not repeat those fields, so fixing a shared Elf rule in the parent will not require editing every subrace."
+        },
+        {
+          "type": "paragraph",
+          "text": "Darkvision and Perception are particularly easy to misattribute: these are inherited Elf 5e benefits, not High Elf-exclusive additions. Likewise, High Elf is not a second species with a second pool of racial features. Use [[species:elf@5e|Elf 5e]] as the parent reference and apply the High Elf additions exactly once."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-traits-classes",
+      "title": "What do these traits offer different classes?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An Intelligence-focused [[class:wizard@5e|Wizard]] may appreciate the +1 Intelligence and extra cantrip, but weapon proficiency often overlaps with some martial classes. A [[class:rogue@5e|Rogue]] can make use of the parent Elf Dexterity while selecting a utility spell. A [[class:fighter@5e|Fighter]] already has broad weapon training, so the cantrip or extra language may stand out more."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are observations about possible builds, not official class rankings. The practical value depends on the ability array, campaign style, spell selection and other proficiencies. A character whose Intelligence bonus does not cross a modifier threshold may still value the broader roleplaying choices."
+        }
+      ]
+    },
+    {
+      "id": "high-elf-5e-traits-boundary",
+      "title": "Avoid the two most common character-sheet errors",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Do not add the parent Dexterity +2 into the High Elf child record or give High Elf any of the Wood Elf or Drow mechanics. The child owns only Intelligence +1, the four proficiencies, a Wizard cantrip and one chosen language. This preserves a clean edition-specific inheritance path."
+        },
+        {
+          "type": "paragraph",
+          "text": "Also do not import revised 5.5e lineage features. The original High Elf gets a freely selected Wizard cantrip rather than its later lineage progression. If a table uses another sourcebook or custom variant, record that rule separately rather than changing the published 2014 High Elf baseline."
+        }
+      ]
+    }
+  ]
+}

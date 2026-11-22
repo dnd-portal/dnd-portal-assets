@@ -35,7 +35,7 @@
     },
     "contentId": {
       "type": "string",
-      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "pattern": "^(?:species|species-option):[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "question": {
       "type": "string",

@@ -1,0 +1,316 @@
+{
+  "id": "species-option:high-elf@5e",
+  "contentId": "species-option:high-elf",
+  "parentId": "species:elf",
+  "parentEdition": "5e",
+  "edition": "5e",
+  "kind": "subrace",
+  "name": "High Elf",
+  "rulesBasis": "D&D 5e (2014) High Elf subrace from SRD 5.1 and official Basic Rules (2014)",
+  "summary": "Adds Intelligence +1, proficiency with four specified weapons, one Wizard-list cantrip cast with Intelligence, and one extra language to the base Elf 5e traits.",
+  "inheritsFrom": {
+    "contentId": "species:elf",
+    "edition": "5e",
+    "editionId": "species:elf@5e",
+    "mergeStrategy": "parent-plus-additions"
+  },
+  "mechanics": {
+    "additions": {
+      "abilityScoreIncrease": {
+        "type": "fixed",
+        "abilities": {
+          "intelligence": 1
+        },
+        "stacking": "add-to-parent"
+      },
+      "weaponProficiencies": {
+        "weapons": [
+          "longsword",
+          "shortsword",
+          "shortbow",
+          "longbow"
+        ],
+        "proficiencyType": "weapon",
+        "grantedMastery": false
+      },
+      "cantrip": {
+        "count": 1,
+        "spellLevel": 0,
+        "spellType": "cantrip",
+        "spellList": "wizard",
+        "spellListEdition": "5e",
+        "choiceRequired": true,
+        "choiceTiming": "when selecting this subrace",
+        "spellcastingAbility": "Intelligence",
+        "known": true,
+        "grantsWizardClassLevels": false,
+        "grantsSpellSlots": false,
+        "grantsSpellbook": false,
+        "grantsPreparedWizardSpells": false,
+        "eligibility": "One cantrip on the Wizard spell list permitted under the campaign’s 2014 rules."
+      },
+      "languages": {
+        "additional": {
+          "count": 1,
+          "choiceRequired": true,
+          "choice": "One language available in the campaign",
+          "literacy": [
+            "speak",
+            "read",
+            "write"
+          ]
+        },
+        "inAdditionToParent": true
+      },
+      "traits": [
+        {
+          "id": "high-elf-intelligence-increase",
+          "name": "Ability Score Increase",
+          "kind": "ability-score",
+          "description": "Increase Intelligence by 1 in addition to the base Elf Dexterity increase.",
+          "sourceIds": [
+            "srd-5.1"
+          ]
+        },
+        {
+          "id": "high-elf-weapon-training",
+          "name": "Elf Weapon Training",
+          "kind": "weapon-proficiency",
+          "description": "Gain proficiency with longsword, shortsword, shortbow, and longbow.",
+          "sourceIds": [
+            "srd-5.1"
+          ]
+        },
+        {
+          "id": "high-elf-cantrip",
+          "name": "Cantrip",
+          "kind": "spell-choice",
+          "description": "Know one chosen cantrip from the 2014 Wizard spell list; Intelligence is the spellcasting ability for that cantrip.",
+          "sourceIds": [
+            "srd-5.1"
+          ]
+        },
+        {
+          "id": "high-elf-extra-language",
+          "name": "Extra Language",
+          "kind": "language-choice",
+          "description": "Speak, read, and write one additional chosen language beyond the parent Elf languages.",
+          "sourceIds": [
+            "srd-5.1"
+          ]
+        }
+      ]
+    },
+    "overrides": [],
+    "sourceIds": [
+      "srd-5.1",
+      "basic-rules-5e"
+    ]
+  },
+  "sources": [
+    {
+      "id": "srd-5.1",
+      "title": "System Reference Document 5.1",
+      "publisher": "Wizards of the Coast LLC",
+      "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+      "edition": "5e",
+      "originalRulesYear": 2014,
+      "publicationYear": 2023,
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "attribution": "This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+      "use": "All High Elf 2014 subrace traits: Intelligence increase, weapon training, Wizard cantrip, and one extra language."
+    },
+    {
+      "id": "basic-rules-5e",
+      "title": "D&D Basic Rules (2014): Races — High Elf",
+      "publisher": "Wizards of the Coast LLC",
+      "platform": "D&D Beyond",
+      "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/races",
+      "edition": "5e",
+      "originalRulesYear": 2014,
+      "license": {
+        "id": "reference-only",
+        "note": "Official rules and setting examples checked as reference; this entire D&D Beyond page, including its copyrighted prose and artwork, is not asserted to be CC-licensed."
+      },
+      "use": "Official check of the 2014 High Elf subrace and the parent-plus-subrace character-creation system."
+    }
+  ],
+  "article": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "High Elf is a D&D 5e (2014) subrace of Elf, not an independent species. Its additional traits are Intelligence +1, proficiency with longsword, shortsword, shortbow and longbow, one chosen Wizard cantrip using Intelligence, and one extra language. These four features are added to the base Elf package: Dexterity +2, Medium size, 30-foot speed, 60-foot Darkvision, Keen Senses, Fey Ancestry, Trance, and Common and Elvish."
+          },
+          {
+            "type": "paragraph",
+            "text": "A player chooses Elf, then one permitted Elf subrace. Selecting High Elf fills that subrace choice: it does not allow a player to stack Wood Elf or Drow benefits as well. This page stores only the High Elf additions and points to [[species:elf@5e|Elf 5e]] for inherited traits. Unlike the 2024 High Elf lineage, this is the original 2014 subrace with fixed ability score increases and a freely selected Wizard cantrip."
+          }
+        ]
+      },
+      {
+        "id": "basic-traits",
+        "title": "Basic Traits",
+        "blocks": [
+          {
+            "type": "table",
+            "caption": "Additional High Elf 2014 traits, inherited Elf rules excluded",
+            "headers": [
+              "Trait",
+              "Additional High Elf 5e benefit"
+            ],
+            "rows": [
+              [
+                "Ability Score Increase",
+                "Intelligence +1, added to the parent Elf Dexterity +2"
+              ],
+              [
+                "Elf Weapon Training",
+                "Proficiency: longsword, shortsword, shortbow, longbow"
+              ],
+              [
+                "Cantrip",
+                "Choose one Wizard-list cantrip; Intelligence is its spellcasting ability"
+              ],
+              [
+                "Extra Language",
+                "Choose one language to speak, read and write, in addition to Common and Elvish"
+              ],
+              [
+                "Parent reference",
+                "[[species:elf@5e|Elf 5e]] supplies base size, speed, senses, defenses, rest and languages"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "This table deliberately shows the subrace-specific delta. A complete character also applies the normal parent Elf traits, an allowed background and a class. Weapon training is proficiency, not weapon mastery or an additional attack. The chosen cantrip is known through the subrace even if the character has no Wizard class levels."
+          }
+        ]
+      },
+      {
+        "id": "subrace-traits",
+        "title": "Subrace Traits",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The High Elf increases Intelligence by 1, in addition to the parent Elf’s fixed +2 Dexterity. Ability score modifiers are calculated using the resulting values: starting Intelligence 15 becomes 16, improving its modifier from +2 to +3. This change does not automatically grant Intelligence saving throw proficiency or knowledge skills."
+          },
+          {
+            "type": "paragraph",
+            "text": "Elf Weapon Training grants proficiency with exactly four weapons: the longsword, shortsword, shortbow and longbow. A proficient character adds their normal proficiency bonus to attack rolls made with those weapons. The trait grants no weapon, ammunition, fighting style, Extra Attack, damage bonus or weapon mastery feature by itself."
+          },
+          {
+            "type": "paragraph",
+            "text": "The Cantrip feature gives one cantrip of the player’s choice from the Wizard spell list that applies to 2014 character creation. Intelligence is its spellcasting ability, including any relevant spell attack or save DC. A cantrip can be cast without spending a spell slot, but all normal spell rules such as range, components and action economy still apply. It does not confer a spellbook, other Wizard spells or a Wizard class level."
+          },
+          {
+            "type": "paragraph",
+            "text": "Extra Language grants one additional chosen language that the character can speak, read and write. The parent Elf already knows Common and Elvish. The High Elf’s chosen language is a third species-derived language, not an extra replacement for either parent language. The actual language must be available under the campaign’s language list."
+          },
+          {
+            "type": "callout",
+            "title": "Inherited traits are referenced, not copied",
+            "text": "Only the High Elf additions are defined in this child mechanics object. The parent Elf entry remains authoritative for Dexterity +2, Medium size, speed, Darkvision, Perception, Fey Ancestry, Trance and Common/Elvish."
+          }
+        ]
+      },
+      {
+        "id": "relationship-to-elf",
+        "title": "Relationship to Elf",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The 2014 Elf character option has two complementary layers. The parent species defines what all Elves share; the selected subrace supplies only its additional traits. High Elf therefore uses the stable content ID `species-option:high-elf` and references the specific parent edition `species:elf@5e`. This prevents a future loader from accidentally importing the revised 2024 Elf rules."
+          },
+          {
+            "type": "paragraph",
+            "text": "To build a complete High Elf, resolve [[species:elf@5e|Elf 5e]] first, then apply the High Elf 5e additions once. For ability scores this yields Dexterity +2 from the parent and Intelligence +1 from the child. For languages it yields Common and Elvish from the parent plus one chosen extra language from the child. Other trait categories combine by ordinary rules rather than being repeated in both records."
+          },
+          {
+            "type": "paragraph",
+            "text": "The child is registered as implemented for the parent Elf’s 5e subrace selection. Wood Elf and Drow remain unimplemented child options in the assets dataset. The 5.5e Elven Lineage named High Elf is also still pending; the two editions must not be treated as interchangeable simply because the names are the same."
+          }
+        ]
+      },
+      {
+        "id": "history-and-lore",
+        "title": "History & Lore",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "High Elf themes often include scholarship, careful craftsmanship, preserved literature, formal training and the study of magic. Those themes provide starting points for roleplaying, not universal laws about intelligence, morality or personality. A character might come from a scholarly academy, a seafaring community, a traveling family or a cosmopolitan city."
+          },
+          {
+            "type": "paragraph",
+            "text": "Many D&D settings describe different High Elf cultures and historical traditions. Names such as sun elves, moon elves, Silvanesti or Qualinesti belong to particular settings and need not describe every High Elf in every campaign. Their cultures and stories should not be confused with the four mechanical traits granted by the common 2014 High Elf subrace."
+          },
+          {
+            "type": "paragraph",
+            "text": "Long-lived Elves may develop different perspectives on time than their shorter-lived friends. A High Elf may have studied an art for decades, yet another might have deliberately rejected a family profession. The inherited Elf longevity is already defined in the parent species; the High Elf child adds no separate lifespan bonus or rule requiring a scholarly background."
+          }
+        ]
+      },
+      {
+        "id": "playing-as-a-high-elf",
+        "title": "Playing as a High Elf",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "A [[class:wizard@5e|Wizard]] High Elf benefits from the additional Intelligence score, but the free subrace cantrip remains distinct from spells gained through Wizard class levels. A [[class:rogue@5e|Rogue]] might enjoy Dexterity from the Elf parent, a chosen illusion or utility cantrip and a different extra language. A [[class:fighter@5e|Fighter]] may value both ranged and melee weapon proficiency if their class or build does not already grant it."
+          },
+          {
+            "type": "paragraph",
+            "text": "The cantrip choice should match the character’s play style and the spell’s actual mechanics. [[spell:mage-hand@5e|Mage Hand]] can support small-object manipulation, [[spell:minor-illusion@5e|Minor Illusion]] can create situational distractions, and [[spell:fire-bolt@5e|Fire Bolt]] is an offensive option requiring an Intelligence-based spell attack. These are examples of available Wizard cantrips, not mandatory or automatically known spells."
+          },
+          {
+            "type": "paragraph",
+            "text": "Weapon proficiencies can be redundant for classes that already receive the same proficiencies. Redundancy does not convert them into weapon mastery, free equipment or extra damage. Likewise, a fixed Intelligence increase might be especially useful when it changes an ability modifier, but not every character needs an Intelligence-focused build."
+          },
+          {
+            "type": "paragraph",
+            "text": "For roleplaying, consider how a particular character acquired formal weapon training, learned one piece of introductory magic and chose another language. Those explanations can connect to a family, mentor, travel experience or personal curiosity without turning every High Elf into the same academic archetype."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Start with Elf 5e, including the inherited Dexterity +2, Perception proficiency and Common/Elvish.",
+              "Add Intelligence +1 from High Elf once; do not transfer this score increase to the Elf parent.",
+              "Record the four specific weapon proficiencies, your chosen Wizard cantrip and Intelligence spellcasting ability.",
+              "Choose one extra spoken, read and written language, subject to your campaign’s available options.",
+              "Do not add Wood Elf or Drow traits or the revised 5.5e High Elf lineage to this 5e package."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sources-and-references",
+        "title": "Sources & References",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "High Elf’s four 2014 traits are included in the official System Reference Document 5.1. Covered SRD material is offered under Creative Commons Attribution 4.0 International, and the full prescribed attribution is stored with this edition’s `srd-5.1` source entry. The descriptions, examples and guidance in this article are independently written."
+          },
+          {
+            "type": "paragraph",
+            "text": "The official 2014 D&D Beyond Basic Rules confirm the High Elf rules and describe how parent races and their subraces combine. That webpage is listed as a reference-only source; its artwork, setting-specific prose and anything outside the SRD are not automatically open-licensed. Parent Elf sources remain in the separate [[species:elf@5e|Elf 5e]] entry."
+          },
+          {
+            "type": "list",
+            "items": [
+              "srd-5.1 — official High Elf 2014 mechanics and required CC BY 4.0 attribution.",
+              "basic-rules-5e — official 2014 High Elf and subrace relationship, used for reference.",
+              "D&D Portal data/LICENSING.md — distinction between SRD source material, original editorial work and proprietary visual assets."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
