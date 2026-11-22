@@ -1,0 +1,66 @@
+name: Validate JSON content
+
+"on":
+  push:
+    branches:
+      - "json/**"
+    paths:
+      - "data/**"
+      - "schemas/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/validate-content.yml"
+  pull_request:
+    paths:
+      - "data/**"
+      - "schemas/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/validate-content.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-content:
+    name: JSON schema and regression tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund --ignore-scripts
+
+      - name: Validate JSON content
+        id: content
+        run: npm run validate:content
+
+      - name: Run validator regression tests
+        id: regression
+        if: ${{ !cancelled() }}
+        run: npm run test:content-validator
+
+      - name: Show results in Actions job summary
+        if: always()
+        run: |
+          {
+            echo "## D&D Portal content checks"
+            echo ""
+            echo "| Check | Result |"
+            echo "| --- | --- |"
+            echo "| JSON schemas, content and references | ${{ steps.content.outcome }} |"
+            echo "| Validator regression tests | ${{ steps.regression.outcome }} |"
+            echo ""
+            echo "Inspect the individual job steps above for errors and warnings."
+          } >> "$GITHUB_STEP_SUMMARY"
