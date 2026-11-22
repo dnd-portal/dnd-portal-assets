@@ -1,0 +1,32 @@
+{
+  "id": "species:elf@5.5e:faq",
+  "edition": "5.5e",
+  "contentId": "species:elf",
+  "items": [
+    {
+      "id": "elf-5.5e-introduction",
+      "file": "./5.5e/what-is-the-elf-species.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "elf-5.5e-traits",
+      "file": "./5.5e/what-traits-do-elves-get.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "elf-5.5e-darkvision-keen-senses",
+      "file": "./5.5e/how-do-darkvision-and-keen-senses-work.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "elf-5.5e-fey-ancestry-trance",
+      "file": "./5.5e/how-do-fey-ancestry-and-trance-work.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "elf-5.5e-elven-lineage",
+      "file": "./5.5e/how-does-elven-lineage-work.json",
+      "includeInGlobalFaq": true
+    }
+  ]
+}

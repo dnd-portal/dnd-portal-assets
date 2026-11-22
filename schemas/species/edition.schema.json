@@ -257,6 +257,169 @@
             }
           },
           "additionalProperties": true
+        },
+        "lineageSelection": {
+          "type": "object",
+          "description": "Optional reusable parent-to-lineage selection metadata. Describes choices and progression without publishing child mechanics.",
+          "required": [
+            "required",
+            "count",
+            "inheritSharedTraits",
+            "availability",
+            "options",
+            "resolution"
+          ],
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "inheritSharedTraits": {
+              "type": "boolean"
+            },
+            "availability": {
+              "enum": [
+                "pending-child-content",
+                "child-content-available"
+              ]
+            },
+            "selectionTiming": {
+              "type": "string",
+              "minLength": 1
+            },
+            "options": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "key",
+                  "name",
+                  "status"
+                ],
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                  },
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "enum": [
+                      "pending-child-content",
+                      "child-content-available"
+                    ]
+                  },
+                  "contentId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": true
+              }
+            },
+            "spellcastingAbility": {
+              "type": "object",
+              "required": [
+                "requiredChoice",
+                "options"
+              ],
+              "properties": {
+                "requiredChoice": {
+                  "type": "boolean"
+                },
+                "choiceTiming": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "options": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "appliesTo": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "progression": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "characterLevel",
+                  "benefit",
+                  "source",
+                  "detailsImplemented"
+                ],
+                "properties": {
+                  "characterLevel": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "benefit": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "detailsImplemented": {
+                    "type": "boolean"
+                  },
+                  "spellRules": {
+                    "type": "object",
+                    "properties": {
+                      "alwaysPrepared": {
+                        "type": "boolean"
+                      },
+                      "freeCast": {
+                        "type": "object",
+                        "required": [
+                          "uses",
+                          "recharge"
+                        ],
+                        "properties": {
+                          "uses": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "recharge": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      "mayCastUsingAppropriateSpellSlots": {
+                        "type": "boolean"
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            },
+            "resolution": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
         }
       },
       "additionalProperties": true

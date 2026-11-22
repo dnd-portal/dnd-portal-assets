@@ -1,0 +1,101 @@
+{
+  "id": "elf-5.5e-introduction",
+  "slug": "what-is-the-elf-species",
+  "edition": "5.5e",
+  "contentId": "species:elf",
+  "question": "What is the Elf species in D&D 5.5e?",
+  "shortAnswer": "Elf is a Medium Humanoid species with 30-foot speed, 60-foot Darkvision, Fey Ancestry, a chosen Insight, Perception or Survival proficiency, conscious four-hour Trance and a required Elven Lineage that develops at character levels 1, 3 and 5.",
+  "introduction": "The revised Elf keeps recognizable fey-inspired senses and rest features while replacing the 2014 fixed Dexterity bonus and subrace structure. To make a complete Elf, choose both the shared species and a lineage from the three official options.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-elf-5.5e",
+    "basic-rules-5.5e",
+    "srd-5.1"
+  ],
+  "sections": [
+    {
+      "id": "elf-5.5e-introduction-identity",
+      "title": "An adaptable Elf is more than a lineage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Elves in the revised fifth edition are long-lived Humanoids frequently associated with the Feywild, memory and magical traditions. Their core abilities provide useful senses, protection against certain charms and an unusual way to rest. A character might be a scholar, traveler, craftsworker or protector without taking any of those identities as a mandatory species role."
+        },
+        {
+          "type": "paragraph",
+          "text": "The 2024 rules distinguish the shared Elf from three possible Elven Lineages. Drow, High Elf and Wood Elf appear as distinct magical inheritances, but a lineage name does not determine the character's morality, culture or homeland. Those elements depend on the individual and the setting the DM establishes."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-introduction-basic",
+      "title": "The shared mechanics everyone receives",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "All revised Elves have the Humanoid creature type, Medium size, a 30-foot walking speed and Darkvision with a 60-foot range. Fey Ancestry provides Advantage on saving throws to avoid or end Charmed. Keen Senses offers one skill proficiency selected from Insight, Perception and Survival. Trance removes the need for sleep and permits a four-hour Long Rest while meditating and retaining consciousness."
+        },
+        {
+          "type": "paragraph",
+          "text": "These features come from the parent species even before the selected lineage adds anything. The Elf does not gain a bonus feat from its species package, does not automatically know Elvish from species and does not receive Dexterity +2. Keeping those boundaries clear prevents the older Elf rules from being accidentally stacked onto the new ones."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-introduction-lineage",
+      "title": "A complete Elf includes one Elven Lineage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Elven Lineage is an actual required choice. The official options are Drow, High Elf and Wood Elf, and the chosen option provides its own first-level benefit. At character levels 3 and 5, it also grants a lineage-specific spell. The higher-level spells remain prepared and can each be cast once without a spell slot, refreshing after a Long Rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "When selecting the lineage, choose Intelligence, Wisdom or Charisma as the spellcasting ability for its spells. If the character has spell slots suitable for those spells, they can also use those slots to cast them. The precise first-level gifts and names of the higher-level spells depend on the lineage and are deliberately left to future child entries."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-introduction-background",
+      "title": "What species, background and language selection each provide",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Starting ability-score adjustments come from the background in the revised creation system, not from being an Elf. A background normally provides specified skill proficiencies and an Origin feat. These are separate from Keen Senses, whose skill is selected from a distinct three-option list."
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting language selection is likewise a character-creation rule. The ordinary revised procedure gives Common plus two standard languages chosen or rolled, regardless of species. Elvish may be selected if eligible, but the shared 5.5e Elf does not automatically grant it. Other features can add languages according to their own rules."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-introduction-practical",
+      "title": "How Elf traits influence play",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A [[class:ranger@5.5e|Ranger]] may enjoy picking a Keen Senses skill that complements the class's other proficiencies, while a [[class:wizard@5.5e|Wizard]] could value Darkvision and the freedom to select Intelligence for lineage spells. The choice of spellcasting ability matters when a lineage spell calls for a spell attack or saving throw."
+        },
+        {
+          "type": "paragraph",
+          "text": "A party might ask an Elf to investigate a dim corridor, where Darkvision helps the Elf see within range but does not automatically identify hidden objects. During a dangerous night, Trance can shorten the Elf's own Long Rest without forcing the entire party's schedule to change. Fey Ancestry is useful against qualifying Charmed saves, not every spell or condition."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-introduction-comparison",
+      "title": "How the revised Elf differs from the 2014 version",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 parent Elf had a fixed +2 Dexterity increase, automatic Perception proficiency, Common and Elvish as species languages, and a separate subrace choice. The revised Elf instead gets character-origin ability adjustments, a choice among three Keen Senses skills, language selection outside species and the Elven Lineage progression."
+        },
+        {
+          "type": "paragraph",
+          "text": "The older 2014 Elf also described the four-hour Trance in terms of the equivalent human sleep benefit, with an official clarification about the Long Rest. The revised Elf expressly states that four hours of meditation complete a Long Rest and the Elf retains consciousness. Both versions have related fantasy ideas, but the two mechanical packages should not be combined."
+        }
+      ]
+    }
+  ]
+}

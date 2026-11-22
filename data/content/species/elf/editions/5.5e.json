@@ -1,0 +1,598 @@
+{
+  "id": "species:elf@5.5e",
+  "contentId": "species:elf",
+  "edition": "5.5e",
+  "name": "Elf",
+  "rulesBasis": "D&D fifth edition revised 2024 Player's Handbook Elf rules, checked against System Reference Document 5.2.1 and official Character Origins",
+  "summary": "A Medium Humanoid with 30-foot speed, 60-foot Darkvision, Fey Ancestry, a choice of Insight, Perception or Survival proficiency, conscious four-hour Trance, and one required Elven Lineage.",
+  "mechanics": {
+    "creatureType": "Humanoid",
+    "size": {
+      "category": "Medium"
+    },
+    "speed": {
+      "walking": {
+        "value": 30,
+        "unit": "feet"
+      }
+    },
+    "abilityScoreIncrease": {
+      "type": "none-from-species",
+      "grantedBySpecies": false,
+      "source": "background",
+      "backgroundAdjustment": {
+        "eligibleAbilitiesCount": 3,
+        "options": [
+          {
+            "method": "two-scores",
+            "increases": [
+              2,
+              1
+            ],
+            "distinctScores": true
+          },
+          {
+            "method": "three-scores",
+            "increases": [
+              1,
+              1,
+              1
+            ],
+            "distinctScores": true
+          }
+        ],
+        "maximumScoreAfterAdjustment": 20
+      }
+    },
+    "languages": {
+      "grantedBySpecies": [],
+      "source": "character-creation",
+      "standardCharacterCreation": {
+        "automatic": [
+          "Common"
+        ],
+        "additional": {
+          "count": 2,
+          "method": [
+            "choose",
+            "roll"
+          ],
+          "pool": "Standard Languages table"
+        },
+        "literacy": [
+          "speak",
+          "read",
+          "write"
+        ]
+      },
+      "note": "Language selection is part of the revised character-creation rules, not an automatic Elf trait. Elvish is not granted merely by choosing this species."
+    },
+    "background": {
+      "originFeat": {
+        "count": 1,
+        "selection": "specified by the chosen background"
+      },
+      "skillProficiencies": {
+        "count": 2,
+        "selection": "specified by the chosen background"
+      },
+      "abilityAdjustments": {
+        "source": "background",
+        "countOfEligibleScores": 3
+      }
+    },
+    "darkvision": {
+      "range": {
+        "value": 60,
+        "unit": "feet"
+      },
+      "dimLightSeenAs": "bright light",
+      "darknessSeenAs": "dim light",
+      "colorsDiscernibleInDarkness": false,
+      "magicalDarknessInteraction": "Follow the applicable effect; Darkvision does not automatically overcome all magical darkness."
+    },
+    "feyAncestry": {
+      "savingThrowAdvantage": {
+        "condition": "Charmed",
+        "purpose": [
+          "avoid",
+          "end"
+        ]
+      },
+      "charmedImmunity": false,
+      "magicalSleepPreventionProvidedBy": "Trance"
+    },
+    "keenSenses": {
+      "skillProficiency": {
+        "count": 1,
+        "choiceRequired": true,
+        "options": [
+          "Insight",
+          "Perception",
+          "Survival"
+        ]
+      }
+    },
+    "trance": {
+      "requiresSleep": false,
+      "magicallyInducedSleepPossible": false,
+      "longRest": {
+        "durationHours": 4,
+        "requires": "trancelike meditation",
+        "retainsConsciousness": true,
+        "otherwiseUsesGeneralRestRules": true
+      }
+    },
+    "lineageSelection": {
+      "required": true,
+      "count": 1,
+      "inheritSharedTraits": true,
+      "availability": "pending-child-content",
+      "options": [
+        {
+          "key": "drow",
+          "name": "Drow",
+          "status": "pending-child-content"
+        },
+        {
+          "key": "high-elf",
+          "name": "High Elf",
+          "status": "pending-child-content"
+        },
+        {
+          "key": "wood-elf",
+          "name": "Wood Elf",
+          "status": "pending-child-content"
+        }
+      ],
+      "selectionTiming": "when selecting the Elf species",
+      "spellcastingAbility": {
+        "requiredChoice": true,
+        "choiceTiming": "when selecting the lineage",
+        "options": [
+          "Intelligence",
+          "Wisdom",
+          "Charisma"
+        ],
+        "appliesTo": "spells cast using Elven Lineage"
+      },
+      "progression": [
+        {
+          "characterLevel": 1,
+          "benefit": "initial-lineage-benefit",
+          "source": "selected-lineage-child",
+          "detailsImplemented": false
+        },
+        {
+          "characterLevel": 3,
+          "benefit": "lineage-spell",
+          "source": "selected-lineage-child",
+          "detailsImplemented": false,
+          "spellRules": {
+            "alwaysPrepared": true,
+            "freeCast": {
+              "uses": 1,
+              "recharge": "finish-long-rest"
+            },
+            "mayCastUsingAppropriateSpellSlots": true
+          }
+        },
+        {
+          "characterLevel": 5,
+          "benefit": "lineage-spell",
+          "source": "selected-lineage-child",
+          "detailsImplemented": false,
+          "spellRules": {
+            "alwaysPrepared": true,
+            "freeCast": {
+              "uses": 1,
+              "recharge": "finish-long-rest"
+            },
+            "mayCastUsingAppropriateSpellSlots": true
+          }
+        }
+      ],
+      "resolution": "Select a lineage under the applicable official rules. This parent defines how selection and progression work; named spell lists and initial lineage-specific benefits belong in separate pending child datasets."
+    },
+    "traits": [
+      {
+        "id": "elf-darkvision-5.5e",
+        "name": "Darkvision",
+        "kind": "sense",
+        "description": "See within 60 feet using Darkvision. Dim light appears bright, and darkness appears dim for vision, without discerning colors in darkness.",
+        "sense": {
+          "type": "darkvision",
+          "rangeFeet": 60,
+          "dimAsBright": true,
+          "darkAsDim": true,
+          "colorsInDarkness": false
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      },
+      {
+        "id": "elf-elven-lineage-5.5e",
+        "name": "Elven Lineage",
+        "kind": "lineage-choice",
+        "description": "Choose Drow, High Elf or Wood Elf; receive a lineage benefit at level 1 and lineage spells at character levels 3 and 5. Choose Intelligence, Wisdom or Charisma for spells cast with this trait. Individual lineage benefits are documented separately.",
+        "choice": {
+          "required": true,
+          "count": 1,
+          "category": "Elven Lineage",
+          "options": [
+            "Drow",
+            "High Elf",
+            "Wood Elf"
+          ],
+          "spellcastingAbilityChoice": [
+            "Intelligence",
+            "Wisdom",
+            "Charisma"
+          ]
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      },
+      {
+        "id": "elf-fey-ancestry-5.5e",
+        "name": "Fey Ancestry",
+        "kind": "defense",
+        "description": "Have Advantage on saving throws made to avoid or end the Charmed condition.",
+        "savingThrows": {
+          "advantage": true,
+          "condition": "Charmed",
+          "purposes": [
+            "avoid",
+            "end"
+          ]
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      },
+      {
+        "id": "elf-keen-senses-5.5e",
+        "name": "Keen Senses",
+        "kind": "skill-proficiency",
+        "description": "Gain proficiency in one skill chosen from Insight, Perception, or Survival.",
+        "choice": {
+          "required": true,
+          "count": 1,
+          "category": "skill",
+          "options": [
+            "Insight",
+            "Perception",
+            "Survival"
+          ]
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      },
+      {
+        "id": "elf-trance-5.5e",
+        "name": "Trance",
+        "kind": "rest",
+        "description": "You need no sleep and cannot be put to sleep by magic; complete a Long Rest with four hours of trancelike meditation while retaining consciousness.",
+        "rest": {
+          "sleepRequired": false,
+          "magicalSleepBlocked": true,
+          "durationHours": 4,
+          "retainsConsciousness": true,
+          "kind": "Long Rest"
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      }
+    ],
+    "notGrantedAutomatically": [
+      "2014 Elf Dexterity +2",
+      "2014 Elf fixed Perception proficiency",
+      "2014 Elf automatic Common and Elvish species languages",
+      "2014 subrace trait package",
+      "any specific lineage's level-1 benefits or spell identities without choosing that lineage",
+      "innate spellcasting independent of selected Elven Lineage"
+    ],
+    "sourceIds": [
+      "srd-5.2.1",
+      "phb-elf-5.5e",
+      "basic-rules-5.5e",
+      "srd-5.1"
+    ]
+  },
+  "optionalVariants": [],
+  "sources": [
+    {
+      "id": "srd-5.2.1",
+      "title": "System Reference Document 5.2.1",
+      "publisher": "Wizards of the Coast LLC",
+      "url": "https://www.dndbeyond.com/srd",
+      "documentUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "edition": "5.5e",
+      "rulesPublicationYear": 2024,
+      "publicationYear": 2025,
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "attribution": "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+      "use": "Revised Elf shared traits, Elven Lineage progression and spellcasting rules, character origins, Darkvision, rest and licensing."
+    },
+    {
+      "id": "phb-elf-5.5e",
+      "title": "Elf — Player's Handbook (2024)",
+      "publisher": "Wizards of the Coast LLC",
+      "platform": "D&D Beyond",
+      "url": "https://www.dndbeyond.com/species/1751437-elf",
+      "edition": "5.5e",
+      "publicationYear": 2024,
+      "license": {
+        "id": "reference-only",
+        "note": "Used for verification of the official revised Elf and lineage terminology. The D&D Beyond page and Player's Handbook artwork or prose outside covered SRD material are not assumed to be CC-licensed."
+      },
+      "use": "Official revised Elf species description, lineage names, choices and level milestones."
+    },
+    {
+      "id": "basic-rules-5.5e",
+      "title": "Basic Rules (2024): Character Origins",
+      "publisher": "Wizards of the Coast LLC",
+      "platform": "D&D Beyond",
+      "url": "https://www.dndbeyond.com/sources/dnd/br-2024/character-origins",
+      "edition": "5.5e",
+      "publicationYear": 2024,
+      "license": {
+        "id": "reference-only",
+        "note": "Official rules reference only. No open-content license is asserted for the complete D&D Beyond webpage."
+      },
+      "use": "Background ability-score adjustments and Origin feats, character languages and distinction between species and background."
+    },
+    {
+      "id": "srd-5.1",
+      "title": "System Reference Document 5.1",
+      "publisher": "Wizards of the Coast LLC",
+      "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+      "edition": "5e",
+      "rulesPublicationYear": 2014,
+      "publicationYear": 2023,
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "attribution": "This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+      "use": "Historical comparison only: shared 2014 Elf traits and subrace system; not a source of current 5.5e mechanics."
+    }
+  ],
+  "article": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "An Elf in D&D 5.5e is a Medium Humanoid with a 30-foot walking speed, 60-foot Darkvision, an advantage against the Charmed condition, a choice of keen-sense training, and a four-hour Long Rest through conscious Trance. Elven Lineage adds a required choice—Drow, High Elf or Wood Elf—which provides a benefit at character level 1 and further spells at levels 3 and 5."
+          },
+          {
+            "type": "paragraph",
+            "text": "This revised species does not include the 2014 Elf's Dexterity +2, automatic Perception proficiency or Common-and-Elvish language trait. Ability-score adjustments instead come from a background, and all characters select starting languages through the general creation rules. This article covers the shared parent Elf rules and the method for selecting a lineage; the specific child lineages are separate, pending content."
+          }
+        ]
+      },
+      {
+        "id": "basic-traits",
+        "title": "Basic Traits",
+        "blocks": [
+          {
+            "type": "table",
+            "caption": "Shared Elf mechanics in revised fifth edition",
+            "headers": [
+              "Property",
+              "5.5e rule"
+            ],
+            "rows": [
+              [
+                "Creature type",
+                "Humanoid"
+              ],
+              [
+                "Size",
+                "Medium"
+              ],
+              [
+                "Walking speed",
+                "30 feet; a selected lineage may modify this later"
+              ],
+              [
+                "Darkvision",
+                "60 feet; dim light appears bright and darkness appears dim, without color distinction in darkness"
+              ],
+              [
+                "Fey Ancestry",
+                "Advantage on saving throws to avoid or end Charmed"
+              ],
+              [
+                "Keen Senses",
+                "Choose one skill proficiency: Insight, Perception or Survival"
+              ],
+              [
+                "Trance",
+                "No sleep needed; magic cannot induce sleep; four-hour conscious trancelike Long Rest"
+              ],
+              [
+                "Elven Lineage",
+                "Choose one of Drow, High Elf or Wood Elf; initial benefit at character level 1, spells at 3 and 5"
+              ],
+              [
+                "Lineage spellcasting ability",
+                "Choose Intelligence, Wisdom or Charisma when selecting lineage"
+              ],
+              [
+                "Ability scores",
+                "Adjusted by background; no species-granted Dexterity +2"
+              ],
+              [
+                "Languages",
+                "Character creation: Common plus two Standard Languages table choices, not an automatic Elf language trait"
+              ],
+              [
+                "Background feat",
+                "An Origin feat is normally specified by background, not granted by Elf"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "All numerical values in this table describe the shared Elf species before applying any lineage-specific modifications. The listed lineage names are choices, not completed child content in D&D Portal. A full character also has separate class, background and general character-creation benefits."
+          }
+        ]
+      },
+      {
+        "id": "species-traits",
+        "title": "Species Traits",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Darkvision extends to 60 feet. Within that range, dim light can be perceived as bright light and darkness as dim light. Darkness still reduces visual detail and prevents normal color recognition; Darkvision is not the same as illuminating a room or automatically detecting hidden creatures. Specific effects that block Darkvision must be resolved using their own rules."
+          },
+          {
+            "type": "paragraph",
+            "text": "Fey Ancestry grants Advantage on saving throws made to avoid or end the Charmed condition. This is more precisely defined than the 2014 wording and does not create outright immunity to being Charmed. Magical sleep prevention is a separate part of Trance in the revised entry, not a second paragraph that must be imported from the older Fey Ancestry trait."
+          },
+          {
+            "type": "paragraph",
+            "text": "Keen Senses grants one chosen proficiency from Insight, Perception or Survival. Choose the skill after reviewing class and background proficiencies. Insight can help interpret intentions, Perception helps notice sights or sounds, and Survival supports appropriate wilderness and tracking checks. It does not grant all three, Expertise or a flat Advantage on every related check."
+          },
+          {
+            "type": "paragraph",
+            "text": "Trance removes the need for ordinary sleep and prevents magic from making the Elf sleep. Four hours of trancelike meditation can complete a Long Rest; the Elf retains consciousness during this meditation. This feature does not grant extra spell slots, an extra Long Rest in disregard of general limits, or a later-edition proficiency swap."
+          },
+          {
+            "type": "paragraph",
+            "text": "Elven Lineage is also a shared trait but its particular gifts depend on the lineage chosen. Choose one lineage and an Intelligence, Wisdom or Charisma spellcasting ability at selection. The lineage provides a level-1 benefit; at character levels 3 and 5, the Elf learns a lineage spell that remains prepared. Each such spell can be cast once without a spell slot per Long Rest, or using suitable spell slots if the character has them. The parent stores this progression, not the spell names or any lineage-specific modifiers."
+          },
+          {
+            "type": "callout",
+            "title": "Shared species versus character origin",
+            "text": "The revised Elf does not add Dexterity +2 or automatically teach Elvish. Backgrounds determine the character's starting ability adjustments and normally provide an Origin feat; the general 2024 creation procedure supplies language choices independently of the species."
+          }
+        ]
+      },
+      {
+        "id": "elven-lineages",
+        "title": "Elven Lineages",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The revised 2024 Elf has a required lineage choice, selected from Drow, High Elf and Wood Elf. The lineage is not an optional add-on that can be skipped in a finished player character. It is also not a 2014 subrace package: the newer framework ties each lineage to a benefit at level 1 and a progression of lineage spells at character levels 3 and 5."
+          },
+          {
+            "type": "paragraph",
+            "text": "The level-1 benefit is specific to the selected lineage and may include a cantrip or another change; this parent article does not list those features. At character level 3, one higher-level lineage spell is learned and remains prepared; at level 5, another spell is added. These are character-level milestones, so a multiclass character should use total character level, not the level in just one class."
+          },
+          {
+            "type": "paragraph",
+            "text": "For the spells granted at levels 3 and 5, each may be cast once without expending a spell slot, and that free-cast use returns after a completed Long Rest. If the character has appropriate spell slots, those spells can also be cast using slots. A classless extra spell slot is not gained simply by picking Elf, and the exact spell identities depend on the chosen lineage."
+          },
+          {
+            "type": "paragraph",
+            "text": "The player selects Intelligence, Wisdom or Charisma as the spellcasting ability for spells cast with the lineage when making the lineage choice. A Wizard might choose Intelligence to match class spells, while a different character might prefer Wisdom or Charisma. This choice is recorded once as part of the lineage and should not be inferred solely from class selection."
+          },
+          {
+            "type": "paragraph",
+            "text": "Drow, High Elf and Wood Elf are three official names for those options. In a future dataset each will receive an independent child ID, parent reference, additional mechanics, article and FAQ collection. Until then, the parent marks all options as pending and does not claim their specific 1st-level benefits or spell lists are available in this JSON repository."
+          },
+          {
+            "type": "callout",
+            "title": "Implementation status",
+            "text": "This parent Elf entry supplies the valid selection structure and level progression, but the individual lineages remain unimplemented. Select the actual rules from your permitted official source for a complete character rather than treating an unpopulated child as a blank rules package."
+          }
+        ]
+      },
+      {
+        "id": "history-and-lore",
+        "title": "History & Lore",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Elves are often portrayed as long-lived people connected to memory, craftsmanship, old stories and the supernatural. Official fiction associates different elven communities with particular magical environments, but such depictions can vary significantly between campaign settings. A broad species entry should not assign every Elf the same homeland, faith, politics or outlook."
+          },
+          {
+            "type": "paragraph",
+            "text": "A lifespan reaching roughly 750 years is common in the revised Elf's descriptive lore. That longevity can make generational changes vivid: an Elf might remember a town before a major war or be learning a craft alongside people whose grandparents were not yet born when the Elf began adventuring. Those story possibilities do not grant free history proficiency or knowledge of events the character never witnessed."
+          },
+          {
+            "type": "paragraph",
+            "text": "Drow, High Elf and Wood Elf describe magical lineages in the revised species rules; they need not dictate where a character lives or their personal allegiances. A campaign could have mixed communities, traveling families and cultural exchanges that are more important to identity than a singular lineage label."
+          },
+          {
+            "type": "paragraph",
+            "text": "Work with the DM to decide which setting histories apply. Treat lineage as a defined rules selection, while language, education, friendships and local custom remain meaningful individual choices. Do not assume that setting-specific accounts of deities or ancient conflicts are universal 5.5e mechanical requirements."
+          }
+        ]
+      },
+      {
+        "id": "playing-as-an-elf",
+        "title": "Playing as an Elf",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Keen Senses lets a player fill a useful skill gap. A [[class:ranger@5.5e|Ranger]] who already has Perception might choose Insight for social scenes or Survival for tracking and wilderness navigation, subject to the full character's existing proficiencies. A [[class:wizard@5.5e|Wizard]] might use Perception to notice environmental threats. These are possibilities, not mandated or universally optimal builds."
+          },
+          {
+            "type": "paragraph",
+            "text": "Darkvision and Keen Senses complement each other without guaranteeing successful scouting. The Elf might discern movement in a nearby dark corridor, while a Perception check could still be needed to notice a concealed creature. In darkness that Darkvision treats as dim light, reduced visual detail can still affect detection; the general [[rule:movement|Movement]] rules and visibility rules remain relevant."
+          },
+          {
+            "type": "paragraph",
+            "text": "Fey Ancestry makes the Elf more resilient against effects whose saving throws avoid or end Charmed, but it does not make a failed saving throw impossible. When resting, Trance enables a four-hour conscious meditation that can complete the Elf's Long Rest; this can help with camp scheduling without shortening every other party member's required rest."
+          },
+          {
+            "type": "paragraph",
+            "text": "Plan the lineage choice alongside class development. The chosen spellcasting ability matters for any lineage spell that depends on it, and levels 3 and 5 add spells automatically under the selected lineage. A non-spellcasting class can still receive the lineage's spells; using spell slots is simply conditional on having suitable slots from some other source."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Record Humanoid, Medium, 30-foot walking speed and 60-foot Darkvision.",
+              "Choose one Keen Senses proficiency: Insight, Perception or Survival.",
+              "Add Fey Ancestry's Charmed protection and Trance's magical-sleep and conscious-rest rules.",
+              "Select Drow, High Elf or Wood Elf from a permitted source and choose Intelligence, Wisdom or Charisma for lineage spellcasting.",
+              "Apply background ability adjustments, background Origin feat and general starting language selection separately.",
+              "At character levels 3 and 5, add the selected lineage's spells and track their individual free-cast recovery."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sources-and-references",
+        "title": "Sources & References",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The System Reference Document 5.2.1 is the primary rules source for the updated Elf species, its lineage selection, spell progression, character origins and general mechanics. It is available under Creative Commons Attribution 4.0 International; the prescribed official attribution statement is preserved verbatim in the source metadata for this edition."
+          },
+          {
+            "type": "paragraph",
+            "text": "The official D&D Beyond revised Elf species page and 2024 Basic Rules Character Origins page serve as independent reference checks. Their complete webpages, copyrighted presentation and artwork are not assumed to be covered by the SRD Creative Commons grant. All interpretive paragraphs and gameplay examples here are newly written."
+          },
+          {
+            "type": "paragraph",
+            "text": "System Reference Document 5.1 supports historical comparisons with the 2014 Elf's Dexterity increase, fixed Perception training and subraces. Those details are not added to the updated 5.5e mechanics. D&D Portal's data licensing guidance explains the distinction between CC-licensed source rules, original editorial content and reference-only works."
+          },
+          {
+            "type": "list",
+            "items": [
+              "srd-5.2.1 — revised Elf rules, Character Origins and applicable CC BY 4.0 attribution.",
+              "phb-elf-5.5e — official 2024 Elf species entry, consulted as reference-only.",
+              "basic-rules-5.5e — official Character Origins explanation, consulted as reference-only.",
+              "srd-5.1 — older Elf mechanics for comparison only."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "id": "elf-5.5e-elven-lineage",
+  "slug": "how-does-elven-lineage-work",
+  "edition": "5.5e",
+  "contentId": "species:elf",
+  "question": "How does Elven Lineage work in D&D 5.5e?",
+  "shortAnswer": "An Elf must choose Drow, High Elf, or Wood Elf as an Elven Lineage. That choice grants a level-1 benefit and spells at character levels 3 and 5; choose Intelligence, Wisdom, or Charisma as the spellcasting ability for the lineage's spells.",
+  "introduction": "Elven Lineage is the revised Elf's required additional species choice. The parent species defines how lineages are selected and how their spells progress, but the abilities and spell names of each lineage belong to separate rules entries.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-elf-5.5e",
+    "basic-rules-5.5e",
+    "srd-5.1"
+  ],
+  "sections": [
+    {
+      "id": "elf-5.5e-lineage-mandatory",
+      "title": "Choosing a lineage is part of choosing Elf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the revised rules, Elven Lineage requires selecting one option from the official table. The choices are Drow, High Elf and Wood Elf. That selection is not an extra feat, a class subclass or an optional package that can be left blank in a fully defined Elf character. It is the way a specific Elf receives the magical benefits of this species trait."
+        },
+        {
+          "type": "paragraph",
+          "text": "All Elves still retain their parent features: Medium size, 30-foot base walking speed, Darkvision, Fey Ancestry, a chosen Keen Senses proficiency and Trance. The chosen lineage supplies an additional layer of rules and may modify a shared value where its specific benefit expressly does so."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-three",
+      "title": "Drow, High Elf and Wood Elf are three distinct options",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The official 2024 Elf species lists Drow, High Elf and Wood Elf as its three core lineages. Each is a real mechanical choice, with its own level-1 benefit and spells at later character levels. These differences should be taken from the specific published option rather than assumed from a common trait such as Darkvision."
+        },
+        {
+          "type": "paragraph",
+          "text": "D&D Portal is currently implementing the parent Elf only. The three names are included so the required selection can be represented accurately, but the parent JSON does not distribute their specific cantrips, vision modifications, movement bonuses or later spell lists. Those details will belong to individually sourced and validated child files."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-progress-table",
+      "title": "Character-level progression at a glance",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Elven Lineage milestones",
+          "headers": [
+            "Character level",
+            "What the selected lineage grants",
+            "Where the details belong"
+          ],
+          "rows": [
+            [
+              "1",
+              "One initial lineage-specific benefit",
+              "Future selected lineage child entry"
+            ],
+            [
+              "3",
+              "One lineage-specific spell, learned and always prepared",
+              "Future selected lineage child entry"
+            ],
+            [
+              "5",
+              "Another lineage-specific spell, learned and always prepared",
+              "Future selected lineage child entry"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The levels above refer to total character level, not only levels in a spellcasting class. A character who reaches level 3 through multiple classes still reaches the lineage's level-3 milestone, provided the character uses the revised Elf rules. The granted spell identities depend on the selected lineage."
+        },
+        {
+          "type": "paragraph",
+          "text": "The level-1 benefit is defined by the chosen lineage and should not be represented as a generic free spell for every Elf. Individual lineages can have different types of starting benefit. The parent describes only the timing and rule that a benefit exists."
+        },
+        {
+          "type": "callout",
+          "title": "No published child mechanics yet",
+          "text": "The table describes a framework, not the completed Drow, High Elf or Wood Elf abilities. Read the corresponding official lineage entry until the D&D Portal child datasets are implemented."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-spellcasting",
+      "title": "The Intelligence, Wisdom or Charisma decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At the moment you choose Elven Lineage, select Intelligence, Wisdom or Charisma as the spellcasting ability for spells cast with this trait. The choice belongs to this species feature, rather than automatically matching the character's primary class statistic. It is important to record the chosen ability even before level 3 because a lineage's level-1 benefit may include a spell."
+        },
+        {
+          "type": "paragraph",
+          "text": "A [[class:wizard@5.5e|Wizard]] might choose Intelligence to align with a class-based spellcasting ability, while a [[class:ranger@5.5e|Ranger]] may consider Wisdom. Choosing the same ability as a class can simplify character-sheet calculations, but it is not mandatory. Use the selected ability for any spell attacks or spell saving throw DCs that depend on this lineage trait."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-spellslots",
+      "title": "Preparation, free casting and spell slots",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The level-3 and level-5 lineage spells are always prepared after being learned. Each has one casting without spending a spell slot, and that particular free use is restored when the character finishes a Long Rest. The ability to cast without a spell slot is tied to each granted spell, not an unlimited at-will casting option."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the character has spell slots of the appropriate level, those spells may also be cast by expending suitable slots. An Elf who is not a spellcaster still receives the lineage's granted spells and their limited slot-free casts. The lineage feature does not grant spell slots of its own merely by reaching level 3 or 5."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-parent",
+      "title": "Parent traits remain separate from lineage benefits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The parent Elf provides Darkvision with a 60-foot baseline and walking speed of 30 feet; it also specifies Fey Ancestry, Keen Senses and Trance. A chosen lineage can provide a modification to one of these numbers or add something entirely different, but that change is associated with the child selection, not the universal parent."
+        },
+        {
+          "type": "paragraph",
+          "text": "A robust character sheet should therefore store the shared species facts once, then record the lineage's own source-specific additions or overrides. Copying a particular lineage's increased vision range into the Elf parent, for example, would incorrectly give that range to Elves who chose another lineage. This separation will also simplify future content maintenance."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-versus-subraces",
+      "title": "2024 lineages are not the 2014 subrace system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In the 2014 rules, the Elf parent gave Dexterity +2, Perception proficiency and automatic Common and Elvish. A chosen subrace added its distinct 2014 features. The revised edition changes that structure: no fixed Dexterity increase from species, a choice of Keen Senses proficiency, general character-creation languages and level-based lineage magic."
+        },
+        {
+          "type": "paragraph",
+          "text": "The official names High Elf and Wood Elf occur in both editions, but the same name does not prove identical mechanics. Do not combine the 2014 subrace's ability increases or other features with the 2024 lineage package unless a separate campaign rule explicitly permits that custom combination."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-lineage-implementation",
+      "title": "What a future lineage entry must contain",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each future D&D Portal lineage should have its own stable content ID, a parent reference to the revised Elf, edition-specific mechanical additions, source citations, full article and separate FAQ index and articles. It should not duplicate the parent's Fey Ancestry, Trance or Keen Senses unless necessary to express an actual override."
+        },
+        {
+          "type": "paragraph",
+          "text": "Until those files are released, parent metadata marks the lineage choices as pending. A D&D Portal viewer or API should distinguish the names of selectable official options from published in-repository content. For a playable character today, use the applicable official source for the chosen lineage's exact benefits and spells."
+        }
+      ]
+    }
+  ]
+}

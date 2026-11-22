@@ -1,0 +1,114 @@
+{
+  "id": "elf-5.5e-fey-ancestry-trance",
+  "slug": "how-do-fey-ancestry-and-trance-work",
+  "edition": "5.5e",
+  "contentId": "species:elf",
+  "question": "How do Fey Ancestry and Trance work for Elves in D&D 5.5e?",
+  "shortAnswer": "Fey Ancestry gives Advantage on saving throws to avoid or end Charmed. Trance means an Elf does not need sleep, cannot be magically put to sleep, and can complete a Long Rest through four hours of meditation while retaining consciousness.",
+  "introduction": "The updated Elf separates charm protection and magical-sleep protection into two different traits. Fey Ancestry addresses a specific condition and qualifying saving throws; Trance describes sleep and the Elf's resting method.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-elf-5.5e",
+    "srd-5.1"
+  ],
+  "sections": [
+    {
+      "id": "elf-5.5e-fey-avoid",
+      "title": "Fey Ancestry when avoiding Charmed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If a rule asks the Elf to make a saving throw to avoid gaining the Charmed condition, Fey Ancestry provides Advantage on that saving throw. The player rolls according to the normal Advantage procedure rather than treating the condition as automatically prevented."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, an effect that asks for a Wisdom saving throw to avoid being Charmed can trigger the benefit. The Elf can still fail and become Charmed. An effect that inflicts a different condition, such as Frightened, is not covered merely because both effects influence behavior."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-fey-end",
+      "title": "Fey Ancestry when ending Charmed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The revised wording also covers saving throws made to end the Charmed condition. If an effect later permits another saving throw to shake off its charm, that qualifying save benefits from Advantage as well. The player should read the triggering ability or spell to determine whether and when such a saving throw exists."
+        },
+        {
+          "type": "paragraph",
+          "text": "This does not give the Elf the power to end Charmed whenever they wish. A saving throw must actually be available through the relevant rule. If the effect has no applicable saving throw at the moment, Fey Ancestry does not create one, shorten the duration or function as outright immunity."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-trance-sleep",
+      "title": "Magical sleep prevention belongs to Trance",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In the 2024 Elf, Trance states that the Elf does not need to sleep and cannot be put to sleep by magic. An effect whose result is magically making a creature sleep cannot impose that sleep on an Elf protected by the trait. The description does not require the player to make a special nightly resistance roll."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trance does not prevent unconsciousness for unrelated reasons. An Elf can still be knocked unconscious by damage or affected by other disabling conditions. Likewise, an effect that does not cause sleep must be resolved according to its own text rather than being dismissed as though all magic that inhibits awareness were sleep."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-trance-rest",
+      "title": "A Long Rest can finish in four hours",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An Elf may finish a Long Rest after four hours of trancelike meditation while retaining consciousness. This is an explicit part of the revised species trait, not an inference from a statement about a human's eight-hour sleeping benefit. The standard rules governing Long Rests still matter wherever the trait does not override them."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a Human companion may need a longer rest interval while the Elf can finish earlier. The Elf does not automatically speed up the companion's rest, bypass a limit on how frequently a character benefits from a Long Rest, or make camp safe from interruptions."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-trance-consciousness",
+      "title": "What retaining consciousness means",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The revised wording says the meditating Elf remains conscious. The character is not simply asleep for four hours, and their account of the period may include awareness of the surrounding campsite. At the same time, those hours must actually be spent in trancelike meditation to qualify for the shortened rest."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not interpret consciousness as permission to adventure for four hours while automatically completing a Long Rest. If the Elf interrupts the meditation for other activities, resolve whether the Long Rest is completed according to the rest rules and the DM's adjudication."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-trance-2014",
+      "title": "How the current wording differs from 2014",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The earlier 2014 Elf described Fey Ancestry as helping saving throws against being charmed and also included magical sleep prevention there. The revised trait uses the more specific avoid-or-end-Charmed wording, and magical sleep protection now appears in Trance. The mechanical effects overlap in theme, but the traits are organized differently."
+        },
+        {
+          "type": "paragraph",
+          "text": "The older Trance described a human-equivalent sleep benefit after four hours of semiconscious meditation and relied on the official Sage Advice clarification for the four-hour Long Rest. The 2024 text directly specifies a four-hour Long Rest and consciousness. Use the rules that match the character's selected edition instead of mixing the descriptions."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-fey-cases",
+      "title": "Two situations at the table",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A hostile creature attempts to charm the party: the Elf gains Advantage if a saving throw is made to avoid Charmed. Later, if the same effect allows a new save to end the condition, Fey Ancestry applies again to that new save. The original roll can still fail even with Advantage."
+        },
+        {
+          "type": "paragraph",
+          "text": "At camp, the Elf chooses to spend four hours in Trance while other characters sleep. When the meditation qualifies as a Long Rest, the Elf finishes their own rest and can plan subsequent activities with the party. If a magical sleep effect is used during an encounter, the Elf's protection comes from Trance, while other effects continue to work according to their own conditions."
+        }
+      ]
+    }
+  ]
+}

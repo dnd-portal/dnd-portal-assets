@@ -1,0 +1,144 @@
+{
+  "id": "elf-5.5e-darkvision-keen-senses",
+  "slug": "how-do-darkvision-and-keen-senses-work",
+  "edition": "5.5e",
+  "contentId": "species:elf",
+  "question": "How do Darkvision and Keen Senses work for Elves in D&D 5.5e?",
+  "shortAnswer": "Elves see through ordinary darkness within 60 feet as if it were dim light, and treat dim light as bright for vision. Keen Senses lets an Elf choose proficiency in Insight, Perception, or Survival; it does not automatically grant Perception or perfect sight.",
+  "introduction": "Darkvision affects available visual information, while Keen Senses grants trained ability in one of three skills. Understanding the difference helps adjudicate stealth, exploration, social observations and visibility accurately.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-elf-5.5e"
+  ],
+  "sections": [
+    {
+      "id": "elf-5.5e-darkvision-range",
+      "title": "Darkvision has a 60-foot baseline",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "All revised Elves begin with Darkvision reaching 60 feet. Dim light within the range is seen as bright light, and darkness is seen as dim light. This improves perception in shadows and unlit spaces, but does not change the location of a wall, create light for companions or extend sight past the normal range of vision."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, an Elf watching a guard twenty feet away in an unlit passage might distinguish the guard's outline without needing a torch. That does not imply the Elf can distinguish small details on a distant object beyond 60 feet, or that the rest of the party receives the same benefit."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-darkvision-dim",
+      "title": "Why darkness still has limitations",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Seeing darkness as dim light is not the same as seeing it as bright light. Dim light can make sight-based visual checks more difficult, and Darkvision does not automatically reveal hidden objects or invisible opponents. In darkness, Darkvision does not let an Elf discern ordinary colors; shapes and contrast matter more than colored details."
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose a trap clue is marked by two inks of identical brightness but different colors. An Elf using only Darkvision in a blacked-out room may be unable to separate the markings by color. A light source or a different information-gathering method may be needed even though larger objects remain visible."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-darkvision-magic",
+      "title": "Darkvision and magical darkness",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The shared Darkvision feature does not automatically bypass every effect that creates darkness. Read the particular magical effect: if its rules say Darkvision cannot see through it, the Elf's ordinary Darkvision does not override that prohibition. Similarly, fog, opaque obstacles and cover can obstruct vision for reasons unrelated to lighting."
+        },
+        {
+          "type": "paragraph",
+          "text": "An Elf might choose to avoid a light source for stealth, but the lack of light does not make the character invisible or automatically hidden. Darkness can affect what other creatures see as well; movement, noise and the environment are adjudicated with the regular detection and hiding rules."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-keen-choice",
+      "title": "Keen Senses offers three skill options",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the revised rule, the player chooses proficiency in exactly one of Insight, Perception and Survival. Perception can support noticing sights, sounds or other sensory clues. Insight often concerns interpreting another creature's intentions or behavior. Survival is relevant to appropriate natural-world tasks such as navigating and following tracks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Unlike the 2014 Elf, whose Keen Senses always granted Perception proficiency, this version leaves the choice to the player. You cannot record all three skills because they appear in the description, and the feature does not permit taking a completely unrelated skill such as Arcana."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-keen-math",
+      "title": "How proficiency affects checks and passive scores",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Proficiency contributes the normal proficiency bonus to a relevant check. For a character with Wisdom 14 and proficiency bonus +2, a proficient Wisdom (Perception) check typically has a +4 modifier. The same reasoning applies when an appropriate check uses Insight or Survival, although the situation determines which skill the DM calls for."
+        },
+        {
+          "type": "paragraph",
+          "text": "Passive scores are calculated using the game's ordinary rules and circumstances. Keen Senses does not by itself double proficiency, grant universal Advantage or guarantee detection; a higher proficiency bonus later increases eligible checks without creating a new Elf-only scaling rule."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-keen-class",
+      "title": "Choosing a skill that complements a class",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An [[class:ranger@5.5e|Ranger]] may already have useful wilderness skill options from class and background. If Perception and Survival are covered, Insight can expand the character's capability during a negotiation or interrogation. A [[class:wizard@5.5e|Wizard]] might select Perception to contribute during exploration or Survival if the campaign frequently ventures into unfamiliar terrain."
+        },
+        {
+          "type": "paragraph",
+          "text": "The most useful selection is situational. If the character already has proficiency in a chosen skill, a second source does not normally stack the proficiency bonus or automatically provide Expertise. Check the class and background first and use the species choice to fill a practical gap."
+        }
+      ]
+    },
+    {
+      "id": "elf-5.5e-darkvision-checks",
+      "title": "Practical detection checklist",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Examples of when the traits matter",
+          "headers": [
+            "Situation",
+            "Darkvision contribution",
+            "Keen Senses contribution"
+          ],
+          "rows": [
+            [
+              "Dimly lit room",
+              "Treat dim light as bright within 60 feet",
+              "Chosen Perception may help detect subtle clues"
+            ],
+            [
+              "Fully dark passage",
+              "Treat darkness as dim within 60 feet; no colors",
+              "Chosen Perception may aid sight-based checks, subject to lighting limits"
+            ],
+            [
+              "Suspicious conversation",
+              "No special contribution from ordinary lighting",
+              "Chosen Insight can aid interpretation of behavior"
+            ],
+            [
+              "Tracking through woods",
+              "Only relevant where lighting matters",
+              "Chosen Survival may help follow trails"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These examples show separate effects, not automatic successes. A creature might still be obscured, the DM may request a different skill, and a particular magical effect can alter visibility."
+        },
+        {
+          "type": "paragraph",
+          "text": "The parent Elf has 60-foot Darkvision. A future chosen lineage may change that baseline through its own feature, but the unimplemented child mechanics are not included here."
+        }
+      ]
+    }
+  ]
+}
