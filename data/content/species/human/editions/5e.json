@@ -1,0 +1,397 @@
+{
+  "id": "species:human@5e",
+  "contentId": "species:human",
+  "edition": "5e",
+  "name": "Human",
+  "rulesBasis": "D&D fifth edition, standard Human from the 2014 rules",
+  "summary": "Standard Human is Medium, walks 30 feet, increases all six ability scores by 1 and knows Common plus one additional language.",
+  "mechanics": {
+    "creatureType": "Humanoid",
+    "size": {
+      "category": "Medium"
+    },
+    "speed": {
+      "walking": {
+        "value": 30,
+        "unit": "feet"
+      }
+    },
+    "abilityScoreIncrease": {
+      "type": "fixed-all-six",
+      "abilities": {
+        "strength": 1,
+        "dexterity": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "wisdom": 1,
+        "charisma": 1
+      }
+    },
+    "languages": {
+      "automatic": [
+        "Common"
+      ],
+      "additional": {
+        "count": 1,
+        "choice": "one additional language of your choice, subject to available campaign languages"
+      },
+      "literacy": [
+        "speak",
+        "read",
+        "write"
+      ]
+    },
+    "age": {
+      "adulthood": "late teens",
+      "typicalLifespan": "less than one century",
+      "mechanicalModifiers": false
+    },
+    "alignment": {
+      "required": null,
+      "description": "No fixed or mandatory alignment."
+    },
+    "traits": [
+      {
+        "id": "human-ability-score-increase",
+        "name": "Ability Score Increase",
+        "kind": "ability-score",
+        "description": "Increase each of the six ability scores by 1.",
+        "sourceIds": [
+          "srd-5.1"
+        ]
+      },
+      {
+        "id": "human-age",
+        "name": "Age",
+        "kind": "descriptive",
+        "description": "Humans reach adulthood in their late teens and usually live less than a century.",
+        "sourceIds": [
+          "srd-5.1"
+        ]
+      },
+      {
+        "id": "human-alignment",
+        "name": "Alignment",
+        "kind": "descriptive",
+        "description": "No mandatory alignment.",
+        "sourceIds": [
+          "srd-5.1"
+        ]
+      },
+      {
+        "id": "human-size",
+        "name": "Size",
+        "kind": "size",
+        "description": "Medium.",
+        "sourceIds": [
+          "srd-5.1"
+        ]
+      },
+      {
+        "id": "human-speed",
+        "name": "Speed",
+        "kind": "movement",
+        "description": "30-foot walking speed.",
+        "sourceIds": [
+          "srd-5.1"
+        ]
+      },
+      {
+        "id": "human-languages",
+        "name": "Languages",
+        "kind": "language",
+        "description": "Speak, read and write Common and one extra chosen language.",
+        "sourceIds": [
+          "srd-5.1"
+        ]
+      }
+    ],
+    "notGrantedAutomatically": [
+      "feat",
+      "skill proficiency",
+      "Darkvision",
+      "innate spells",
+      "damage resistance",
+      "species-specific limited-use action"
+    ]
+  },
+  "optionalVariants": [
+    {
+      "id": "variant-human",
+      "name": "Variant Human",
+      "status": "optional",
+      "requiresDmApproval": true,
+      "optionalRulesRequired": [
+        "feats"
+      ],
+      "sourceIds": [
+        "basic-rules-5e"
+      ],
+      "replaces": [
+        "human-ability-score-increase"
+      ],
+      "mechanics": {
+        "abilityScoreIncrease": {
+          "type": "choose-distinct",
+          "count": 2,
+          "amountPerAbility": 1
+        },
+        "skillProficiency": {
+          "count": 1,
+          "choice": "one skill of your choice"
+        },
+        "feat": {
+          "count": 1,
+          "choice": "one feat allowed under optional feat rules",
+          "atLevel": 1
+        }
+      },
+      "retainedTraits": [
+        "human-age",
+        "human-alignment",
+        "human-size",
+        "human-speed",
+        "human-languages"
+      ],
+      "stackingRule": "Variant Human's two chosen +1 ability increases replace the standard +1 to all six. The packages must not be combined."
+    }
+  ],
+  "sources": [
+    {
+      "id": "srd-5.1",
+      "title": "System Reference Document 5.1",
+      "publisher": "Wizards of the Coast LLC",
+      "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+      "edition": "5e",
+      "originalRulesYear": 2014,
+      "publicationYear": 2023,
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "attribution": "Rules are based on Wizards of the Coast LLC's System Reference Document 5.1, available under Creative Commons Attribution 4.0 International. Explanations here are independently written.",
+      "use": "Standard Human rules and descriptive traits"
+    },
+    {
+      "id": "basic-rules-5e",
+      "title": "D&D Basic Rules (2014): Races — Human",
+      "publisher": "Wizards of the Coast LLC",
+      "platform": "D&D Beyond",
+      "url": "https://www.dndbeyond.com/species/1-human",
+      "edition": "5e",
+      "originalRulesYear": 2014,
+      "license": {
+        "id": "reference-only",
+        "note": "Used as an official reference for the optional Variant Human. No CC or other open-content license is asserted for the entire page."
+      },
+      "use": "Optional Variant Human mechanics"
+    }
+  ],
+  "article": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Humans are adaptable playable people in D&D 5e. Standard Human gains +1 to each of the six ability scores, is Medium, walks 30 feet, and can speak, read and write Common plus one chosen extra language. It is a flexible starting option rather than a species with a built-in feat, magical sight or special combat attack."
+          },
+          {
+            "type": "paragraph",
+            "text": "A Human might pursue an adventuring life as a [[class:fighter@5e|Fighter]], [[class:wizard@5e|Wizard]], diplomat, craftsperson or explorer. Background and class give most of the character's specialist capabilities, while the Human species package supports a broad range of concepts. This entry covers the standard 2014 fifth-edition rules."
+          }
+        ]
+      },
+      {
+        "id": "basic-traits",
+        "title": "Basic Traits",
+        "blocks": [
+          {
+            "type": "table",
+            "caption": "Standard Human 5e mechanics",
+            "headers": [
+              "Property",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Ability scores",
+                "+1 to Strength, Dexterity, Constitution, Intelligence, Wisdom and Charisma"
+              ],
+              [
+                "Size",
+                "Medium"
+              ],
+              [
+                "Walking speed",
+                "30 feet"
+              ],
+              [
+                "Languages",
+                "Common plus one additional language; speak, read and write both"
+              ],
+              [
+                "Age",
+                "Adult in late teens; normally less than a century of life"
+              ],
+              [
+                "Alignment",
+                "No required alignment"
+              ],
+              [
+                "Species-granted feat",
+                "None"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "These values describe the standard Human species only. A class, background or approved optional rule may add other proficiencies, languages or features. Store those additions under their own sources rather than changing the published Human baseline."
+          }
+        ]
+      },
+      {
+        "id": "species-traits",
+        "title": "Species Traits",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Increasing every ability score by 1 makes the standard Human broadly competent. The effect on ability modifiers depends on starting values: increasing 13 to 14 improves a modifier from +1 to +2, while increasing 14 to 15 leaves the modifier at +2. Scores with different starting parities therefore gain different immediate benefits."
+          },
+          {
+            "type": "paragraph",
+            "text": "Medium is the size category used when a rule asks about creature size. A base walking speed of 30 feet defines normal available movement on a turn before special actions or other modifiers; see [[rule:movement|Movement]]. Human does not grant a special climbing, swimming, burrowing or flying speed."
+          },
+          {
+            "type": "paragraph",
+            "text": "Knowing Common and one selected additional language allows spoken and written communication in both. Language knowledge does not automatically grant social advantage or expertise in the history of its speakers. Human age and alignment descriptions support character portrayal but are not additional mechanical bonuses."
+          },
+          {
+            "type": "callout",
+            "title": "Standard Human has no automatic feat",
+            "text": "The baseline does not supply Darkvision, a skill proficiency, an innate spell, elemental resistance, a feat or a species-specific limited-use action. Such benefits can come from other permitted character options."
+          }
+        ]
+      },
+      {
+        "id": "variants",
+        "title": "Variants",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Variant Human is a separate optional choice in the 2014 Basic Rules, available when the Dungeon Master permits it and the table uses optional feats. Instead of +1 to each of six abilities, Variant Human increases two different abilities by 1 each, gains proficiency in one chosen skill and receives one permitted feat at character creation."
+          },
+          {
+            "type": "paragraph",
+            "text": "The variant retains ordinary Human size, speed, age, alignment and languages. The two chosen ability increases replace the standard six increases; the alternative packages do not stack. A feat's normal prerequisites and the DM's available feat options remain relevant."
+          },
+          {
+            "type": "table",
+            "caption": "Standard and optional Variant Human",
+            "headers": [
+              "Trait",
+              "Standard",
+              "Variant"
+            ],
+            "rows": [
+              [
+                "Ability bonuses",
+                "+1 to all six",
+                "+1 to two different chosen abilities"
+              ],
+              [
+                "Species skill proficiency",
+                "None",
+                "One chosen skill"
+              ],
+              [
+                "Species feat",
+                "None",
+                "One allowed feat"
+              ],
+              [
+                "Size and speed",
+                "Medium, 30 feet",
+                "Medium, 30 feet"
+              ],
+              [
+                "Languages",
+                "Common plus one",
+                "Common plus one"
+              ]
+            ]
+          },
+          {
+            "type": "callout",
+            "title": "Source distinction",
+            "text": "The standard traits are attributed to SRD 5.1. Variant Human is verified separately using the 2014 Basic Rules, without asserting that the full Basic Rules page is Creative Commons material."
+          }
+        ]
+      },
+      {
+        "id": "history-and-lore",
+        "title": "History & Lore",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Many fantasy settings present Human communities as ports, trade towns, farming settlements, seafaring cultures, scholarly institutions and kingdoms. Their comparatively short lives can inspire stories about urgency, ambition, stewardship and legacies passed between generations. These are common story themes, not required characteristics."
+          },
+          {
+            "type": "paragraph",
+            "text": "No universal Human civilization, religion, political system or moral outlook exists across every D&D setting. One world might feature an old Human empire; another might scatter Human communities among much older civilizations. Human history should be adapted to the world in which the character actually lives."
+          },
+          {
+            "type": "paragraph",
+            "text": "An individual Human may be traditional, adventurous, diplomatic, suspicious, devout or skeptical. Their experiences and relationships explain these qualities more usefully than a fixed species stereotype."
+          }
+        ]
+      },
+      {
+        "id": "playing-as-a-human",
+        "title": "Playing as a Human",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Start with a goal: an archivist protecting endangered documents, a guard looking for a missing friend, a trader connecting divided communities, or an explorer trying to map an unfamiliar coast. The character's class shapes how they approach problems, and the standard Human's ability-score spread can support several roles."
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Calculate which starting scores become even after the +1 Human adjustment.",
+              "Choose the extra language for a credible background or practical purpose.",
+              "Compare standard Human and Variant Human only if the optional variant is allowed.",
+              "Ask the DM how Human communities and histories fit the specific campaign setting."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "A [[class:rogue@5e|Rogue]] could value Dexterity alongside Wisdom, Intelligence and Charisma; a [[class:cleric@5e|Cleric]] may especially value Wisdom and Constitution. These are examples of useful combinations, not claims that Human has a universally best class."
+          }
+        ]
+      },
+      {
+        "id": "sources-and-references",
+        "title": "Sources & References",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Standard Human traits were checked against the official System Reference Document 5.1. Its license is Creative Commons Attribution 4.0 International; the source record identifies Wizards of the Coast LLC and the official license link. D&D Portal's explanatory writing is original rather than reproduced sourcebook prose."
+          },
+          {
+            "type": "paragraph",
+            "text": "The optional Variant Human is referenced against Wizards of the Coast's 2014 Basic Rules chapter hosted on D&D Beyond. This reference does not mean all content in those Basic Rules is released under the same license as SRD 5.1."
+          },
+          {
+            "type": "list",
+            "items": [
+              "srd-5.1 — Standard Human and source license.",
+              "basic-rules-5e — Optional Variant Human."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

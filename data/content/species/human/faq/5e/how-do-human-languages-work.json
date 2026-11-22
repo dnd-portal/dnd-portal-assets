@@ -1,0 +1,112 @@
+{
+  "id": "human-languages",
+  "slug": "how-do-human-languages-work",
+  "edition": "5e",
+  "contentId": "species:human",
+  "question": "How do Human languages work in D&D?",
+  "shortAnswer": "In standard 5e, a Human speaks, reads and writes Common plus one extra language of their choice. The extra language is selected during character creation using the campaign's available options.",
+  "introduction": "The language choice is both a rules benefit and a useful part of a character's story. It opens conversations and access to writing without automatically granting skill proficiencies or unlimited translation.",
+  "sourceIds": [
+    "srd-5.1"
+  ],
+  "sections": [
+    {
+      "id": "human-languages-baseline",
+      "title": "The two starting languages",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The standard 2014 Human has Common automatically and one additional language chosen by the player. The published trait covers speaking, reading and writing in both languages. It is not merely the ability to understand spoken conversation, and the extra language is not a choice that can be changed from one encounter to the next."
+        },
+        {
+          "type": "paragraph",
+          "text": "Write the second language on the character sheet during creation. A character who chooses Elvish in a setting where it is available does not then exchange Elvish for Dwarvish halfway through an adventure unless some separate rule permits language learning or replacement."
+        }
+      ]
+    },
+    {
+      "id": "human-languages-availability",
+      "title": "Who decides which language can be chosen?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The player selects one additional language, while the Dungeon Master establishes the language options that exist in the campaign. Many fifth-edition settings include Dwarvish, Elvish, Halfling and other languages; another world might have a different language list or different cultural associations."
+        },
+        {
+          "type": "paragraph",
+          "text": "The trait does not automatically authorize a character to invent a secret tongue or know a language absent from the setting. If a language has unusual access restrictions, ask the DM during character creation. This preserves the published one-language benefit without assuming that every fantasy world has identical linguistic geography."
+        }
+      ]
+    },
+    {
+      "id": "human-languages-character",
+      "title": "Connecting the choice to a character",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A merchant could know the tongue of a trading partner, a scout could have learned from neighbors across a frontier, or a scholar could have practiced a language while studying written sources. A character may also have learned a language through family connections, friendship, apprenticeship or years of travel."
+        },
+        {
+          "type": "paragraph",
+          "text": "These motivations make a small rules choice meaningful in roleplay. They do not give the Human extra languages beyond the one chosen language. If the backstory requires several fluent languages, look for an appropriate background or other legitimate feature that actually grants them."
+        }
+      ]
+    },
+    {
+      "id": "human-languages-communication",
+      "title": "What speaking and reading a language can do",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Knowing a language allows ordinary spoken communication and reading or writing in that language. That can help the group ask an NPC questions, read a warning, exchange information or communicate without relying on another party member to translate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Knowledge of a language does not guarantee that every speaker shares a familiar dialect, that a coded document can be deciphered, or that a stranger will be persuaded. Separate ability checks or roleplay may still be required. Reading a language also does not automatically grant proficiency in History or other knowledge skills."
+        }
+      ]
+    },
+    {
+      "id": "human-languages-other-sources",
+      "title": "When a Human knows more languages",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A character may gain additional languages through backgrounds, class features, feats, training or another explicitly applicable rule. Those bonuses are cumulative where their sources allow it, but should be attributed correctly. The standard Human species grants Common plus one selected additional language, not every language appearing on the completed character sheet."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, if a background provides an extra language, add it according to that background's instructions. Do not rewrite the Human's original species traits to say it grants two or three extra choices. Tracking sources separately is especially helpful when reviewing character sheets and rules questions."
+        }
+      ]
+    },
+    {
+      "id": "human-languages-play",
+      "title": "Languages at the table",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Choose a language relevant to the setting and the character's history.",
+            "Ask what languages are spoken in the regions the party is likely to visit.",
+            "Use language knowledge to help teammates communicate or read information.",
+            "Do not assume it adds automatic bonuses to Persuasion, History or Investigation."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "One member of the party may become an important interpreter during a conversation or the only person able to read a particular inscription. Those moments can create cooperation and interesting narrative decisions, provided the DM has established the language actually used."
+        },
+        {
+          "type": "callout",
+          "title": "Keep campaign additions separate",
+          "text": "The public standard Human trait remains Common plus one additional language. Any setting-specific extra language or custom restriction belongs in separately scoped campaign rules, not the underlying species entry."
+        },
+        {
+          "type": "paragraph",
+          "text": "The goal is a consistent character sheet and meaningful roleplay. A language should be a stable part of the character's knowledge, with its usefulness emerging from the people and places encountered."
+        }
+      ]
+    }
+  ]
+}

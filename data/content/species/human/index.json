@@ -1,0 +1,17 @@
+{
+  "id": "species:human",
+  "type": "species",
+  "slug": "human",
+  "name": "Human",
+  "summary": "A versatile, adaptable playable species whose standard 5e traits improve all six ability scores and grant a choice of additional language.",
+  "editions": [
+    "5e"
+  ],
+  "defaultEdition": "5e",
+  "tags": [
+    "humanoid",
+    "playable",
+    "adaptable",
+    "versatile"
+  ]
+}

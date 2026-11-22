@@ -1,0 +1,108 @@
+{
+  "id": "human-traits",
+  "slug": "what-traits-do-humans-get",
+  "edition": "5e",
+  "contentId": "species:human",
+  "question": "What traits do Humans get in D&D 5e?",
+  "shortAnswer": "A standard Human increases all six ability scores by 1, has Medium size and a 30-foot walking speed, and can speak, read and write Common plus one additional chosen language.",
+  "introduction": "The standard Human's concise list of species traits is simple to apply, but its gameplay value depends on the character's starting numbers and the rest of the build.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "human-traits-ability",
+      "title": "Ability Score Increase",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Increase Strength, Dexterity, Constitution, Intelligence, Wisdom and Charisma by exactly 1 each. These six increases are fixed; they are not a pool of six points to distribute wherever you want. Apply the trait to the starting ability scores according to the character-creation system in use."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, starting Strength 15 becomes 16 and improves the modifier from +2 to +3. Wisdom 13 becomes 14 and its modifier rises from +1 to +2. A starting Constitution 14 becomes 15 but keeps the +2 modifier. This is why the benefits of six +1 increases depend on the original array."
+        }
+      ]
+    },
+    {
+      "id": "human-traits-size",
+      "title": "Medium size",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Standard Human uses Medium size. Size is a game category that matters to rules about a creature's space, certain grappling interactions and some effects that explicitly mention size. Medium does not imply that every Human must be the same height, weight or body type."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can describe the character as tall, short, broad or slender without inventing an additional size-based bonus. If a setting includes exceptional physical circumstances, consult the DM rather than assuming ordinary descriptive variation changes the mechanical size category."
+        }
+      ]
+    },
+    {
+      "id": "human-traits-speed",
+      "title": "Movement and walking speed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Human base walking speed is 30 feet. This sets the normal distance a character can move on a combat turn, before accounting for other actions, conditions, difficult terrain and features. The [[rule:movement|Movement]] rules explain how movement can be split before and after actions, and when it can cost extra."
+        },
+        {
+          "type": "paragraph",
+          "text": "Standard Human does not gain a separate climbing, swimming, burrowing or flying speed from its species traits. It can still climb or swim under general rules, but those actions are not automatically improved into special movement modes."
+        }
+      ]
+    },
+    {
+      "id": "human-traits-languages",
+      "title": "Common and a chosen language",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A Human starts knowing Common and one additional language of the player's choice. The character can speak, read and write both. The additional choice is made during character creation, typically in consultation with the DM about languages that exist and are available in the campaign setting."
+        },
+        {
+          "type": "paragraph",
+          "text": "A background or class feature may provide more languages, but those belong to the feature that grants them. A standard Human does not receive extra languages merely because they travel widely or have an unusually curious personality."
+        }
+      ]
+    },
+    {
+      "id": "human-traits-descriptions",
+      "title": "Age and alignment are not bonus features",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 Human description places adulthood in the late teens and the normal lifespan below one century. The species also has no required alignment. These descriptions help players portray different experiences, moral outlooks and life goals rather than setting extra ability modifiers."
+        },
+        {
+          "type": "paragraph",
+          "text": "A wise older character is not automatically proficient in History, and a young character is not automatically faster. If an age, occupation or upbringing should affect a skill or ability, express it through the character's normal choices and the rules available for those choices."
+        }
+      ]
+    },
+    {
+      "id": "human-traits-absent",
+      "title": "What is not included",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "No automatic starting feat from standard Human.",
+            "No free skill proficiency from species.",
+            "No innate Darkvision or spellcasting.",
+            "No natural damage resistance or special combat action."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A character can gain a feat, skill, spell or resistance through another legitimate option. That does not change the Human baseline. The optional Variant Human is different because its alternative package grants one chosen skill and feat but replaces the broad ability-score increase."
+        },
+        {
+          "type": "paragraph",
+          "text": "When checking a character sheet, label each benefit by its source. That makes it easy to distinguish the published standard Human from a background benefit, class feature, optional variant or item effect."
+        }
+      ]
+    }
+  ]
+}

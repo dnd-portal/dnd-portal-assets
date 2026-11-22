@@ -1,0 +1,136 @@
+{
+  "id": "human-feat",
+  "slug": "does-standard-human-get-a-feat",
+  "edition": "5e",
+  "contentId": "species:human",
+  "question": "Does Standard Human get a feat in D&D?",
+  "shortAnswer": "No. The standard Human does not get a starting feat from its species. Optional Variant Human can get one feat, but only through its separate, DM-approved trait package.",
+  "introduction": "Standard and Variant Human are often discussed as if their benefits belonged to one character. In the 2014 fifth-edition rules they are separate alternatives with different ability-score increases.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "human-feat-standard",
+      "title": "Why the standard Human does not receive a feat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Standard Human increases all six ability scores by 1, is Medium, moves 30 feet and knows Common plus one extra language. Its species traits do not include a feat at first level. Selecting a class that benefits from feats does not add an unlisted species feature."
+        },
+        {
+          "type": "paragraph",
+          "text": "A standard Human might acquire a feat later through a permitted class-level Ability Score Improvement or another valid feature. If the table uses optional feats, that is a separate character-building decision made when the relevant rule allows it. It is not a retroactive benefit of choosing Human."
+        }
+      ]
+    },
+    {
+      "id": "human-feat-variant",
+      "title": "The optional Variant Human alternative",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the 2014 Basic Rules, a Dungeon Master may permit Variant Human when the optional feat rules are in use. That option increases two different ability scores chosen by the player by 1 each, grants proficiency in one chosen skill and provides one eligible feat at character creation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The alternative retains ordinary Human age, alignment, Medium size, 30-foot walking speed and starting languages. A chosen feat remains subject to its prerequisites and any limits set by the DM. The variant is not automatically active at every table simply because it appears in an official book."
+        }
+      ]
+    },
+    {
+      "id": "human-feat-comparison",
+      "title": "Standard and Variant Human compared",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Human choice comparison",
+          "headers": [
+            "Trait",
+            "Standard Human",
+            "Variant Human"
+          ],
+          "rows": [
+            [
+              "Ability-score increase",
+              "+1 to every ability",
+              "+1 to two different abilities"
+            ],
+            [
+              "Species skill proficiency",
+              "None",
+              "One chosen skill"
+            ],
+            [
+              "Starting species feat",
+              "None",
+              "One permitted feat"
+            ],
+            [
+              "Size and speed",
+              "Medium and 30 feet",
+              "Medium and 30 feet"
+            ],
+            [
+              "Languages",
+              "Common plus one chosen",
+              "Common plus one chosen"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The variant's two chosen ability increases replace the standard Human's +1 to all six. It is not legal under the published options to take the standard six increases and then add the variant's feat and skill on top."
+        },
+        {
+          "type": "callout",
+          "title": "Avoid accidental stacking",
+          "text": "Record exactly one chosen Human ability-score package. If a campaign deliberately alters it, that alteration belongs in separate campaign-specific rules, not in the standard species entry."
+        }
+      ]
+    },
+    {
+      "id": "human-feat-creation",
+      "title": "How the choice changes character creation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An early feat can let a focused character concept become mechanically distinct at the first session. A [[class:fighter@5e|Fighter]] built around a specialized weapon approach could value a qualifying feat, while a utility-focused character might choose a feat that expands noncombat tools."
+        },
+        {
+          "type": "paragraph",
+          "text": "Standard Human can instead improve several ability modifiers when the starting array contains multiple odd scores. That sometimes matters more than an early feat. Compare the actual character sheet, including ability modifiers, proficiencies and feat prerequisites, rather than treating Variant Human as universally superior."
+        }
+      ]
+    },
+    {
+      "id": "human-feat-levels",
+      "title": "Can a standard Human take feats later?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Potentially yes. The optional feat rules allow a character to choose a feat instead of taking an eligible Ability Score Improvement, provided all applicable conditions are met. The improvement comes from class progression, not from the standard Human species traits."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a class receives its first improvement later, the standard Human waits for that opportunity. A Variant Human's selected starting feat is different: it comes from the variant species choice. Keeping these sources separate prevents incorrect level-one character sheets."
+        }
+      ]
+    },
+    {
+      "id": "human-feat-source",
+      "title": "Official rules and optional permission",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Standard Human's broad ability increases are documented in SRD 5.1. The optional feat-based Human is described in the 2014 Basic Rules, but permission to use it remains a table decision. Official publication of an optional rule is not equivalent to automatic availability."
+        },
+        {
+          "type": "paragraph",
+          "text": "The two source records are also kept distinct for legal clarity. SRD 5.1 is available under CC BY 4.0 with appropriate attribution. The Basic Rules webpage is cited for verifying the optional variant, not treated as a blanket grant of open-content rights."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "human-classes",
+  "slug": "is-human-good-for-every-class",
+  "edition": "5e",
+  "contentId": "species:human",
+  "question": "Is Human good for every class?",
+  "shortAnswer": "Yes. A standard Human can work with any D&D 5e class because all six ability scores rise by 1, although whether that is an especially strong choice depends on the build.",
+  "introduction": "Human provides broad ability scores rather than a signature combat feature, spell or resistance. That can support many character roles, but useful improvements depend on starting scores and the situations the campaign presents.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "human-classes-compatibility",
+      "title": "Why the standard Human works with any class",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Every class uses ability scores, and the standard Human raises each of them. Strength and Dexterity are commonly important in physical conflict; Constitution supports endurance; and Intelligence, Wisdom and Charisma contribute to many skills and spellcasting systems. Humans have no class prohibition and no mandatory alignment."
+        },
+        {
+          "type": "paragraph",
+          "text": "That does not mean the six abilities have equal value to every build. A [[class:wizard@5e|Wizard]] still focuses on Intelligence, while a [[class:barbarian@5e|Barbarian]] often emphasizes Strength and Constitution. Human's breadth helps secondary scores, but class features decide most of the character's distinctive strengths."
+        }
+      ]
+    },
+    {
+      "id": "human-classes-modifiers",
+      "title": "Pay attention to even-numbered scores",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An ability modifier improves when its score reaches an even value. Standard Human therefore makes multiple odd starting scores particularly attractive. A character beginning with Strength 15, Constitution 13 and Wisdom 13 receives 16, 14 and 14 after the Human increases, immediately improving each of those three modifiers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting with mostly even values may produce fewer immediate modifier gains. A 14 becoming 15 has the same modifier. The extra point may help with a later score increase, but it cannot automatically be counted as a current improvement in attack rolls, saving throws or skills."
+        }
+      ]
+    },
+    {
+      "id": "human-classes-martial",
+      "title": "Human Fighters, Rogues and other martial builds",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A [[class:fighter@5e|Fighter]] may use Human's increases to support a chosen attack ability, Constitution and secondary skills. A [[class:rogue@5e|Rogue]] can value Dexterity together with Wisdom for awareness and Intelligence or Charisma for investigations and social situations."
+        },
+        {
+          "type": "paragraph",
+          "text": "These advantages depend on proficiencies and scores. The standard Human does not gain additional weapon attacks, maneuver dice, Expertise or an extra skill proficiency from species. Those benefits must be traced to the class or another legal option. Human provides a flexible foundation, not a replacement for martial class progression."
+        }
+      ]
+    },
+    {
+      "id": "human-classes-casters",
+      "title": "Human spellcasters and support characters",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A [[class:cleric@5e|Cleric]] commonly values Wisdom and Constitution, while a [[class:wizard@5e|Wizard]] prioritizes Intelligence along with defensive scores. Standard Human can assist a character who starts with odd values in several relevant abilities and occasionally uses a broader spread of knowledge or social checks."
+        },
+        {
+          "type": "paragraph",
+          "text": "No extra cantrip, spell slot or innate magic comes from standard Human. If the campaign emphasizes environmental hazards, darkness or a specific spellcasting synergy, another permitted species with specialized traits may be mechanically attractive even if its raw ability-score bonuses are narrower."
+        }
+      ]
+    },
+    {
+      "id": "human-classes-multiclass",
+      "title": "Multiclassing implications",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The optional multiclass rules require minimum ability scores for entering and leaving particular classes. A Human bonus may raise a score from 12 to 13, allowing a character to meet a relevant prerequisite that would otherwise be missed. Check both classes' requirements before planning the progression."
+        },
+        {
+          "type": "paragraph",
+          "text": "Meeting a prerequisite does not guarantee an effective multiclass build. Multiclassing can delay spells, attacks, improvements or other important class features. Consider the entire progression rather than choosing Human solely because a +1 bonus unlocks an interesting combination."
+        }
+      ]
+    },
+    {
+      "id": "human-classes-limits",
+      "title": "Strengths, limitations and the right choice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Standard Human has no automatic Darkvision, damage resistance, movement trick or special limited-use ability. In a campaign where such traits are frequently decisive, another species can be more convenient. Variant Human, if allowed, is different again: it gives two chosen ability increases, a skill proficiency and a feat instead of six increases."
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose Human when its broad numerical support or character concept fits what you want to play. There is no universally strongest Human class without considering the starting array, level range, encounter style and available optional rules. A character does not need perfect mechanical optimization to contribute meaningfully."
+        }
+      ]
+    }
+  ]
+}

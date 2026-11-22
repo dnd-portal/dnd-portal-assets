@@ -1,0 +1,138 @@
+{
+  "id": "human-introduction",
+  "slug": "what-is-the-human-species",
+  "edition": "5e",
+  "contentId": "species:human",
+  "question": "What is the Human species in D&D?",
+  "shortAnswer": "Humans are versatile playable people. In standard D&D 5e they gain +1 to every ability score, Medium size, 30 feet of walking speed, and Common plus one chosen language.",
+  "introduction": "Human is a flexible starting point for adventurers whose history, personality and class matter more than a compulsory species-wide identity. The standard 2014 rules favor broad ability improvements over a special power.",
+  "sourceIds": [
+    "srd-5.1",
+    "basic-rules-5e"
+  ],
+  "sections": [
+    {
+      "id": "human-introduction-identity",
+      "title": "Human identity in a fantasy world",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Humans are people who can belong to wildly different communities, traditions and occupations. An adventurer might have grown up in a busy port, an isolated village, a border fortress or a city of scholars. Neither the rules nor the species label forces the same values, accent, profession or attitude on every Human."
+        },
+        {
+          "type": "paragraph",
+          "text": "In fantasy stories, humans often provide a familiar perspective on extraordinary events. But that is not a limit on the characters you can imagine: a Human may be the last student of an ancient school, a diplomatic envoy, a desert wanderer or a ruler who left home under an assumed name."
+        }
+      ]
+    },
+    {
+      "id": "human-introduction-core-rules",
+      "title": "Standard Human at a glance",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The standard fifth-edition Human improves each of Strength, Dexterity, Constitution, Intelligence, Wisdom and Charisma by 1. The character is Medium, has a base walking speed of 30 feet, and can speak, read and write Common plus one language chosen at character creation. Humans reach adulthood in their late teens, usually live less than a century and have no mandatory alignment."
+        },
+        {
+          "type": "table",
+          "caption": "Standard Human traits",
+          "headers": [
+            "Trait",
+            "Result"
+          ],
+          "rows": [
+            [
+              "Ability Score Increase",
+              "+1 to all six abilities"
+            ],
+            [
+              "Size",
+              "Medium"
+            ],
+            [
+              "Speed",
+              "30-foot walk"
+            ],
+            [
+              "Languages",
+              "Common and one other"
+            ],
+            [
+              "Automatic species feat",
+              "None"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the baseline Human, not the optional Variant Human. The standard version does not automatically gain Darkvision, innate spellcasting, a skill proficiency or a feat. Such benefits can come from other character features, but they are not hidden species traits."
+        }
+      ]
+    },
+    {
+      "id": "human-introduction-flexibility",
+      "title": "Why the Human feels versatile",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Most species features favor a particular kind of activity, while the standard Human improves every ability score a little. A [[class:fighter@5e|Fighter]] might appreciate Strength and Constitution while still using Wisdom in exploration. A [[class:wizard@5e|Wizard]] may welcome Intelligence alongside Dexterity for defense and initiative. No special class pairing is required."
+        },
+        {
+          "type": "paragraph",
+          "text": "The numerical improvement depends on starting scores. When 13 becomes 14, the modifier rises from +1 to +2; when 14 becomes 15, its modifier stays at +2. Flexibility does not mean equal mastery in every skill. Proficiencies, spells, equipment and class features still shape a character's expertise."
+        }
+      ]
+    },
+    {
+      "id": "human-introduction-creation",
+      "title": "Where Human fits in character creation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a species, class, background and ability scores as complementary parts of the character. Species supplies the Human traits, the class supplies a progression of features, and the background gives context and its own applicable benefits. Keep the sources separate so that your character sheet does not count an ability twice."
+        },
+        {
+          "type": "paragraph",
+          "text": "The chosen extra language can support a clear personal history. Perhaps a merchant learned it through trade, a student through written records, or a traveler from close companions. These choices offer storytelling possibilities without altering the number of languages given by the published Human trait."
+        }
+      ]
+    },
+    {
+      "id": "human-introduction-misconceptions",
+      "title": "Misconceptions worth clearing up",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Standard Human does not start with a species feat.",
+            "Variant Human is a separate optional alternative, not an extra bonus added to standard Human.",
+            "Neither innate Darkvision nor a damage resistance appears in the standard traits.",
+            "Humans have no required alignment or universally shared culture."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The original fifth-edition book used the game term race, while D&D Portal uses species as its navigation and editorial label. That terminology choice does not change the underlying 2014 rules represented in this entry."
+        },
+        {
+          "type": "paragraph",
+          "text": "History also varies between fantasy settings. A Human society invented for one world is not automatically part of every other world, so avoid treating particular kingdoms, religions or customs as universal published traits."
+        }
+      ]
+    },
+    {
+      "id": "human-introduction-character",
+      "title": "Creating an interesting Human character",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with a goal, a source of tension and a few people the character cares about. A seemingly ordinary courier could be carrying a dangerous message, while a renowned scholar might fear that the truth will hurt their family. Such specific choices are more memorable than assuming that every Human must be generic."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ask the Dungeon Master which Human communities exist in the campaign. Then connect the character's class, background and additional language to that world. A Human can be straightforward to build mechanically while still being deeply distinctive in the story."
+        }
+      ]
+    }
+  ]
+}

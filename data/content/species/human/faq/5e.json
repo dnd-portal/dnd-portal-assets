@@ -1,0 +1,32 @@
+{
+  "id": "species:human@5e:faq",
+  "edition": "5e",
+  "contentId": "species:human",
+  "items": [
+    {
+      "id": "human-introduction",
+      "file": "./5e/what-is-the-human-species.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-traits",
+      "file": "./5e/what-traits-do-humans-get.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-feat",
+      "file": "./5e/does-standard-human-get-a-feat.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-classes",
+      "file": "./5e/is-human-good-for-every-class.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-languages",
+      "file": "./5e/how-do-human-languages-work.json",
+      "includeInGlobalFaq": true
+    }
+  ]
+}
