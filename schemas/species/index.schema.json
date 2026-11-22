@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/species/index.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "slug",
+    "name",
+    "summary",
+    "editions",
+    "defaultEdition",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "type": {
+      "const": "species"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "editions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "1e",
+          "2e",
+          "3e",
+          "3.5e",
+          "4e",
+          "5e",
+          "5.5e"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "defaultEdition": {
+      "enum": [
+        "1e",
+        "2e",
+        "3e",
+        "3.5e",
+        "4e",
+        "5e",
+        "5.5e"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true
+    },
+    "media": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

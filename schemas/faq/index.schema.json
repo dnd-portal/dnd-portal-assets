@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/faq/index.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "edition",
+    "contentId",
+    "items"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*@[1-5](?:\\.5)?e:faq$"
+    },
+    "edition": {
+      "enum": [
+        "1e",
+        "2e",
+        "3e",
+        "3.5e",
+        "4e",
+        "5e",
+        "5.5e"
+      ]
+    },
+    "contentId": {
+      "type": "string",
+      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "file",
+          "includeInGlobalFaq"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+          },
+          "file": {
+            "type": "string",
+            "pattern": "^\\./(?:1e|2e|3e|3\\.5e|4e|5e|5\\.5e)/[a-z0-9]+(?:-[a-z0-9]+)*\\.json$"
+          },
+          "includeInGlobalFaq": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}

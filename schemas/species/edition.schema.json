@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/species/edition.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "contentId",
+    "edition",
+    "name",
+    "mechanics",
+    "sources",
+    "article"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*@[1-5](?:\\.5)?e$"
+    },
+    "contentId": {
+      "type": "string",
+      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "edition": {
+      "enum": [
+        "1e",
+        "2e",
+        "3e",
+        "3.5e",
+        "4e",
+        "5e",
+        "5.5e"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rulesBasis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mechanics": {
+      "type": "object",
+      "required": [
+        "creatureType",
+        "size",
+        "speed",
+        "traits"
+      ],
+      "properties": {
+        "creatureType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "size": {
+          "type": "object",
+          "required": [
+            "category"
+          ],
+          "properties": {
+            "category": {
+              "type": "string",
+              "minLength": 1
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "choiceRequired": {
+              "type": "boolean"
+            },
+            "selectionTiming": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        },
+        "speed": {
+          "type": "object",
+          "required": [
+            "walking"
+          ],
+          "properties": {
+            "walking": {
+              "type": "object",
+              "required": [
+                "value",
+                "unit"
+              ],
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "abilityScoreIncrease": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "abilities": {
+              "type": "object"
+            },
+            "grantedBySpecies": {
+              "type": "boolean"
+            }
+          }
+        },
+        "languages": {
+          "type": "object"
+        },
+        "age": {
+          "type": "object"
+        },
+        "alignment": {
+          "type": "object"
+        },
+        "background": {
+          "type": "object"
+        },
+        "traits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "kind",
+              "description",
+              "sourceIds"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+                },
+                "minItems": 1
+              },
+              "choice": {
+                "type": "object"
+              },
+              "trigger": {
+                "type": "object"
+              },
+              "resourceRules": {
+                "type": "object"
+              },
+              "grants": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": true
+          },
+          "minItems": 1
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+          },
+          "minItems": 0
+        },
+        "notGrantedAutomatically": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "excludedAutomaticBenefits": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "optionalVariants": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.dnd-portal.invalid/common/source.schema.json"
+      },
+      "minItems": 1
+    },
+    "article": {
+      "type": "object",
+      "required": [
+        "sections"
+      ],
+      "properties": {
+        "sections": {
+          "type": "array",
+          "items": {
+            "$ref": "https://schemas.dnd-portal.invalid/common/article-section.schema.json"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

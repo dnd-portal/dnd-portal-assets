@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/common/article-section.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "blocks"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.dnd-portal.invalid/common/content-block.schema.json"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}

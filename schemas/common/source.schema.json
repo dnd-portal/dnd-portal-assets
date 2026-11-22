@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/common/source.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "publisher",
+    "url",
+    "edition",
+    "license"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://[^\\s]+$"
+    },
+    "documentUrl": {
+      "type": "string",
+      "pattern": "^https://[^\\s]+$"
+    },
+    "edition": {
+      "enum": [
+        "1e",
+        "2e",
+        "3e",
+        "3.5e",
+        "4e",
+        "5e",
+        "5.5e"
+      ]
+    },
+    "publicationYear": {
+      "type": "integer",
+      "minimum": 1970
+    },
+    "originalRulesYear": {
+      "type": "integer",
+      "minimum": 1970
+    },
+    "rulesPublicationYear": {
+      "type": "integer",
+      "minimum": 1970
+    },
+    "license": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "enum": [
+            "CC-BY-4.0",
+            "reference-only"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://[^\\s]+$"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "attribution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "use": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

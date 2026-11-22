@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.dnd-portal.invalid/faq/article.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "edition",
+    "contentId",
+    "question",
+    "shortAnswer",
+    "introduction",
+    "sourceIds",
+    "sections"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "edition": {
+      "enum": [
+        "1e",
+        "2e",
+        "3e",
+        "3.5e",
+        "4e",
+        "5e",
+        "5.5e"
+      ]
+    },
+    "contentId": {
+      "type": "string",
+      "pattern": "^species:[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shortAnswer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "introduction": {
+      "type": "string"
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+      },
+      "minItems": 1
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.dnd-portal.invalid/common/article-section.schema.json"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}

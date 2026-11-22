@@ -16,5 +16,12 @@
     ],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
+    },
+    "scripts": {
+        "validate:content": "node scripts/validate-content.mjs",
+        "test:content-validator": "node scripts/test-content-validator.mjs"
+    },
+    "devDependencies": {
+        "ajv": "8.17.1"
     }
 }
