@@ -1,0 +1,209 @@
+{
+  "id": "human-5.5e-edition-changes",
+  "slug": "what-changed-between-5e-and-5-5e",
+  "edition": "5.5e",
+  "contentId": "species:human",
+  "question": "What changed for Humans between D&D 5e and 5.5e?",
+  "shortAnswer": "The 2024 Human replaces the 2014 ability-score-based Human packages with Resourceful, Skillful and Versatile; it can be Medium or Small, while backgrounds provide ability adjustments and a feat and languages are chosen separately.",
+  "introduction": "Both versions are official Human options, but they belong to different character-creation systems. The clearest comparison distinguishes the earlier standard Human, the optional earlier Variant Human, and the revised Human species.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-human-5.5e",
+    "srd-5.1"
+  ],
+  "sections": [
+    {
+      "id": "human-5.5e-edition-changes-at-a-glance",
+      "title": "Three different Human packages",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Human rules across editions",
+          "headers": [
+            "Rule",
+            "5e Standard Human",
+            "5e optional Variant Human",
+            "5.5e Human"
+          ],
+          "rows": [
+            [
+              "Creature type",
+              "Humanoid",
+              "Humanoid",
+              "Humanoid"
+            ],
+            [
+              "Size",
+              "Medium",
+              "Medium",
+              "Medium or Small, chosen"
+            ],
+            [
+              "Walking speed",
+              "30 feet",
+              "30 feet",
+              "30 feet"
+            ],
+            [
+              "Species ability increases",
+              "+1 to all six abilities",
+              "+1 to two different abilities",
+              "None; background handles increases"
+            ],
+            [
+              "Species skill proficiency",
+              "None",
+              "One skill of choice",
+              "One skill of choice (Skillful)"
+            ],
+            [
+              "Species feat",
+              "None",
+              "One feat if variant and optional feats allowed",
+              "One chosen Origin feat (Versatile)"
+            ],
+            [
+              "Heroic Inspiration species trait",
+              "None",
+              "None",
+              "Resourceful after each completed Long Rest"
+            ],
+            [
+              "Species language trait",
+              "Common plus one additional",
+              "Common plus one additional",
+              "None; character-creation languages"
+            ],
+            [
+              "Background Origin feat",
+              "Not part of standard 2014 background design",
+              "Not part of standard 2014 background design",
+              "Normally one specified Origin feat"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The table identifies where each benefit comes from. A missing species feat in standard 5e does not mean that no character can ever obtain a feat through another rule. Likewise, the revised Human's extra Origin feat is a Human benefit distinct from the background's normal feat."
+        },
+        {
+          "type": "callout",
+          "title": "Use one edition's package",
+          "text": "The three columns are alternative rules profiles, not a menu from which to select the most desirable trait in each row. Any deliberate cross-edition conversion belongs to the table's conversion rules, not the published Human baseline."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-edition-changes-abilities",
+      "title": "Ability Score Improvements moved to backgrounds",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 standard Human increased all six abilities by 1. The 2014 Variant Human was an optional alternative that increased two different chosen abilities by 1 each. Those changes were species-level mechanics, so selecting which Human package you used affected your ability distribution directly."
+        },
+        {
+          "type": "paragraph",
+          "text": "The revised Human no longer grants ability-score improvements through its species entry. Instead, the character's background lists three eligible abilities: increase one of those by 2 and a different one by 1, or increase all three by 1, without exceeding the permitted cap. This changes how players choose backgrounds and assign scores, but is not a reduction applied only to Human characters."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not carry either older Human adjustment forward and then also apply the revised background adjustments. If you are rebuilding a character for the updated rules, recalculate the starting scores using the new character-creation sequence rather than adding bonuses on top of an old character sheet."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-edition-changes-size",
+      "title": "Size and speed are no longer identical choices",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The standard and optional Variant Human entries from the 2014 rules use Medium size and a 30-foot walking speed. Revised Humans can choose Medium or Small at species selection, while keeping the same 30-foot base walking speed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Size can matter to general rules that depend on occupied space or creature size, but selecting Small is not a new subspecies and does not automatically give stealth proficiency, bonus speed or better ability scores. When converting a character, select the size that matches the concept and record it explicitly."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-edition-changes-language",
+      "title": "Starting languages now come from character creation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The earlier standard Human had a Human trait giving Common plus one other language. The optional Variant Human retained that language trait. Backgrounds and classes could provide further languages under their own rules, but the species itself carried the additional language."
+        },
+        {
+          "type": "paragraph",
+          "text": "Under revised character creation, characters normally know Common plus two Standard Languages table languages that they choose or roll, regardless of species. The updated Human does not get a separate additional language just for being Human. Someone converting an older character should use the revised language-selection step rather than adding the old Human language trait to it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Language knowledge continues to support speaking, reading and writing under the applicable character-creation rules. The change is primarily the source and number of starting language selections, not a new rule that Humans have forgotten how to read."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-edition-changes-skill-feat",
+      "title": "Skill proficiency and starting feat choices",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The 2014 standard Human gave no free species skill proficiency or feat. The optional Variant Human gave one chosen skill proficiency and a feat, but used a reduced ability-score package and required permission to use the variant and optional feats."
+        },
+        {
+          "type": "paragraph",
+          "text": "The revised Human's Skillful grants a chosen skill proficiency and Versatile grants one chosen Origin feat. The feat is restricted to the Origin category and must satisfy applicable feat rules. The background normally grants a separate specified Origin feat, meaning a revised Human commonly begins with two feat sources: one from their background and one from Versatile."
+        },
+        {
+          "type": "paragraph",
+          "text": "This does not mean the updated Human automatically receives any 2014 feat or qualifies for a 5.5e General feat at level one. Origin feat eligibility and repeatability are governed by the revised feat rules, not by the older Variant Human option. Skilled and Alert are examples of feats from the Origin category."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-edition-changes-resourceful",
+      "title": "Resourceful and Heroic Inspiration are new to this species profile",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Neither the old standard Human nor the old optional Variant Human had Resourceful. The revised Human receives Heroic Inspiration whenever they finish a Long Rest, making a recurring reroll opportunity part of their species features."
+        },
+        {
+          "type": "paragraph",
+          "text": "Heroic Inspiration permits rerolling a die immediately after rolling it, and the new result must be used. A character can hold only one instance at a time. When a Human would receive another instance while already holding one, the newly gained instance can be given to a fellow player character in the group who lacks it."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not the same as having a bonus point to add to an ability score or as automatic Advantage on all attacks. It is a specific resource with a timing rule. Old-edition Inspiration terminology should not be substituted for the current Heroic Inspiration mechanic without checking the actual rules in use."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-edition-changes-checklist",
+      "title": "Checklist for converting an older Human character",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Confirm the campaign uses the revised Human rules rather than the 2014 standard or optional Variant Human package.",
+            "Remove old Human species ability increases when rebuilding starting scores; apply the background's 2024 adjustment rules.",
+            "Choose Medium or Small size and record 30-foot speed.",
+            "Add Skillful's chosen skill without assuming repeated proficiency doubles the bonus.",
+            "Take the background's specified Origin feat, then choose Versatile's additional permitted Origin feat.",
+            "Use the revised Common-plus-two-standard-languages character-creation step rather than retaining a separate species language bonus.",
+            "Track Heroic Inspiration from Resourceful after completed Long Rests."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If the game retains characters created under the older rules, discuss the conversion method with the DM; the comparison alone is not an instruction to retroactively redesign everyone. The safe default for a newly created 5.5e Human is to use the full updated package and avoid borrowing benefits from a separate older option."
+        },
+        {
+          "type": "paragraph",
+          "text": "A player choosing between a [[class:fighter@5.5e|Fighter]] or [[class:wizard@5.5e|Wizard]] still considers different ability and skill priorities, but those priorities now influence the background and chosen Origin feat more directly than the species' raw ability increases."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "human-5.5e-traits",
+  "slug": "what-traits-do-humans-get",
+  "edition": "5.5e",
+  "contentId": "species:human",
+  "question": "What traits do Humans get in D&D 5.5e?",
+  "shortAnswer": "The revised Human is a Humanoid of Medium or Small size with 30-foot speed. Resourceful grants Heroic Inspiration after a Long Rest, Skillful grants one skill proficiency, and Versatile grants one Origin feat.",
+  "introduction": "Human traits in the revised fifth edition are a short list of meaningful choices and a recurring resource. The distinction between those traits and the new background rules is essential to accurate character creation.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-human-5.5e"
+  ],
+  "sections": [
+    {
+      "id": "human-5.5e-traits-creature-type",
+      "title": "Creature type: Humanoid",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The Human creature type is Humanoid. A creature's type matters when another rule expressly refers to Humanoids, and it distinguishes a Human from a creature whose type is Undead, Construct or something else. Choosing Human does not by itself confer a special bonus against other creature types."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not confuse creature type with a class, background or culture. All Human player characters using this species option share its Humanoid type, whether they are scholars, warriors, traveling performers or people with unusual histories."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-traits-size",
+      "title": "Choose Medium or Small",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The player chooses Medium or Small when selecting Human. The official description gives typical height ranges for the two size categories, but it is the mechanical category that matters in rules for occupied spaces and interactions that specify creature size."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Small Human is not automatically a different species variant, and a Medium Human has no claim to extra ability-score increases. Size may affect particular equipment or movement interactions governed by the general rules, so record the selected size clearly rather than assuming it has no consequences."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-traits-speed",
+      "title": "Walking speed: 30 feet",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Both Medium and Small Humans have a walking speed of 30 feet. The species does not provide a different walking speed for each size and does not grant a flying, swimming or climbing speed by default. Normal movement can still be affected by terrain, actions and class features."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, moving through difficult terrain can consume movement differently, while Dash can increase movement available on a turn. Those effects come from the general [[rule:movement|Movement]] system, not from a separate Human-only walking rule."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-traits-resourceful",
+      "title": "Resourceful: recurring Heroic Inspiration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Resourceful grants Heroic Inspiration whenever the Human finishes a Long Rest. Under the current rules, a player character can spend Heroic Inspiration immediately after rolling a die to reroll it and must keep the new result. That can be useful for a high-stakes check, saving throw, attack roll or another die roll permitted by the rule."
+        },
+        {
+          "type": "paragraph",
+          "text": "Only one instance may be held. Receiving another while already inspired allows the player to pass the newly gained instance to a player character in the group who has none. Resourceful does not grant an unlimited number of rerolls or automatically trigger on a Short Rest."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-traits-skillful",
+      "title": "Skillful: one skill proficiency of choice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Skillful grants one chosen skill proficiency. That choice is independent of the skills provided by the class and background. A Human who expects to investigate mysteries could choose Investigation; a wilderness traveler could choose Survival; a social character might choose Persuasion."
+        },
+        {
+          "type": "paragraph",
+          "text": "Proficiency helps on ability checks where the selected skill applies, according to the normal proficiency rules. It does not automatically double the proficiency bonus, award Expertise or provide proficiency in every related skill. Review the rest of the character's skills first so this choice adds meaningful coverage."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-traits-versatile",
+      "title": "Versatile: one extra Origin feat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Versatile grants an Origin feat of the player's choice, subject to feat eligibility. A background normally grants a separate specified Origin feat, so Human Versatile means a character can begin with both that background feat and an additional chosen Origin feat. This is the central difference from a species that relies only on the background for a starting feat."
+        },
+        {
+          "type": "paragraph",
+          "text": "The choice must belong to the Origin feat category; it is not a free choice of any General, Fighting Style or Epic Boon feat. Officially, Skilled is recommended for Human, but the recommendation is optional. A player might instead choose Alert or another permitted Origin feat that fits the character concept."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-traits-not-from-species",
+      "title": "What is supplied outside the Human species",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under standard revised character creation, a background determines eligible ability-score adjustments: one allowed score increases by 2 and another by 1, or three different allowed scores each increase by 1. The background also normally grants a specified Origin feat and skill proficiencies. None of those background benefits is the Human species' own ability-score trait."
+        },
+        {
+          "type": "paragraph",
+          "text": "Every new character normally knows Common plus two standard languages selected or rolled from the language table. The revised Human does not grant a third chosen language from species, unlike the earlier standard Human's specific language trait."
+        },
+        {
+          "type": "list",
+          "items": [
+            "No +1 to every ability score from Human.",
+            "No automatic species language choices.",
+            "No Darkvision or innate spellcasting from the Human species.",
+            "No 2014 Variant Human package layered on top of Resourceful, Skillful or Versatile."
+          ]
+        }
+      ]
+    }
+  ]
+}

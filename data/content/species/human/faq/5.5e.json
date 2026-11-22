@@ -1,0 +1,32 @@
+{
+  "id": "species:human@5.5e:faq",
+  "edition": "5.5e",
+  "contentId": "species:human",
+  "items": [
+    {
+      "id": "human-5.5e-introduction",
+      "file": "./5.5e/what-is-the-human-species.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-5.5e-traits",
+      "file": "./5.5e/what-traits-do-humans-get.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-5.5e-resourceful",
+      "file": "./5.5e/how-does-resourceful-work.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-5.5e-skillful-versatile",
+      "file": "./5.5e/how-do-skillful-and-versatile-work.json",
+      "includeInGlobalFaq": true
+    },
+    {
+      "id": "human-5.5e-edition-changes",
+      "file": "./5.5e/what-changed-between-5e-and-5-5e.json",
+      "includeInGlobalFaq": true
+    }
+  ]
+}

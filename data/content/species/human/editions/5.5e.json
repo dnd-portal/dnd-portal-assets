@@ -1,0 +1,453 @@
+{
+  "id": "species:human@5.5e",
+  "contentId": "species:human",
+  "edition": "5.5e",
+  "name": "Human",
+  "rulesBasis": "Revised fifth-edition Human from the 2024 Player's Handbook, cross-checked against SRD 5.2.1",
+  "summary": "Humans can be Medium or Small, move 30 feet, gain Heroic Inspiration after a Long Rest, choose one skill proficiency, and gain an Origin feat in addition to their background's feat.",
+  "mechanics": {
+    "creatureType": "Humanoid",
+    "size": {
+      "category": "choice",
+      "options": [
+        "Medium",
+        "Small"
+      ],
+      "choiceRequired": true,
+      "selectionTiming": "when selecting this species"
+    },
+    "speed": {
+      "walking": {
+        "value": 30,
+        "unit": "feet"
+      }
+    },
+    "abilityScoreIncrease": {
+      "type": "none-from-species",
+      "grantedBySpecies": false,
+      "source": "background",
+      "backgroundAdjustment": {
+        "eligibleAbilitiesCount": 3,
+        "options": [
+          {
+            "method": "two-scores",
+            "increases": [
+              2,
+              1
+            ],
+            "distinctScores": true
+          },
+          {
+            "method": "three-scores",
+            "increases": [
+              1,
+              1,
+              1
+            ],
+            "distinctScores": true
+          }
+        ],
+        "maximumScoreAfterAdjustment": 20
+      }
+    },
+    "languages": {
+      "grantedBySpecies": [],
+      "source": "character-creation",
+      "standardCharacterCreation": {
+        "automatic": [
+          "Common"
+        ],
+        "additional": {
+          "count": 2,
+          "method": [
+            "choose",
+            "roll"
+          ],
+          "pool": "Standard Languages table"
+        },
+        "literacy": [
+          "speak",
+          "read",
+          "write"
+        ]
+      },
+      "note": "The starting character languages do not originate in the Human species trait."
+    },
+    "background": {
+      "originFeat": {
+        "count": 1,
+        "selection": "specified by the chosen background"
+      },
+      "speciesFeatAddsToBackground": true,
+      "skillProficiencies": {
+        "count": 2,
+        "selection": "specified by background"
+      }
+    },
+    "traits": [
+      {
+        "id": "human-resourceful",
+        "name": "Resourceful",
+        "kind": "resource",
+        "description": "Gain Heroic Inspiration whenever you finish a Long Rest.",
+        "trigger": {
+          "event": "finish-long-rest"
+        },
+        "grants": {
+          "resource": "Heroic Inspiration"
+        },
+        "resourceRules": {
+          "maxHeld": 1,
+          "spend": {
+            "timing": "immediately-after-rolling-a-die",
+            "effect": "reroll-that-die",
+            "mustUseNewRoll": true
+          },
+          "whenAlreadyHeld": "May give the new instance to another player character in your group who lacks Heroic Inspiration.",
+          "advantageOrDisadvantage": "A reroll of a d20 roll with Advantage or Disadvantage can affect only one of its dice."
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      },
+      {
+        "id": "human-skillful",
+        "name": "Skillful",
+        "kind": "skill-proficiency",
+        "description": "Gain proficiency in one skill of your choice.",
+        "choice": {
+          "required": true,
+          "category": "skill",
+          "count": 1,
+          "selection": "any skill"
+        },
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      },
+      {
+        "id": "human-versatile",
+        "name": "Versatile",
+        "kind": "feat",
+        "description": "Gain an Origin feat of your choice, in addition to any Origin feat granted by your background.",
+        "choice": {
+          "required": true,
+          "category": "Origin feat",
+          "count": 1,
+          "selection": "one Origin feat for which the character qualifies",
+          "prerequisitesApply": true
+        },
+        "additionalToBackgroundOriginFeat": true,
+        "repeatability": "A feat can be chosen again only if its own description explicitly permits repeat selection.",
+        "sourceIds": [
+          "srd-5.2.1"
+        ]
+      }
+    ],
+    "notGrantedAutomatically": [
+      "species-based ability score increases",
+      "species-based starting languages",
+      "2014 standard Human traits",
+      "2014 Variant Human feat or ability-score package",
+      "Darkvision",
+      "innate spellcasting"
+    ],
+    "sourceIds": [
+      "srd-5.2.1",
+      "phb-human-5.5e"
+    ]
+  },
+  "optionalVariants": [],
+  "sources": [
+    {
+      "id": "srd-5.2.1",
+      "title": "System Reference Document 5.2.1",
+      "publisher": "Wizards of the Coast LLC",
+      "url": "https://www.dndbeyond.com/srd",
+      "documentUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "edition": "5.5e",
+      "rulesPublicationYear": 2024,
+      "publicationYear": 2025,
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "attribution": "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+      "use": "Human traits; Heroic Inspiration; character creation, feats, backgrounds and language rules; licensing"
+    },
+    {
+      "id": "phb-human-5.5e",
+      "title": "Human — Player's Handbook",
+      "publisher": "Wizards of the Coast LLC",
+      "platform": "D&D Beyond",
+      "url": "https://www.dndbeyond.com/species/1751441-human",
+      "edition": "5.5e",
+      "publicationYear": 2024,
+      "license": {
+        "id": "reference-only",
+        "note": "This official species page is used for confirmation. The entire D&D Beyond page, its artwork, and any text outside the SRD are not claimed to be CC-licensed."
+      },
+      "use": "Official 2024 Human profile and trait terminology"
+    },
+    {
+      "id": "srd-5.1",
+      "title": "System Reference Document 5.1",
+      "publisher": "Wizards of the Coast LLC",
+      "url": "https://www.dndbeyond.com/srd",
+      "edition": "5e",
+      "publicationYear": 2023,
+      "rulesPublicationYear": 2014,
+      "license": {
+        "id": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "attribution": "Used only for factual comparison with standard 2014 Human rules; existing 5e dataset retains its own source attribution.",
+      "use": "Comparison of the previous standard Human mechanics"
+    }
+  ],
+  "article": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In D&D 5.5e, Humans are adaptable Humanoids who choose Medium or Small size, walk 30 feet, gain Heroic Inspiration at the end of every Long Rest, select a skill proficiency, and gain an Origin feat of their choice. Resourceful, Skillful and Versatile make the revised Human flexible without tying that flexibility to increases in all six ability scores."
+          },
+          {
+            "type": "paragraph",
+            "text": "A Human's background now determines their starting ability-score adjustments and normally provides a separate Origin feat. Languages also come from the shared character-creation rules, not from a Human-only language trait. This entry uses the updated 2024 rules as described in official sources and SRD 5.2.1. No 2014 standard or Variant Human mechanics have been added to the new species package."
+          }
+        ]
+      },
+      {
+        "id": "basic-traits",
+        "title": "Basic Traits",
+        "blocks": [
+          {
+            "type": "table",
+            "caption": "Human in the revised fifth edition",
+            "headers": [
+              "Property",
+              "5.5e rule"
+            ],
+            "rows": [
+              [
+                "Creature type",
+                "Humanoid"
+              ],
+              [
+                "Size",
+                "Choose Medium or Small when selecting Human"
+              ],
+              [
+                "Walking speed",
+                "30 feet, regardless of chosen size"
+              ],
+              [
+                "Resourceful",
+                "Gain Heroic Inspiration after finishing a Long Rest"
+              ],
+              [
+                "Skillful",
+                "Choose proficiency in one skill"
+              ],
+              [
+                "Versatile",
+                "Choose one additional Origin feat"
+              ],
+              [
+                "Ability scores",
+                "Adjusted through background; Human provides no species-based increase"
+              ],
+              [
+                "Languages",
+                "Character creation: Common plus two standard languages chosen or rolled, not a Human trait"
+              ],
+              [
+                "Background feat",
+                "Normally one specified Origin feat, separate from Versatile"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Keep the species choices separate in a character builder: choose size, one skill, and one Origin feat for Human; then apply the background's ability adjustments, assigned Origin feat and other benefits under the background rules. Starting languages are selected in the ordinary character-creation step."
+          }
+        ]
+      },
+      {
+        "id": "species-traits",
+        "title": "Species Traits",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Resourceful grants Heroic Inspiration when the Human finishes a Long Rest. Heroic Inspiration is a resource that can be spent immediately after rolling a die to reroll that die; the second result replaces the first even if it is worse. The resource can apply beyond d20 checks, but any individual reroll still follows the relevant game's timing and dice rules. In an Advantage or Disadvantage roll, only one d20 may be rerolled."
+          },
+          {
+            "type": "paragraph",
+            "text": "You cannot hold more than one instance of Heroic Inspiration. If you receive another while you already have one, you can pass that new instance to a player character in your group who lacks it. The Long Rest therefore guarantees a new opportunity to gain Inspiration, not an endlessly accumulating reserve. Resourceful does not itself create an additional reroll after every die roll."
+          },
+          {
+            "type": "paragraph",
+            "text": "Skillful provides proficiency in one skill of your choice. This is a flexible species choice, distinct from the skills supplied by your class and background. A trained investigator might choose Investigation, while a scout could choose Perception or Stealth; the best selection depends on what is already covered by the character's other options."
+          },
+          {
+            "type": "paragraph",
+            "text": "Versatile grants a chosen Origin feat in addition to the one normally specified by a background. The choice must be an Origin feat and must follow any eligibility requirements and feat rules, including limits on taking the same feat twice. Skilled is recommended in the official Human entry, but it is not mandatory. For example, Skilled can broaden skill and tool training, while Alert can support readiness in initiative."
+          },
+          {
+            "type": "callout",
+            "title": "Where scores and languages come from",
+            "text": "The updated Human has no +1-to-every-score trait and no extra species language. Backgrounds normally provide ability adjustments and a specified Origin feat. The ordinary 2024 character-creation procedure grants Common plus two Standard Languages table choices; these are not a bonus from being Human."
+          }
+        ]
+      },
+      {
+        "id": "variants",
+        "title": "Variants",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The revised Human is a distinct 5.5e species entry, not a new instance of 2014 Variant Human. In the 2014 standard Human rules, all six ability scores increased by 1, Medium was the size and the species granted Common plus one extra language. The separate optional 2014 Variant Human instead used two chosen +1 ability increases, a chosen skill proficiency and a feat."
+          },
+          {
+            "type": "paragraph",
+            "text": "The 2024 Human no longer uses either of those ability-score packages. It gains Resourceful, Skillful and Versatile, can be Small or Medium, and uses the new background and language creation steps. A similar opportunity to start with a feat does not mean the two editions' feat rules or selectable packages are interchangeable."
+          },
+          {
+            "type": "table",
+            "caption": "Three different Human options",
+            "headers": [
+              "Rule",
+              "2014 Standard Human",
+              "2014 optional Variant Human",
+              "2024 Human"
+            ],
+            "rows": [
+              [
+                "Ability boosts",
+                "+1 to each of six",
+                "+1 to two different abilities",
+                "From background"
+              ],
+              [
+                "Size",
+                "Medium",
+                "Medium",
+                "Medium or Small"
+              ],
+              [
+                "Species skill",
+                "None",
+                "One chosen",
+                "One chosen"
+              ],
+              [
+                "Species feat",
+                "None",
+                "One feat under optional rules",
+                "One chosen Origin feat"
+              ],
+              [
+                "Resourceful",
+                "No",
+                "No",
+                "Yes"
+              ],
+              [
+                "Languages",
+                "Common plus one chosen",
+                "Common plus one chosen",
+                "Character-creation rules"
+              ]
+            ]
+          },
+          {
+            "type": "callout",
+            "title": "Do not combine editions",
+            "text": "Choose the full rules package for the edition in use. The species options are not independent enhancements that can be stacked onto a character without an explicit separate rule."
+          }
+        ]
+      },
+      {
+        "id": "history-and-lore",
+        "title": "History & Lore",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Human characters can come from many kinds of communities, including trading ports, remote farming settlements, mixed-species cities, nomadic communities and centers of scholarship. Adaptability can be reflected through practical skills, shifting alliances and diverse ways of living rather than a single universal cultural identity."
+          },
+          {
+            "type": "paragraph",
+            "text": "The official multiverse includes some specific stories about Human origins, but those accounts do not establish that every fantasy setting has the same history. A campaign could feature Humans as recent newcomers, old inhabitants, traveling merchants or people with widely differing relationships to other species."
+          },
+          {
+            "type": "paragraph",
+            "text": "A Human's outlook should be built from family, training, work, language and personal choices. The revised rules offer flexible mechanics for portraying a wide range of personalities without assuming that all Humans are ambitious, heroic, diplomatic or alike."
+          }
+        ]
+      },
+      {
+        "id": "playing-as-a-human",
+        "title": "Playing as a Human",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choose size to fit the character concept and expected play style; the 30-foot walking speed remains the same. Consider how the campaign's size-related movement and positioning rules affect the character, rather than assuming Small grants extra stealth or an automatic attack benefit. See [[rule:movement|Movement]] for the general mechanics."
+          },
+          {
+            "type": "paragraph",
+            "text": "Plan the skill choice after you know the class and background proficiencies. A [[class:fighter@5.5e|Fighter]] might use Skillful to improve out-of-combat investigation or awareness, while a [[class:wizard@5.5e|Wizard]] could expand social or exploration competence. Choose a skill that creates new opportunities rather than assuming that a duplicate proficiency doubles the proficiency bonus."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use Versatile to choose an Origin feat that complements the character without relying on a feat of the wrong category. A Human looking for broad training might choose Skilled, if eligible; a character who wants to improve initiative support may choose Alert. The Human feat comes in addition to the background's specified Origin feat, so check both choices and any repeatability rules."
+          },
+          {
+            "type": "paragraph",
+            "text": "Plan Resourceful as a recurring opportunity for a reroll, not a guarantee of success. Consider spending Heroic Inspiration after a high-stakes die result, remembering that the new result must be kept. If an upcoming Long Rest would grant another instance while you still have one, the rules allow you to pass the new one to a teammate who lacks it."
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Choose Medium or Small and record 30-foot walking speed.",
+              "Select the character's background and apply its allowed ability increases and Origin feat.",
+              "Add Skillful's one chosen skill proficiency and Versatile's additional eligible Origin feat.",
+              "Choose Common plus two standard languages using the general character-creation rules.",
+              "Track Heroic Inspiration and its Long Rest grant separately from other class or feat resources."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sources-and-references",
+        "title": "Sources & References",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The mechanical baseline and Heroic Inspiration rules are checked against the official System Reference Document 5.2.1, which contains the revised Human and character-creation rules. The original rules and defined terms are credited under CC BY 4.0; the required attribution statement appears in the SRD source metadata above."
+          },
+          {
+            "type": "paragraph",
+            "text": "The official D&D Beyond Human species page confirms the 2024 Player's Handbook identity, trait names and size choice. It is an official reference, but its entire page and imagery are not assumed to be freely reusable under the SRD license. All explanations in this article are newly written."
+          },
+          {
+            "type": "paragraph",
+            "text": "The SRD 5.1 record is included only for edition comparisons, not as a source of the 5.5e Human's actual traits. See the existing 5e edition JSON for that rules package and its original sourcing."
+          },
+          {
+            "type": "list",
+            "items": [
+              "srd-5.2.1 — Revised Human traits, character creation, feats, Heroic Inspiration and open-content license.",
+              "phb-human-5.5e — Official revised Human species reference.",
+              "srd-5.1 — Standard 5e comparison reference only."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

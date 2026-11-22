@@ -1,0 +1,137 @@
+{
+  "id": "human-5.5e-introduction",
+  "slug": "what-is-the-human-species",
+  "edition": "5.5e",
+  "contentId": "species:human",
+  "question": "What is the Human species in D&D 5.5e?",
+  "shortAnswer": "Human is a flexible Humanoid species in D&D 5.5e. Humans choose Medium or Small size, move 30 feet, gain Heroic Inspiration after a Long Rest, select a skill proficiency, and receive an additional Origin feat.",
+  "introduction": "The revised Human builds flexibility through practical choices rather than the +1-to-all-abilities rule of the earlier standard Human. Resourceful, Skillful and Versatile support a character defined by their class, background and personal goals.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-human-5.5e"
+  ],
+  "sections": [
+    {
+      "id": "human-5.5e-introduction-identity",
+      "title": "What it means to play a Human",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Human characters can come from almost any society the Dungeon Master has established. Their upbringing may include a port, an isolated community, a cosmopolitan city or a traveling group. The species itself does not impose an alignment, profession or single cultural identity. A Human can be a curious explorer, meticulous scholar, determined defender or reluctant negotiator without selecting an official culture as a rule."
+        },
+        {
+          "type": "paragraph",
+          "text": "That narrative openness is reflected by the mechanics. Instead of forcing one favored ability, the revised Human offers a skill choice and a feat choice. Both can complement the character's story and class: a navigator might train in Survival, while a diplomatic envoy might favor Insight or Persuasion."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-introduction-mechanics",
+      "title": "The six essential rules",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Humans have the Humanoid creature type. When selecting the species, choose Medium or Small. Either size has a walking speed of 30 feet. Resourceful grants Heroic Inspiration whenever you finish a Long Rest; Skillful grants one chosen skill proficiency; and Versatile grants one chosen Origin feat."
+        },
+        {
+          "type": "paragraph",
+          "text": "No ability-score increase or additional language is built into these species traits. That absence is intentional. Starting ability adjustments are associated with backgrounds, while the common language selection belongs to the overall character-creation rules. Treating these as separate sources prevents accidental use of older Human benefits."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-introduction-table",
+      "title": "A quick-reference Human profile",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Human species at a glance",
+          "headers": [
+            "Component",
+            "5.5e value"
+          ],
+          "rows": [
+            [
+              "Creature type",
+              "Humanoid"
+            ],
+            [
+              "Size",
+              "Medium or Small"
+            ],
+            [
+              "Walking speed",
+              "30 feet"
+            ],
+            [
+              "Resourceful",
+              "Heroic Inspiration on finishing a Long Rest"
+            ],
+            [
+              "Skillful",
+              "Proficiency in one chosen skill"
+            ],
+            [
+              "Versatile",
+              "One chosen Origin feat"
+            ],
+            [
+              "Species ability increases",
+              "None"
+            ],
+            [
+              "Species language trait",
+              "None"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The table describes benefits from species only. A complete level-one character also has class and background benefits, languages selected during character creation and, normally, a separate Origin feat supplied by their background."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-introduction-resourceful",
+      "title": "How Resourceful influences play",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Heroic Inspiration lets a player reroll a die immediately after rolling it, but the new result must replace the old result. That makes it a useful safeguard for moments that matter, not a guarantee that a poor roll becomes good. A player may prefer to save it for an important saving throw or spend it on a consequential attack or skill check."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Human receives it after each completed Long Rest. Only one instance can be held at a time, so repeatedly resting does not accumulate a pool. If the character already has one when another is gained, the new instance can be passed to a fellow player character in the group who lacks it. This creates a small opportunity for support as well as personal resilience."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-introduction-creation",
+      "title": "Species versus background in character creation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The updated rules place several starting choices outside species. A background supplies the allowed ability-score adjustments and a specified Origin feat, as well as its other benefits. Human Versatile adds one Origin feat on top of the background feat, giving a standard Human character two distinct feat sources at character creation."
+        },
+        {
+          "type": "paragraph",
+          "text": "A character also begins with Common and two standard languages they choose or roll, regardless of whether they are Human. The character's class may add still more benefits. When constructing a [[class:fighter@5.5e|Fighter]] or [[class:wizard@5.5e|Wizard]], select the class and background before choosing Skillful's skill to avoid redundant character-sheet entries."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-introduction-misconceptions",
+      "title": "Common misconceptions when moving to 5.5e",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This is not the 2014 Variant Human with a new name. The new Human is its own species package, and its feat is restricted to the Origin category. It does not gain the older standard Human's six +1 ability improvements, nor does it inherit the optional Variant Human's two +1 improvements."
+        },
+        {
+          "type": "paragraph",
+          "text": "Small Human characters still have a 30-foot walking speed; choosing Small does not automatically provide a stealth bonus or an ability-score penalty. Finally, Resourceful does not let you stockpile Heroic Inspiration or ignore the obligation to use the new die result after rerolling."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "human-5.5e-skillful-versatile",
+  "slug": "how-do-skillful-and-versatile-work",
+  "edition": "5.5e",
+  "contentId": "species:human",
+  "question": "How do Skillful and Versatile work for Humans in D&D 5.5e?",
+  "shortAnswer": "Skillful gives a Human proficiency in one skill of their choice. Versatile adds one eligible Origin feat of their choice on top of the Origin feat normally granted by their background.",
+  "introduction": "These two revised Human traits create flexibility at character creation. Skillful expands a character's trained skills; Versatile adds a feat choice without changing the background's specified Origin feat.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-human-5.5e"
+  ],
+  "sections": [
+    {
+      "id": "human-5.5e-skillful-basics",
+      "title": "Skillful grants one chosen skill",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Skillful allows the player to select proficiency in one skill. Unlike a fixed proficiency granted by some class or background choices, this Human trait does not limit the selection to a smaller species list. The selected skill uses the normal rules for proficient ability checks."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, Investigation can support examining clues, Survival can complement wilderness travel, and Persuasion can help in appropriate social encounters. The trait does not guarantee that every attempted action using that skill succeeds. It allows the character to apply their proficiency bonus when the check and rules call for it."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-skillful-plan",
+      "title": "How to avoid wasting a choice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before choosing Skillful's skill, write down proficiencies already supplied by the class and background. Choose a skill that adds a new kind of task the character can perform well, rather than assuming that selecting a skill twice doubles the normal proficiency bonus."
+        },
+        {
+          "type": "paragraph",
+          "text": "A [[class:fighter@5.5e|Fighter]] whose background and class cover Athletics might choose Perception or Investigation to contribute during exploration. A [[class:wizard@5.5e|Wizard]] with strong academic proficiencies might choose Insight or a social skill to broaden their role. These are suggestions, not mandatory optimized builds."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-versatile-choice",
+      "title": "Versatile grants one chosen Origin feat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Versatile grants one Origin feat that the player chooses. The feat must belong to the Origin category, not the General, Fighting Style or Epic Boon category, and any relevant prerequisites still apply. Versatile does not permit selecting a feat of an unrelated category simply because the character is Human."
+        },
+        {
+          "type": "paragraph",
+          "text": "The official Human entry recommends Skilled but does not require it. Skilled can grant proficiency in three skills or tools in a permitted combination, and Alert improves initiative-related capability. Both are examples of Origin feats that create different character identities. Consult the selected feat's exact text before recording its benefits."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-versatile-background",
+      "title": "How Versatile combines with a background feat",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A background in revised character creation normally grants one specified Origin feat. Versatile is an additional species trait, so a Human typically starts with the background's feat plus one chosen Origin feat from Versatile. The background feat is not replaced by the Human feat, nor does the Human choose two feats through Versatile alone."
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine a background that assigns one Origin feat and a Human who selects Alert through Versatile. Record the assigned feat as a background benefit and Alert as a Human benefit. The character has separate sources for the two feats, making future character-sheet audits and edition comparisons easier."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-skillful-feat-examples",
+      "title": "Examples of complementary choices",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Possible Human concepts",
+          "headers": [
+            "Concept",
+            "Skillful choice",
+            "Versatile choice",
+            "Why it might help"
+          ],
+          "rows": [
+            [
+              "Expedition scout",
+              "Survival",
+              "Alert",
+              "Preparedness and travel competence"
+            ],
+            [
+              "Broad investigator",
+              "Investigation",
+              "Skilled",
+              "Additional skills or tools"
+            ],
+            [
+              "Diplomatic defender",
+              "Persuasion",
+              "Alert",
+              "Social contribution and initiative support"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are example combinations, not prebuilt characters or required choices. Whether the chosen skill is most useful depends on the class, background, campaign and other proficiencies. Skilled can itself grant multiple skill or tool proficiencies, so check the completed list to avoid redundant choices."
+        },
+        {
+          "type": "callout",
+          "title": "Choosing the same feat twice",
+          "text": "The 2024 feat rules normally allow a feat only once unless its description explicitly allows repeat selection. Skilled is repeatable; other choices must be checked individually. A Human's additional feat does not override these eligibility rules."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-skillful-ability-scores",
+      "title": "How this differs from Human ability bonuses",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Neither Skillful nor Versatile changes the Human's ability scores by itself. In 5.5e, the background supplies the relevant starting ability adjustments. The background also normally gives two specified skill proficiencies, which are distinct from the Human's one chosen proficiency."
+        },
+        {
+          "type": "paragraph",
+          "text": "This differs from the older standard Human, which granted +1 to all six abilities, and from the older optional Variant Human, which offered a feat as part of a different species package. The revised Human is not a permission to add one of those old ability-score packages on top of Skillful and Versatile."
+        }
+      ]
+    }
+  ]
+}

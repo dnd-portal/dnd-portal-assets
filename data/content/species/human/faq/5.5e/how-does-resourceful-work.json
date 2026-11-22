@@ -1,0 +1,108 @@
+{
+  "id": "human-5.5e-resourceful",
+  "slug": "how-does-resourceful-work",
+  "edition": "5.5e",
+  "contentId": "species:human",
+  "question": "How does Resourceful work for Humans in D&D 5.5e?",
+  "shortAnswer": "Resourceful gives a Human Heroic Inspiration whenever they finish a Long Rest. They can spend it immediately after rolling a die to reroll that die, must keep the new result, and can hold only one instance at a time.",
+  "introduction": "Resourceful is the revised Human's recurring species feature. To apply it accurately, distinguish the Long Rest that grants Inspiration from the separate game-wide rules about spending, holding and passing Heroic Inspiration.",
+  "sourceIds": [
+    "srd-5.2.1",
+    "phb-human-5.5e"
+  ],
+  "sections": [
+    {
+      "id": "human-5.5e-resourceful-trigger",
+      "title": "When Resourceful grants Inspiration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Every time a Human finishes a Long Rest, Resourceful grants Heroic Inspiration. The important trigger is finishing the rest; a Short Rest does not activate this trait. Resourceful does not require the Dungeon Master to award Inspiration for impressive roleplay, because the grant is already specified by the Human species rule."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Human who used their previous Inspiration during an encounter can receive another after their next completed Long Rest. The text does not grant an extra instance every time the Human takes an action, makes a check or wakes from an interrupted rest. Use the actual finish-a-Long-Rest trigger instead of an invented daily charge counter."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-resourceful-spend",
+      "title": "Spending Heroic Inspiration on a roll",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Under the revised rules, a player character with Heroic Inspiration may expend it immediately after rolling a die to reroll that die. The replacement result must be used even when it is lower than the original. The choice happens after the die is rolled, but it is not permission to wait until much later and revise a resolved outcome."
+        },
+        {
+          "type": "paragraph",
+          "text": "Heroic Inspiration can apply to more than just an attack roll or ability check because the general rule refers to a die, not only a d20. For instance, rerolling one damage die or an important saving throw die can be meaningful. If a roll uses multiple dice, the feature does not automatically reroll the whole collection; select the appropriate die and apply the rule."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-resourceful-advantage",
+      "title": "Interactions with Advantage and Disadvantage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a d20 roll has Advantage or Disadvantage, the player rolls two d20s and uses the relevant higher or lower result. If Heroic Inspiration is applied to that roll, the revised reroll rule permits rerolling only one of the two dice, not both. The new value replaces the chosen die before determining the result."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a Human with Disadvantage rolls 3 and 17. They can reroll the 3 if they spend Heroic Inspiration immediately, but they must keep the new result even if it is 1. They cannot reroll the 3 and 17 together. The rest of the rules for the roll remain unchanged."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-resourceful-cap",
+      "title": "Why Inspiration cannot accumulate",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A character may hold no more than one instance of Heroic Inspiration. Resourceful therefore does not build a reserve through several completed Long Rests. A Human who already has Inspiration and receives another cannot save both for later, nor can they spend multiple stored instances on the same check."
+        },
+        {
+          "type": "paragraph",
+          "text": "The general rule provides an alternative: if another instance is granted while you already hold one, you may give the newly gained one to a player character in your group who has none. This can make a rest beneficial to another character. The transfer is tied to receiving an additional instance; it should not be reinterpreted as an unrestricted ability to pass Inspiration around whenever desired."
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-resourceful-decisions",
+      "title": "Practical resource management",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Because the next completed Long Rest can grant another instance, a Human may be more willing to use Heroic Inspiration during a dangerous encounter than a character who depends entirely on occasional Dungeon Master awards. Even so, spending it on a trivial check might leave it unavailable for a more consequential roll later."
+        },
+        {
+          "type": "paragraph",
+          "text": "A sensible approach is to identify what failure would cost the party. A critical defense roll, a check required to rescue someone or an important attack may deserve the reroll. The new roll is not guaranteed to be higher, and the character must accept the outcome."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use it immediately after rolling the selected die.",
+            "Keep the rerolled result, even if worse.",
+            "Hold no more than one instance.",
+            "At a Long Rest, consider whether the new grant can benefit an uninspired teammate."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "human-5.5e-resourceful-source",
+      "title": "What Resourceful does not change",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Resourceful does not alter a Human's base walking speed, grant an attack or saving throw proficiency, add advantage to a roll or turn Heroic Inspiration into a free automatic success. It grants a resource which is spent under the general Heroic Inspiration rules. Any additional effect must come from some other applicable rule."
+        },
+        {
+          "type": "paragraph",
+          "text": "This matters when comparing Human to other species or to the older Human entries. The 2014 standard Human does not have Resourceful. The revised Human does, but does not inherit the old +1 to every ability score as compensation or an additional package."
+        }
+      ]
+    }
+  ]
+}

@@ -3,9 +3,10 @@
   "type": "species",
   "slug": "human",
   "name": "Human",
-  "summary": "A versatile, adaptable playable species whose standard 5e traits improve all six ability scores and grant a choice of additional language.",
+  "summary": "A versatile and adaptable playable species with different traits across D&D editions.",
   "editions": [
-    "5e"
+    "5e",
+    "5.5e"
   ],
   "defaultEdition": "5e",
   "tags": [
